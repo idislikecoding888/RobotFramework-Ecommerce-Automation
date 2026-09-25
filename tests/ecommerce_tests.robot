@@ -38,7 +38,6 @@ TC05 - Register New User
     Verify Account Created
     Continue After Registration
     Verify User Is Logged In
-    Delete Created Account
 
 TC06 - Data Driven Product Search
     [Template]    Search Product With Data

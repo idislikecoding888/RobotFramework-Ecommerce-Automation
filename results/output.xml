@@ -1,490 +1,478 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.14.6 on win32)" generated="2026-09-25T13:49:48.135984" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.2 (Python 3.14.6 on win32)" generated="2026-09-25T14:05:46.808530" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="C:\Projects\Internship_proj\RobotFramework-Ecommerce-Automation\tests">
 <suite id="s1-s1" name="Ecommerce Tests" source="C:\Projects\Internship_proj\RobotFramework-Ecommerce-Automation\tests\ecommerce_tests.robot">
 <test id="s1-s1-t1" name="TC05 - Register New User" line="35">
 <kw name="Open Application" owner="common" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:49:48.672533" level="INFO">Opening browser 'chrome' to base url 'https://automationexercise.com'.</msg>
+<msg time="2026-09-25T14:05:47.351884" level="INFO">Opening browser 'chrome' to base url 'https://automationexercise.com'.</msg>
 <arg>${BASE_URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-09-25T13:49:48.672208" elapsed="6.051390"/>
+<status status="PASS" start="2026-09-25T14:05:47.351568" elapsed="7.123854"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-09-25T13:49:54.724039" elapsed="0.029631"/>
+<status status="PASS" start="2026-09-25T14:05:54.476075" elapsed="0.043176"/>
 </kw>
 <kw name="Set Selenium Timeout" owner="SeleniumLibrary">
 <arg>15 seconds</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" start="2026-09-25T13:49:54.753953" elapsed="0.001109"/>
+<status status="PASS" start="2026-09-25T14:05:54.519562" elapsed="0.001487"/>
 </kw>
-<status status="PASS" start="2026-09-25T13:49:48.671204" elapsed="6.084052"/>
+<status status="PASS" start="2026-09-25T14:05:47.350557" elapsed="7.170679"/>
 </kw>
 <kw name="Generate Unique Registration Data" owner="common">
 <kw name="Get Current Date" owner="DateTime">
-<msg time="2026-09-25T13:49:54.756621" level="INFO">${timestamp} = 20260925134954</msg>
+<msg time="2026-09-25T14:05:54.522559" level="INFO">${timestamp} = 20260925140554</msg>
 <var>${timestamp}</var>
 <arg>result_format=%Y%m%d%H%M%S</arg>
 <doc>Returns current local or UTC time with an optional increment.</doc>
-<status status="PASS" start="2026-09-25T13:49:54.756303" elapsed="0.000398"/>
+<status status="PASS" start="2026-09-25T14:05:54.522200" elapsed="0.000408"/>
 </kw>
 <kw name="Catenate" owner="BuiltIn">
-<msg time="2026-09-25T13:49:54.757256" level="INFO">${unique_email} = robotuser20260925134954@example.com</msg>
+<msg time="2026-09-25T14:05:54.523185" level="INFO">${unique_email} = robotuser20260925140554@example.com</msg>
 <var>${unique_email}</var>
 <arg>SEPARATOR=</arg>
 <arg>robotuser</arg>
 <arg>${timestamp}</arg>
 <arg>@example.com</arg>
 <doc>Catenates the given items together and returns the resulted string.</doc>
-<status status="PASS" start="2026-09-25T13:49:54.756847" elapsed="0.000435"/>
+<status status="PASS" start="2026-09-25T14:05:54.522751" elapsed="0.000469"/>
 </kw>
 <kw name="Set Test Variable" owner="BuiltIn">
-<msg time="2026-09-25T13:49:54.758570" level="INFO">${REG_NAME} = Robot Test User</msg>
+<msg time="2026-09-25T14:05:54.524478" level="INFO">${REG_NAME} = Robot Test User</msg>
 <arg>${REG_NAME}</arg>
 <arg>Robot Test User</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<status status="PASS" start="2026-09-25T13:49:54.757400" elapsed="0.001238"/>
+<status status="PASS" start="2026-09-25T14:05:54.523372" elapsed="0.001164"/>
 </kw>
 <kw name="Set Test Variable" owner="BuiltIn">
-<msg time="2026-09-25T13:49:54.760353" level="INFO">${REG_EMAIL} = robotuser20260925134954@example.com</msg>
+<msg time="2026-09-25T14:05:54.525659" level="INFO">${REG_EMAIL} = robotuser20260925140554@example.com</msg>
 <arg>${REG_EMAIL}</arg>
 <arg>${unique_email}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<status status="PASS" start="2026-09-25T13:49:54.758773" elapsed="0.001640"/>
+<status status="PASS" start="2026-09-25T14:05:54.524676" elapsed="0.001022"/>
 </kw>
 <kw name="Set Test Variable" owner="BuiltIn">
-<msg time="2026-09-25T13:49:54.761507" level="INFO">${REG_PASSWORD} = Test@12345</msg>
+<msg time="2026-09-25T14:05:54.526525" level="INFO">${REG_PASSWORD} = Test@12345</msg>
 <arg>${REG_PASSWORD}</arg>
 <arg>Test@12345</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<status status="PASS" start="2026-09-25T13:49:54.760580" elapsed="0.000970"/>
+<status status="PASS" start="2026-09-25T14:05:54.525794" elapsed="0.000764"/>
 </kw>
-<status status="PASS" start="2026-09-25T13:49:54.755890" elapsed="0.005743"/>
+<status status="PASS" start="2026-09-25T14:05:54.521670" elapsed="0.004946"/>
 </kw>
 <kw name="Register New User" owner="common">
 <kw name="Remove Advertisement Overlays" owner="common">
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:49:54.762530" level="INFO">Executing JavaScript:
+<msg time="2026-09-25T14:05:54.527280" level="INFO">Executing JavaScript:
 document.querySelectorAll('iframe[id^="aswift"], div[id^="aswift"], ins.adsbygoogle, [id^="google_ads_iframe"], [id*="google_ads_iframe"]').forEach(el =&gt; el.remove());
 Without any arguments.</msg>
 <arg>document.querySelectorAll('iframe[id^="aswift"], div[id^="aswift"], ins.adsbygoogle, [id^="google_ads_iframe"], [id*="google_ads_iframe"]').forEach(el =&gt; el.remove());</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2026-09-25T13:49:54.762371" elapsed="0.017236"/>
+<status status="PASS" start="2026-09-25T14:05:54.527153" elapsed="0.030905"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:49:54.780225" level="INFO">Executing JavaScript:
+<msg time="2026-09-25T14:05:54.558608" level="INFO">Executing JavaScript:
 document.querySelectorAll('body &gt; *').forEach(el =&gt; { const s = getComputedStyle(el); if (s.position === 'fixed' &amp;&amp; parseInt(s.zIndex || '0') &gt; 100000) el.remove(); });
 Without any arguments.</msg>
 <arg>document.querySelectorAll('body &gt; *').forEach(el =&gt; { const s = getComputedStyle(el); if (s.position === 'fixed' &amp;&amp; parseInt(s.zIndex || '0') &gt; 100000) el.remove(); });</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2026-09-25T13:49:54.779931" elapsed="0.008324"/>
+<status status="PASS" start="2026-09-25T14:05:54.558354" elapsed="0.015039"/>
 </kw>
-<status status="PASS" start="2026-09-25T13:49:54.762196" elapsed="0.026236"/>
+<status status="PASS" start="2026-09-25T14:05:54.526988" elapsed="0.046523"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:49:54.789303" level="INFO">Clicking element 'xpath=//a[contains(.,'Signup / Login')]'.</msg>
+<msg time="2026-09-25T14:05:54.574073" level="INFO">Clicking element 'xpath=//a[contains(.,'Signup / Login')]'.</msg>
 <arg>${LOGIN_LINK}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-09-25T13:49:54.788628" elapsed="3.286138"/>
+<status status="PASS" start="2026-09-25T14:05:54.573650" elapsed="4.830769"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${SIGNUP_NAME_FIELD}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-09-25T13:49:58.075198" elapsed="0.025653"/>
+<status status="PASS" start="2026-09-25T14:05:59.404722" elapsed="0.027387"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:49:58.101925" level="INFO">Typing text 'Robot Test User' into text field 'css=input[data-qa="signup-name"]'.</msg>
+<msg time="2026-09-25T14:05:59.432720" level="INFO">Typing text 'Robot Test User' into text field 'css=input[data-qa="signup-name"]'.</msg>
 <arg>${SIGNUP_NAME_FIELD}</arg>
 <arg>${REG_NAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-09-25T13:49:58.101300" elapsed="0.183131"/>
+<status status="PASS" start="2026-09-25T14:05:59.432370" elapsed="0.078326"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:49:58.285227" level="INFO">Typing text 'robotuser20260925134954@example.com' into text field 'css=input[data-qa="signup-email"]'.</msg>
+<msg time="2026-09-25T14:05:59.511615" level="INFO">Typing text 'robotuser20260925140554@example.com' into text field 'css=input[data-qa="signup-email"]'.</msg>
 <arg>${SIGNUP_EMAIL_FIELD}</arg>
 <arg>${REG_EMAIL}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-09-25T13:49:58.284752" elapsed="0.128997"/>
+<status status="PASS" start="2026-09-25T14:05:59.510956" elapsed="0.148048"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:49:58.414610" level="INFO">Clicking element 'css=button[data-qa="signup-button"]'.</msg>
+<msg time="2026-09-25T14:05:59.659713" level="INFO">Clicking element 'css=button[data-qa="signup-button"]'.</msg>
 <arg>${SIGNUP_BUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-09-25T13:49:58.414108" elapsed="23.525729"/>
+<status status="PASS" start="2026-09-25T14:05:59.659313" elapsed="0.046649"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${MR_RADIO}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-09-25T13:50:21.940287" elapsed="0.075692"/>
+<status status="PASS" start="2026-09-25T14:05:59.706226" elapsed="2.542008"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:50:22.016699" level="INFO">Clicking element 'id=id_gender1'.</msg>
+<msg time="2026-09-25T14:06:02.249368" level="INFO">Clicking element 'id=id_gender1'.</msg>
 <arg>${MR_RADIO}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-09-25T13:50:22.016295" elapsed="0.091136"/>
+<status status="PASS" start="2026-09-25T14:06:02.248713" elapsed="0.087004"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:50:22.108287" level="INFO">Typing text 'Test@12345' into text field 'id=password'.</msg>
+<msg time="2026-09-25T14:06:02.336293" level="INFO">Typing text 'Test@12345' into text field 'id=password'.</msg>
 <arg>${REG_PASSWORD_FIELD}</arg>
 <arg>${REG_PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-09-25T13:50:22.107730" elapsed="0.058440"/>
+<status status="PASS" start="2026-09-25T14:06:02.335972" elapsed="0.102183"/>
 </kw>
 <kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:50:22.167017" level="INFO">Selecting options from selection list 'id=days' by value 10.</msg>
+<msg time="2026-09-25T14:06:02.438640" level="INFO">Selecting options from selection list 'id=days' by value 10.</msg>
 <arg>${DAY_DROPDOWN}</arg>
 <arg>10</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="PASS" start="2026-09-25T13:50:22.166527" elapsed="0.057794"/>
+<status status="PASS" start="2026-09-25T14:06:02.438364" elapsed="0.100765"/>
 </kw>
 <kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:50:22.225237" level="INFO">Selecting options from selection list 'id=months' by value 5.</msg>
+<msg time="2026-09-25T14:06:02.539846" level="INFO">Selecting options from selection list 'id=months' by value 5.</msg>
 <arg>${MONTH_DROPDOWN}</arg>
 <arg>5</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="PASS" start="2026-09-25T13:50:22.224607" elapsed="0.058187"/>
+<status status="PASS" start="2026-09-25T14:06:02.539386" elapsed="0.096439"/>
 </kw>
 <kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:50:22.283486" level="INFO">Selecting options from selection list 'id=years' by value 2000.</msg>
+<msg time="2026-09-25T14:06:02.636591" level="INFO">Selecting options from selection list 'id=years' by value 2000.</msg>
 <arg>${YEAR_DROPDOWN}</arg>
 <arg>2000</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="PASS" start="2026-09-25T13:50:22.283066" elapsed="0.067827"/>
+<status status="PASS" start="2026-09-25T14:06:02.636144" elapsed="0.101062"/>
 </kw>
 <kw name="Select Registration Checkbox" owner="common">
 <kw name="Remove Advertisement Overlays" owner="common">
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:50:22.351933" level="INFO">Executing JavaScript:
+<msg time="2026-09-25T14:06:02.738482" level="INFO">Executing JavaScript:
 document.querySelectorAll('iframe[id^="aswift"], div[id^="aswift"], ins.adsbygoogle, [id^="google_ads_iframe"], [id*="google_ads_iframe"]').forEach(el =&gt; el.remove());
 Without any arguments.</msg>
 <arg>document.querySelectorAll('iframe[id^="aswift"], div[id^="aswift"], ins.adsbygoogle, [id^="google_ads_iframe"], [id*="google_ads_iframe"]').forEach(el =&gt; el.remove());</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2026-09-25T13:50:22.351775" elapsed="0.020712"/>
+<status status="PASS" start="2026-09-25T14:06:02.738190" elapsed="0.040299"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:50:22.373331" level="INFO">Executing JavaScript:
+<msg time="2026-09-25T14:06:02.779106" level="INFO">Executing JavaScript:
 document.querySelectorAll('body &gt; *').forEach(el =&gt; { const s = getComputedStyle(el); if (s.position === 'fixed' &amp;&amp; parseInt(s.zIndex || '0') &gt; 100000) el.remove(); });
 Without any arguments.</msg>
 <arg>document.querySelectorAll('body &gt; *').forEach(el =&gt; { const s = getComputedStyle(el); if (s.position === 'fixed' &amp;&amp; parseInt(s.zIndex || '0') &gt; 100000) el.remove(); });</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2026-09-25T13:50:22.372923" elapsed="0.013931"/>
+<status status="PASS" start="2026-09-25T14:06:02.778813" elapsed="0.006551"/>
 </kw>
-<status status="PASS" start="2026-09-25T13:50:22.351584" elapsed="0.035444"/>
+<status status="PASS" start="2026-09-25T14:06:02.737832" elapsed="0.047682"/>
 </kw>
 <kw name="Get WebElement" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:50:22.399435" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="1c5dbe730a51af2e7e4b96d896644633", element="f.61ACFECF67C37F7F8980CABC21B99497.d.13D1D3B1BE1BF3548966173CADE10C20.e.116")&gt;</msg>
+<msg time="2026-09-25T14:06:02.794903" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="7fab4642f982dfc79d03b34e4b2b1c55", element="f.19C74052F39EB97A5E6ED3D043C154C7.d.7EEAD95CAB0E316A13964B02A16E1DC5.e.113")&gt;</msg>
 <var>${element}</var>
 <arg>${locator}</arg>
 <doc>Returns the first WebElement matching the given ``locator``.</doc>
-<status status="PASS" start="2026-09-25T13:50:22.387258" elapsed="0.012240"/>
+<status status="PASS" start="2026-09-25T14:06:02.785686" elapsed="0.009306"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:50:22.399982" level="INFO">Executing JavaScript:
+<msg time="2026-09-25T14:06:02.795752" level="INFO">Executing JavaScript:
 if (!arguments[0].checked) { arguments[0].click(); }
 By using argument:
-'&lt;selenium.webdriver.remote.webelement.WebElement (session="1c5dbe730a51af2e7e4b96d896644633", element="f.61ACFECF67C37F7F8980CABC21B99497.d.13D1D3B1BE1BF3548966173CADE10C20.e.116")&gt;'</msg>
+'&lt;selenium.webdriver.remote.webelement.WebElement (session="7fab4642f982dfc79d03b34e4b2b1c55", element="f.19C74052F39EB97A5E6ED3D043C154C7.d.7EEAD95CAB0E316A13964B02A16E1DC5.e.113")&gt;'</msg>
 <arg>if (!arguments[0].checked) { arguments[0].click(); }</arg>
 <arg>ARGUMENTS</arg>
 <arg>${element}</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2026-09-25T13:50:22.399723" elapsed="0.005956"/>
+<status status="PASS" start="2026-09-25T14:06:02.795279" elapsed="0.008585"/>
 </kw>
 <kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:50:22.406244" level="INFO">Verifying checkbox 'id=newsletter' is selected.</msg>
+<msg time="2026-09-25T14:06:02.804707" level="INFO">Verifying checkbox 'id=newsletter' is selected.</msg>
 <arg>${locator}</arg>
 <doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<status status="PASS" start="2026-09-25T13:50:22.405933" elapsed="0.022023"/>
+<status status="PASS" start="2026-09-25T14:06:02.804222" elapsed="0.033496"/>
 </kw>
 <arg>${NEWSLETTER_CHECKBOX}</arg>
-<status status="PASS" start="2026-09-25T13:50:22.351240" elapsed="0.076881"/>
+<status status="PASS" start="2026-09-25T14:06:02.737501" elapsed="0.100391"/>
 </kw>
 <kw name="Select Registration Checkbox" owner="common">
 <kw name="Remove Advertisement Overlays" owner="common">
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:50:22.429134" level="INFO">Executing JavaScript:
+<msg time="2026-09-25T14:06:02.838969" level="INFO">Executing JavaScript:
 document.querySelectorAll('iframe[id^="aswift"], div[id^="aswift"], ins.adsbygoogle, [id^="google_ads_iframe"], [id*="google_ads_iframe"]').forEach(el =&gt; el.remove());
 Without any arguments.</msg>
 <arg>document.querySelectorAll('iframe[id^="aswift"], div[id^="aswift"], ins.adsbygoogle, [id^="google_ads_iframe"], [id*="google_ads_iframe"]').forEach(el =&gt; el.remove());</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2026-09-25T13:50:22.428971" elapsed="0.005191"/>
+<status status="PASS" start="2026-09-25T14:06:02.838782" elapsed="0.005596"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:50:22.434639" level="INFO">Executing JavaScript:
+<msg time="2026-09-25T14:06:02.845265" level="INFO">Executing JavaScript:
 document.querySelectorAll('body &gt; *').forEach(el =&gt; { const s = getComputedStyle(el); if (s.position === 'fixed' &amp;&amp; parseInt(s.zIndex || '0') &gt; 100000) el.remove(); });
 Without any arguments.</msg>
 <arg>document.querySelectorAll('body &gt; *').forEach(el =&gt; { const s = getComputedStyle(el); if (s.position === 'fixed' &amp;&amp; parseInt(s.zIndex || '0') &gt; 100000) el.remove(); });</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2026-09-25T13:50:22.434421" elapsed="0.004743"/>
+<status status="PASS" start="2026-09-25T14:06:02.844871" elapsed="0.008489"/>
 </kw>
-<status status="PASS" start="2026-09-25T13:50:22.428756" elapsed="0.010548"/>
+<status status="PASS" start="2026-09-25T14:06:02.838551" elapsed="0.015055"/>
 </kw>
 <kw name="Get WebElement" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:50:22.449681" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="1c5dbe730a51af2e7e4b96d896644633", element="f.61ACFECF67C37F7F8980CABC21B99497.d.13D1D3B1BE1BF3548966173CADE10C20.e.117")&gt;</msg>
+<msg time="2026-09-25T14:06:02.867129" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="7fab4642f982dfc79d03b34e4b2b1c55", element="f.19C74052F39EB97A5E6ED3D043C154C7.d.7EEAD95CAB0E316A13964B02A16E1DC5.e.114")&gt;</msg>
 <var>${element}</var>
 <arg>${locator}</arg>
 <doc>Returns the first WebElement matching the given ``locator``.</doc>
-<status status="PASS" start="2026-09-25T13:50:22.439473" elapsed="0.010272"/>
+<status status="PASS" start="2026-09-25T14:06:02.853897" elapsed="0.013291"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:50:22.450233" level="INFO">Executing JavaScript:
+<msg time="2026-09-25T14:06:02.867633" level="INFO">Executing JavaScript:
 if (!arguments[0].checked) { arguments[0].click(); }
 By using argument:
-'&lt;selenium.webdriver.remote.webelement.WebElement (session="1c5dbe730a51af2e7e4b96d896644633", element="f.61ACFECF67C37F7F8980CABC21B99497.d.13D1D3B1BE1BF3548966173CADE10C20.e.117")&gt;'</msg>
+'&lt;selenium.webdriver.remote.webelement.WebElement (session="7fab4642f982dfc79d03b34e4b2b1c55", element="f.19C74052F39EB97A5E6ED3D043C154C7.d.7EEAD95CAB0E316A13964B02A16E1DC5.e.114")&gt;'</msg>
 <arg>if (!arguments[0].checked) { arguments[0].click(); }</arg>
 <arg>ARGUMENTS</arg>
 <arg>${element}</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2026-09-25T13:50:22.449979" elapsed="0.005871"/>
+<status status="PASS" start="2026-09-25T14:06:02.867398" elapsed="0.006483"/>
 </kw>
 <kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:50:22.456446" level="INFO">Verifying checkbox 'id=optin' is selected.</msg>
+<msg time="2026-09-25T14:06:02.874512" level="INFO">Verifying checkbox 'id=optin' is selected.</msg>
 <arg>${locator}</arg>
 <doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<status status="PASS" start="2026-09-25T13:50:22.456099" elapsed="0.049862"/>
+<status status="PASS" start="2026-09-25T14:06:02.874153" elapsed="0.032598"/>
 </kw>
 <arg>${OFFERS_CHECKBOX}</arg>
-<status status="PASS" start="2026-09-25T13:50:22.428385" elapsed="0.077901"/>
+<status status="PASS" start="2026-09-25T14:06:02.838168" elapsed="0.068758"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:50:22.507093" level="INFO">Typing text 'Robot' into text field 'id=first_name'.</msg>
+<msg time="2026-09-25T14:06:02.907824" level="INFO">Typing text 'Robot' into text field 'id=first_name'.</msg>
 <arg>${FIRST_NAME_FIELD}</arg>
 <arg>Robot</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-09-25T13:50:22.506600" elapsed="0.107094"/>
+<status status="PASS" start="2026-09-25T14:06:02.907142" elapsed="0.089601"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:50:22.614214" level="INFO">Typing text 'Automation' into text field 'id=last_name'.</msg>
+<msg time="2026-09-25T14:06:02.997658" level="INFO">Typing text 'Automation' into text field 'id=last_name'.</msg>
 <arg>${LAST_NAME_FIELD}</arg>
 <arg>Automation</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-09-25T13:50:22.613941" elapsed="0.091194"/>
+<status status="PASS" start="2026-09-25T14:06:02.997196" elapsed="0.094285"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:50:22.705872" level="INFO">Typing text 'Capstone Project' into text field 'id=company'.</msg>
+<msg time="2026-09-25T14:06:03.092462" level="INFO">Typing text 'Capstone Project' into text field 'id=company'.</msg>
 <arg>${COMPANY_FIELD}</arg>
 <arg>Capstone Project</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-09-25T13:50:22.705450" elapsed="0.100862"/>
+<status status="PASS" start="2026-09-25T14:06:03.091983" elapsed="0.086444"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:50:22.807085" level="INFO">Typing text 'Kolkata' into text field 'id=address1'.</msg>
+<msg time="2026-09-25T14:06:03.179127" level="INFO">Typing text 'Kolkata' into text field 'id=address1'.</msg>
 <arg>${ADDRESS1_FIELD}</arg>
 <arg>Kolkata</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-09-25T13:50:22.806604" elapsed="0.085749"/>
+<status status="PASS" start="2026-09-25T14:06:03.178766" elapsed="0.095985"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:50:22.893076" level="INFO">Typing text 'Salt Lake' into text field 'id=address2'.</msg>
+<msg time="2026-09-25T14:06:03.275412" level="INFO">Typing text 'Salt Lake' into text field 'id=address2'.</msg>
 <arg>${ADDRESS2_FIELD}</arg>
 <arg>Salt Lake</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-09-25T13:50:22.892677" elapsed="0.111405"/>
+<status status="PASS" start="2026-09-25T14:06:03.275039" elapsed="0.091847"/>
 </kw>
 <kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:50:23.004924" level="INFO">Selecting options from selection list 'id=country' by label India.</msg>
+<msg time="2026-09-25T14:06:03.367662" level="INFO">Selecting options from selection list 'id=country' by label India.</msg>
 <arg>${COUNTRY_DROPDOWN}</arg>
 <arg>India</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2026-09-25T13:50:23.004496" elapsed="0.068993"/>
+<status status="PASS" start="2026-09-25T14:06:03.367223" elapsed="0.068956"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:50:23.074083" level="INFO">Typing text 'West Bengal' into text field 'id=state'.</msg>
+<msg time="2026-09-25T14:06:03.436979" level="INFO">Typing text 'West Bengal' into text field 'id=state'.</msg>
 <arg>${STATE_FIELD}</arg>
 <arg>West Bengal</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-09-25T13:50:23.073749" elapsed="0.078824"/>
+<status status="PASS" start="2026-09-25T14:06:03.436522" elapsed="0.138757"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:50:23.153153" level="INFO">Typing text 'Kolkata' into text field 'id=city'.</msg>
+<msg time="2026-09-25T14:06:03.576245" level="INFO">Typing text 'Kolkata' into text field 'id=city'.</msg>
 <arg>${CITY_FIELD}</arg>
 <arg>Kolkata</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-09-25T13:50:23.152819" elapsed="0.087125"/>
+<status status="PASS" start="2026-09-25T14:06:03.575565" elapsed="0.069007"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:50:23.240677" level="INFO">Typing text '700091' into text field 'id=zipcode'.</msg>
+<msg time="2026-09-25T14:06:03.645637" level="INFO">Typing text '700091' into text field 'id=zipcode'.</msg>
 <arg>${ZIPCODE_FIELD}</arg>
 <arg>700091</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-09-25T13:50:23.240206" elapsed="0.141753"/>
+<status status="PASS" start="2026-09-25T14:06:03.645139" elapsed="0.079869"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:50:23.382834" level="INFO">Typing text '9876543210' into text field 'id=mobile_number'.</msg>
+<msg time="2026-09-25T14:06:03.725837" level="INFO">Typing text '9876543210' into text field 'id=mobile_number'.</msg>
 <arg>${MOBILE_FIELD}</arg>
 <arg>9876543210</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-09-25T13:50:23.382464" elapsed="0.114737"/>
+<status status="PASS" start="2026-09-25T14:06:03.725321" elapsed="0.100743"/>
 </kw>
 <kw name="Remove Advertisement Overlays" owner="common">
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:50:23.497962" level="INFO">Executing JavaScript:
+<msg time="2026-09-25T14:06:03.826932" level="INFO">Executing JavaScript:
 document.querySelectorAll('iframe[id^="aswift"], div[id^="aswift"], ins.adsbygoogle, [id^="google_ads_iframe"], [id*="google_ads_iframe"]').forEach(el =&gt; el.remove());
 Without any arguments.</msg>
 <arg>document.querySelectorAll('iframe[id^="aswift"], div[id^="aswift"], ins.adsbygoogle, [id^="google_ads_iframe"], [id*="google_ads_iframe"]').forEach(el =&gt; el.remove());</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2026-09-25T13:50:23.497808" elapsed="0.005026"/>
+<status status="PASS" start="2026-09-25T14:06:03.826755" elapsed="0.009142"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:50:23.503236" level="INFO">Executing JavaScript:
+<msg time="2026-09-25T14:06:03.836422" level="INFO">Executing JavaScript:
 document.querySelectorAll('body &gt; *').forEach(el =&gt; { const s = getComputedStyle(el); if (s.position === 'fixed' &amp;&amp; parseInt(s.zIndex || '0') &gt; 100000) el.remove(); });
 Without any arguments.</msg>
 <arg>document.querySelectorAll('body &gt; *').forEach(el =&gt; { const s = getComputedStyle(el); if (s.position === 'fixed' &amp;&amp; parseInt(s.zIndex || '0') &gt; 100000) el.remove(); });</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2026-09-25T13:50:23.503046" elapsed="0.004918"/>
+<status status="PASS" start="2026-09-25T14:06:03.836172" elapsed="0.006188"/>
 </kw>
-<status status="PASS" start="2026-09-25T13:50:23.497512" elapsed="0.010601"/>
+<status status="PASS" start="2026-09-25T14:06:03.826412" elapsed="0.016114"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${CREATE_ACCOUNT_BUTTON}</arg>
 <arg>30 seconds</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-09-25T13:50:23.508387" elapsed="0.015447"/>
+<status status="PASS" start="2026-09-25T14:06:03.842733" elapsed="0.023922"/>
 </kw>
 <kw name="Scroll Element Into View" owner="SeleniumLibrary">
 <arg>${CREATE_ACCOUNT_BUTTON}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" start="2026-09-25T13:50:23.524090" elapsed="0.299240"/>
+<status status="PASS" start="2026-09-25T14:06:03.867065" elapsed="0.300398"/>
 </kw>
 <kw name="Get WebElement" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:50:23.837085" level="INFO">${create_button} = &lt;selenium.webdriver.remote.webelement.WebElement (session="1c5dbe730a51af2e7e4b96d896644633", element="f.61ACFECF67C37F7F8980CABC21B99497.d.13D1D3B1BE1BF3548966173CADE10C20.e.125")&gt;</msg>
+<msg time="2026-09-25T14:06:04.181375" level="INFO">${create_button} = &lt;selenium.webdriver.remote.webelement.WebElement (session="7fab4642f982dfc79d03b34e4b2b1c55", element="f.19C74052F39EB97A5E6ED3D043C154C7.d.7EEAD95CAB0E316A13964B02A16E1DC5.e.122")&gt;</msg>
 <var>${create_button}</var>
 <arg>${CREATE_ACCOUNT_BUTTON}</arg>
 <doc>Returns the first WebElement matching the given ``locator``.</doc>
-<status status="PASS" start="2026-09-25T13:50:23.823778" elapsed="0.013412"/>
+<status status="PASS" start="2026-09-25T14:06:04.167769" elapsed="0.013668"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:50:23.837969" level="INFO">Executing JavaScript:
+<msg time="2026-09-25T14:06:04.181999" level="INFO">Executing JavaScript:
 arguments[0].click();
 By using argument:
-'&lt;selenium.webdriver.remote.webelement.WebElement (session="1c5dbe730a51af2e7e4b96d896644633", element="f.61ACFECF67C37F7F8980CABC21B99497.d.13D1D3B1BE1BF3548966173CADE10C20.e.125")&gt;'</msg>
+'&lt;selenium.webdriver.remote.webelement.WebElement (session="7fab4642f982dfc79d03b34e4b2b1c55", element="f.19C74052F39EB97A5E6ED3D043C154C7.d.7EEAD95CAB0E316A13964B02A16E1DC5.e.122")&gt;'</msg>
 <arg>arguments[0].click();</arg>
 <arg>ARGUMENTS</arg>
 <arg>${create_button}</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2026-09-25T13:50:23.837544" elapsed="4.976183"/>
+<status status="PASS" start="2026-09-25T14:06:04.181669" elapsed="5.234806"/>
 </kw>
-<status status="PASS" start="2026-09-25T13:49:54.761937" elapsed="34.051950"/>
+<status status="PASS" start="2026-09-25T14:05:54.526797" elapsed="14.889935"/>
 </kw>
 <kw name="Verify Account Created" owner="common">
 <kw name="Remove Advertisement Overlays" owner="common">
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:50:28.814924" level="INFO">Executing JavaScript:
+<msg time="2026-09-25T14:06:09.420431" level="INFO">Executing JavaScript:
 document.querySelectorAll('iframe[id^="aswift"], div[id^="aswift"], ins.adsbygoogle, [id^="google_ads_iframe"], [id*="google_ads_iframe"]').forEach(el =&gt; el.remove());
 Without any arguments.</msg>
 <arg>document.querySelectorAll('iframe[id^="aswift"], div[id^="aswift"], ins.adsbygoogle, [id^="google_ads_iframe"], [id*="google_ads_iframe"]').forEach(el =&gt; el.remove());</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2026-09-25T13:50:28.814629" elapsed="0.047520"/>
+<status status="PASS" start="2026-09-25T14:06:09.419801" elapsed="0.023106"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:50:28.862677" level="INFO">Executing JavaScript:
+<msg time="2026-09-25T14:06:09.443481" level="INFO">Executing JavaScript:
 document.querySelectorAll('body &gt; *').forEach(el =&gt; { const s = getComputedStyle(el); if (s.position === 'fixed' &amp;&amp; parseInt(s.zIndex || '0') &gt; 100000) el.remove(); });
 Without any arguments.</msg>
 <arg>document.querySelectorAll('body &gt; *').forEach(el =&gt; { const s = getComputedStyle(el); if (s.position === 'fixed' &amp;&amp; parseInt(s.zIndex || '0') &gt; 100000) el.remove(); });</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2026-09-25T13:50:28.862378" elapsed="0.005644"/>
+<status status="PASS" start="2026-09-25T14:06:09.443208" elapsed="0.010182"/>
 </kw>
-<status status="PASS" start="2026-09-25T13:50:28.814404" elapsed="0.053810"/>
+<status status="PASS" start="2026-09-25T14:06:09.418580" elapsed="0.035084"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${ACCOUNT_CREATED_TEXT}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-09-25T13:50:28.868391" elapsed="0.017527"/>
+<status status="PASS" start="2026-09-25T14:06:09.453862" elapsed="0.023014"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:50:28.902606" level="INFO">Element 'xpath=//b[contains(normalize-space(.),"Account Created!")]' is displayed.</msg>
+<msg time="2026-09-25T14:06:09.495899" level="INFO">Element 'xpath=//b[contains(normalize-space(.),"Account Created!")]' is displayed.</msg>
 <arg>${ACCOUNT_CREATED_TEXT}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2026-09-25T13:50:28.886184" elapsed="0.016570"/>
+<status status="PASS" start="2026-09-25T14:06:09.477192" elapsed="0.018860"/>
 </kw>
-<status status="PASS" start="2026-09-25T13:50:28.814123" elapsed="0.088814"/>
+<status status="PASS" start="2026-09-25T14:06:09.417344" elapsed="0.079069"/>
 </kw>
 <kw name="Continue After Registration" owner="common">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:50:28.903881" level="INFO">Clicking element 'css=a[data-qa="continue-button"]'.</msg>
+<msg time="2026-09-25T14:06:09.497492" level="INFO">Clicking element 'css=a[data-qa="continue-button"]'.</msg>
 <arg>${CONTINUE_BUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-09-25T13:50:28.903612" elapsed="3.921599"/>
+<status status="PASS" start="2026-09-25T14:06:09.497174" elapsed="23.200429"/>
 </kw>
-<status status="PASS" start="2026-09-25T13:50:28.903270" elapsed="3.922153"/>
+<status status="PASS" start="2026-09-25T14:06:09.496853" elapsed="23.201023"/>
 </kw>
 <kw name="Verify User Is Logged In" owner="common">
 <kw name="Remove Advertisement Overlays" owner="common">
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:50:32.828113" level="INFO">Executing JavaScript:
+<msg time="2026-09-25T14:06:32.701452" level="INFO">Executing JavaScript:
 document.querySelectorAll('iframe[id^="aswift"], div[id^="aswift"], ins.adsbygoogle, [id^="google_ads_iframe"], [id*="google_ads_iframe"]').forEach(el =&gt; el.remove());
 Without any arguments.</msg>
 <arg>document.querySelectorAll('iframe[id^="aswift"], div[id^="aswift"], ins.adsbygoogle, [id^="google_ads_iframe"], [id*="google_ads_iframe"]').forEach(el =&gt; el.remove());</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2026-09-25T13:50:32.827898" elapsed="0.026528"/>
+<status status="PASS" start="2026-09-25T14:06:32.701123" elapsed="0.033526"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:50:32.854942" level="INFO">Executing JavaScript:
+<msg time="2026-09-25T14:06:32.735157" level="INFO">Executing JavaScript:
 document.querySelectorAll('body &gt; *').forEach(el =&gt; { const s = getComputedStyle(el); if (s.position === 'fixed' &amp;&amp; parseInt(s.zIndex || '0') &gt; 100000) el.remove(); });
 Without any arguments.</msg>
 <arg>document.querySelectorAll('body &gt; *').forEach(el =&gt; { const s = getComputedStyle(el); if (s.position === 'fixed' &amp;&amp; parseInt(s.zIndex || '0') &gt; 100000) el.remove(); });</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2026-09-25T13:50:32.854695" elapsed="0.008042"/>
+<status status="PASS" start="2026-09-25T14:06:32.734940" elapsed="0.022408"/>
 </kw>
-<status status="PASS" start="2026-09-25T13:50:32.826140" elapsed="0.036751"/>
+<status status="PASS" start="2026-09-25T14:06:32.698738" elapsed="0.058767"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${LOGGED_IN_TEXT}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-09-25T13:50:32.863124" elapsed="0.023478"/>
+<status status="PASS" start="2026-09-25T14:06:32.757685" elapsed="0.018600"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:50:32.901119" level="INFO">Current page contains text 'Logged in as'.</msg>
+<msg time="2026-09-25T14:06:32.789013" level="INFO">Current page contains text 'Logged in as'.</msg>
 <arg>Logged in as</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2026-09-25T13:50:32.886951" elapsed="0.014301"/>
+<status status="PASS" start="2026-09-25T14:06:32.776501" elapsed="0.012650"/>
 </kw>
-<status status="PASS" start="2026-09-25T13:50:32.825670" elapsed="0.075704"/>
-</kw>
-<kw name="Delete Created Account">
-<msg time="2026-09-25T13:50:32.902909" level="FAIL">No keyword with name 'Delete Created Account' found. Did you mean:
-    common./*Delete Created Account</msg>
-<status status="FAIL" start="2026-09-25T13:50:32.902839" elapsed="0.000132">No keyword with name 'Delete Created Account' found. Did you mean:
-    common./*Delete Created Account</status>
+<status status="PASS" start="2026-09-25T14:06:32.698255" elapsed="0.091008"/>
 </kw>
 <kw name="Cleanup Test" type="TEARDOWN">
 <kw name="Run Keyword If" owner="BuiltIn">
-<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2026-09-25T13:50:33.184526" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-70.png"&gt;&lt;img src="selenium-screenshot-70.png" width="800px"&gt;&lt;/a&gt;</msg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2026-09-25T13:50:32.904379" elapsed="0.280296"/>
-</kw>
 <arg>'${TEST STATUS}' == 'FAIL'</arg>
 <arg>Capture Page Screenshot</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2026-09-25T13:50:32.903748" elapsed="0.281026"/>
+<status status="PASS" start="2026-09-25T14:06:32.789902" elapsed="0.000503"/>
 </kw>
 <kw name="Close Application" owner="common">
 <kw name="Close All Browsers" owner="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2026-09-25T13:50:33.185626" elapsed="2.690299"/>
+<status status="PASS" start="2026-09-25T14:06:32.790790" elapsed="2.534879"/>
 </kw>
-<status status="PASS" start="2026-09-25T13:50:33.185007" elapsed="2.691314"/>
+<status status="PASS" start="2026-09-25T14:06:32.790572" elapsed="2.535261"/>
 </kw>
-<status status="PASS" start="2026-09-25T13:50:32.903331" elapsed="2.973094"/>
+<status status="PASS" start="2026-09-25T14:06:32.789601" elapsed="2.536300"/>
 </kw>
-<status status="FAIL" start="2026-09-25T13:49:48.670223" elapsed="47.206325">No keyword with name 'Delete Created Account' found. Did you mean:
-    common./*Delete Created Account</status>
+<status status="PASS" start="2026-09-25T14:05:47.348790" elapsed="47.977170"/>
 </test>
-<status status="FAIL" start="2026-09-25T13:49:48.200444" elapsed="47.677251"/>
+<status status="PASS" start="2026-09-25T14:05:46.877814" elapsed="48.448784"/>
 </suite>
-<status status="FAIL" start="2026-09-25T13:49:48.139008" elapsed="47.739346"/>
+<status status="PASS" start="2026-09-25T14:05:46.810416" elapsed="48.516752"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Tests" id="s1" pass="0" fail="1" skip="0">Tests</stat>
-<stat name="Ecommerce Tests" id="s1-s1" pass="0" fail="1" skip="0">Tests.Ecommerce Tests</stat>
+<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
+<stat name="Ecommerce Tests" id="s1-s1" pass="1" fail="0" skip="0">Tests.Ecommerce Tests</stat>
 </suite>
 </statistics>
 <errors>

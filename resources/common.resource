@@ -69,23 +69,6 @@ Continue After Registration
     Click Element    ${CONTINUE_BUTTON}
 
 
-/*Delete Created Account
-    Remove Advertisement Overlays
-
-    Wait Until Element Is Visible    ${DELETE_ACCOUNT_LINK}    30 seconds
-
-    ${delete_link}=    Get WebElement    ${DELETE_ACCOUNT_LINK}
-
-    Execute Javascript
-    ...    arguments[0].click();
-    ...    ARGUMENTS
-    ...    ${delete_link}
-
-    Remove Advertisement Overlays
-
-    Wait Until Page Contains    Account Deleted!    30 seconds
-    Page Should Contain         Account Deleted!*/
-
 Open Application
     Open Browser    ${BASE_URL}    ${BROWSER}
     Maximize Browser Window

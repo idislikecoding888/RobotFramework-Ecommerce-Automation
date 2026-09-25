@@ -1,51 +1,35 @@
-# RFA // Automation Control Center v0.3
+# SELENATOR — Quality Assurance, made easy.
 
-Live dashboard for the Robot Framework Ecommerce Automation capstone.
+Minimal Robot Framework + Selenium automation console frontend.
 
-## v0.3 fixes
-- Real Robot Framework execution through Python.
-- Automatically searches upward for `tests/ecommerce_tests.robot`, so the dashboard does not depend on one fragile working directory.
-- Windows Python detection tries `py -3`, then `python`, then `python3`.
-- Logs the exact interpreter, Robot version, project root, command, and report location.
-- Uses Robot's verbose console output for readable live terminal output.
-- Terminal stays mounted while dashboard state changes, so running a test does not wipe/recreate the xterm panel.
+## What is included
 
-## Folder layout
-```text
-RobotFramework-Ecommerce-Automation/
-├── dashboard/
-├── tests/
-├── resources/
-├── results/
-├── screenshots/
-├── requirements.txt
-└── Jenkinsfile
-```
+- Next.js App Router frontend
+- Three primary screens: Overview, Tests, Failure Debugger
+- Black / white / gray UI with blood-red failure atmosphere, neon-green success, and micro neon-pink accents
+- Terminal-inspired execution log
+- Test search and pass/fail filtering
+- Test detail drawer
+- Failure inspection panels
+- Copy error, rerun test, rerun failed, and run-all interactions
+- Mock runner so the UI is usable before the backend is connected
 
-## Run
-```powershell
-cd dashboard
+## Run locally
+
+```bash
 npm install
 npm run dev
 ```
-Open `http://localhost:3000`.
 
-Select TC01 first and click `RUN SELECTED`.
+Open `http://localhost:3000/overview`.
 
-The server must be able to import Robot Framework from Python. From the parent project, this should work:
-```powershell
-python -m robot --version
-```
-If your working Python is only available through the launcher:
-```powershell
-py -3 -m robot --version
+## Build
+
+```bash
+npm run build
+npm start
 ```
 
-## Troubleshooting
-The dashboard terminal now prints one of the following before execution:
-- detected Python command + Robot version
-- exact project root it found
-- exact Robot command being launched
-- report paths
+## Backend hand-off
 
-If it says it cannot locate the project, make sure `dashboard` is inside the folder containing `tests/ecommerce_tests.robot`.
+The UI deliberately keeps runner behavior inside `lib/runner.ts` so it can be replaced with the real Robot Framework/NestJS API later without redesigning the screens.

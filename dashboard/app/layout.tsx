@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import "@xterm/xterm/css/xterm.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "RFA // Automation Control Center",
-  description: "Robot Framework ecommerce automation control dashboard",
+  title: "SELENATOR — Quality Assurance, made easy.",
+  description: "Robot Framework + Selenium QA automation console.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

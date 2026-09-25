@@ -69,7 +69,7 @@ Continue After Registration
     Click Element    ${CONTINUE_BUTTON}
 
 
-Delete Created Account
+/*Delete Created Account
     Remove Advertisement Overlays
 
     Wait Until Element Is Visible    ${DELETE_ACCOUNT_LINK}    30 seconds
@@ -84,7 +84,7 @@ Delete Created Account
     Remove Advertisement Overlays
 
     Wait Until Page Contains    Account Deleted!    30 seconds
-    Page Should Contain         Account Deleted!
+    Page Should Contain         Account Deleted!*/
 
 Open Application
     Open Browser    ${BASE_URL}    ${BROWSER}

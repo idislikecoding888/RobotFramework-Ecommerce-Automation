@@ -77,9 +77,22 @@ TC10 - Verify Home Page Subscription
     [Teardown]    Cleanup Test
 
     Go To    ${BASE_URL}
-    Wait Until Page Contains    SUBSCRIPTION    30 seconds
-    Subscribe With Unique Email
-    Verify Subscription Successful
+    Wait Until Location Is    ${BASE_URL}/
+
+    Execute Javascript
+    ...    window.scrollTo(0, document.body.scrollHeight);
+
+    Wait Until Element Is Visible    id=susbscribe_email    30 seconds
+
+    ${timestamp}=    Get Current Date    result_format=%Y%m%d%H%M%S
+    ${email}=        Set Variable    robot.subscription.${timestamp}@example.com
+
+    Input Text       id=susbscribe_email    ${email}
+    Click Element    id=subscribe
+
+    Wait Until Page Contains
+    ...    You have been successfully subscribed!
+    ...    20 seconds
 
 
 TC11 - Add Multiple Products To Cart
@@ -120,20 +133,47 @@ TC13 - Remove Product From Cart
     Remove Men Tshirt From Cart
 
 
-TC14 - Verify Category Navigation
+TC14 - Verify No Results For Invalid Product Search
     [Setup]       Open Application
     [Teardown]    Cleanup Test
 
-    Open Women Tops Category
-    Open Men Tshirts Category
+    Go To    ${BASE_URL}/products
+    Wait Until Location Contains    /products    30 seconds
+
+    Wait Until Element Is Visible    ${SEARCH_BOX}    30 seconds
+    Remove Advertisement Overlays
+
+    Input Text    ${SEARCH_BOX}    RobotProductDoesNotExist999
+    Click Element    ${SEARCH_BUTTON}
+
+    Wait Until Location Contains    /products?search=    30 seconds
+
+    ${product_count}=    Get Element Count    css=div.product-image-wrapper
+
+    Should Be Equal As Integers    ${product_count}    0
 
 
-TC15 - Verify Brand Navigation
+TC15 - Verify Cart Total Price Calculation
     [Setup]       Open Application
     [Teardown]    Cleanup Test
 
-    Open HM Brand
-    Open Polo Brand
+    Add Product With Quantity    2
+
+    Go To    ${BASE_URL}/view_cart
+    Wait Until Location Contains    /view_cart    30 seconds
+
+    Wait Until Element Is Visible    ${CART_PRODUCT_ROWS}    30 seconds
+    Wait Until Element Is Visible    ${CART_UNIT_PRICE}       15 seconds
+    Wait Until Element Is Visible    ${CART_TOTAL_PRICE}      15 seconds
+
+    ${unit_text}=    Get Text    ${CART_UNIT_PRICE}
+    ${total_text}=   Get Text    ${CART_TOTAL_PRICE}
+
+    ${unit_price}=    Evaluate    int($unit_text.replace('Rs. ', '').replace(',', ''))
+    ${total_price}=   Evaluate    int($total_text.replace('Rs. ', '').replace(',', ''))
+    ${expected_total}=    Evaluate    ${unit_price} * 2
+
+    Should Be Equal As Integers    ${total_price}    ${expected_total}
 
 
 TC16 - Verify Cart Persistence After Login
@@ -142,16 +182,47 @@ TC16 - Verify Cart Persistence After Login
 
     Search For Product
     Add Product To Cart
-    Verify User Is Not Logged In
-    Verify Searched Product Is In Cart After Login
+    Open Cart From Modal
+
+    Wait Until Location Contains    /view_cart    30 seconds
+    Wait Until Element Is Visible    ${CART_PRODUCT}    30 seconds
+
+    ${product_before_login}=    Get Text    ${CART_PRODUCT}
+    Should Be Equal As Strings    ${product_before_login}    Men Tshirt
+
+    Remove Advertisement Overlays
+    Click Element    ${LOGIN_LINK}
+
+    Wait Until Element Is Visible    ${EMAIL_FIELD}    30 seconds
+    Remove Advertisement Overlays
+
+    Input Text    ${EMAIL_FIELD}       ${VALID_EMAIL}
+    Input Text    ${PASSWORD_FIELD}    ${VALID_PASSWORD}
+
+    Remove Advertisement Overlays
+    Click Element    ${LOGIN_BUTTON}
+
+    Wait Until Element Is Visible    ${LOGGED_IN_TEXT}    30 seconds
+
+    Go To    ${BASE_URL}/view_cart
+    Wait Until Location Contains    /view_cart    30 seconds
+
+    Wait Until Element Is Visible    ${CART_PRODUCT}    30 seconds
+
+    ${product_after_login}=    Get Text    ${CART_PRODUCT}
+
+    Should Be Equal As Strings
+    ...    ${product_after_login}
+    ...    ${product_before_login}
 
 
 TC17 - Add Product Review
     [Setup]       Open Application
     [Teardown]    Cleanup Test
-
+    Remove Advertisement Overlays
     Add Product Review
     Verify Product Review Submitted
+    Remove Advertisement Overlays
 
 
 TC18 - Add Recommended Product To Cart

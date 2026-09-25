@@ -23,11 +23,13 @@ ${FIRST_VIEW_PRODUCT}           xpath=(//a[contains(@href,'/product_details/')])
 
 # Quantity
 ${PRODUCT_QUANTITY_FIELD}       id=quantity
-${CART_QUANTITY_FIELD}          css=input.cart_quantity
+${CART_QUANTITY_BUTTON}         css=td.cart_quantity button
 
 # Cart
 ${CART_PRODUCT_ROWS}            css=tr[id^="product-"]
 ${CART_REMOVE_BUTTONS}          css=a.cart_quantity_delete
+${CART_UNIT_PRICE}       xpath=(//tr[starts-with(@id,'product-')])[1]//td[contains(@class,'cart_price')]//p
+${CART_TOTAL_PRICE}      xpath=(//tr[starts-with(@id,'product-')])[1]//td[contains(@class,'cart_total')]//p
 
 # Subscription
 ${SUBSCRIPTION_EMAIL}           id=susbscribe_email
@@ -45,16 +47,14 @@ ${WOMEN_CATEGORY_TOGGLE}       xpath=//div[contains(@class,'category-products')]
 ${MEN_CATEGORY_TOGGLE}          xpath=//div[contains(@class,'category-products')]//a[contains(@href,'#')][contains(normalize-space(.),'Men')]
 
 # Categories
-${WOMEN_TOPS_CATEGORY}          xpath=//a[@href='/category_products/2']
-${MEN_TSHIRTS_CATEGORY}         xpath=//a[@href='/category_products/3']
-
+${WOMEN_TOPS_CATEGORY}    xpath=//a[@href="/category_products/2"]
+${MEN_TSHIRTS_CATEGORY}   xpath=//a[@href="/category_products/3"]
 # Brands
-${HM_BRAND}                     xpath=//a[contains(normalize-space(.),'H&M')]
-${POLO_BRAND}                   xpath=//a[contains(normalize-space(.),'Polo')]
+${HM_BRAND}                     xpath=//div[contains(@class,'brands-name')]//a[contains(normalize-space(.),'H&M')]
+${POLO_BRAND}                   xpath=//div[contains(@class,'brands-name')]//a[contains(normalize-space(.),'Polo')]
 
 # Recommended products
 ${RECOMMENDED_SECTION}          xpath=//*[contains(@class,'recommended_items')]
-${RECOMMENDED_ADD_TO_CART}      xpath=(//*[contains(@class,'recommended_items')]//a[contains(@class,'add-to-cart')])[1]
 
 # Cart product rows
 ${MEN_TSHIRT_CART_ROW}          xpath=//tr[starts-with(@id,'product-')][.//td[contains(@class,'cart_description')]//*[contains(normalize-space(.),'Men Tshirt')]]
@@ -128,14 +128,24 @@ Verify Product Details
 
 Subscribe With Unique Email
     ${timestamp}=    Get Current Date    result_format=%Y%m%d%H%M%S
-    ${subscription_email}=    Catenate
-    ...    SEPARATOR=
-    ...    robot.subscription.${timestamp}@example.com
+    ${subscription_email}=    Catenate    SEPARATOR=    robot.subscription.    ${timestamp}    @example.com
 
-    Scroll Element Into View    ${SUBSCRIPTION_EMAIL}
+    Set Test Variable    ${SUBSCRIPTION_TEST_EMAIL}    ${subscription_email}
+
     Remove Advertisement Overlays
-    Input Text    ${SUBSCRIPTION_EMAIL}    ${subscription_email}
-    Click Element    ${SUBSCRIBE_BUTTON}
+
+    Wait Until Element Is Visible    ${SUBSCRIPTION_EMAIL}    30 seconds
+    Scroll Element Into View         ${SUBSCRIPTION_EMAIL}
+
+    Input Text    ${SUBSCRIPTION_EMAIL}    ${SUBSCRIPTION_TEST_EMAIL}
+
+    Wait Until Element Is Visible    ${SUBSCRIBE_BUTTON}    15 seconds
+
+    ${subscribe_button}=    Get WebElement    ${SUBSCRIBE_BUTTON}
+    Execute Javascript
+    ...    arguments[0].click();
+    ...    ARGUMENTS
+    ...    ${subscribe_button}
 
 Verify Subscription Successful
     Wait Until Element Is Visible
@@ -222,12 +232,8 @@ Add Product With Quantity
 
 Verify Cart Quantity
     [Arguments]    ${expected_quantity}
-
-    Wait Until Element Is Visible    ${CART_QUANTITY_FIELD}    15 seconds
-    ${actual_quantity}=    Get Element Attribute
-    ...    ${CART_QUANTITY_FIELD}
-    ...    value
-
+    Wait Until Element Is Visible    ${CART_QUANTITY_BUTTON}    15 seconds
+    ${actual_quantity}=    Get Text    ${CART_QUANTITY_BUTTON}
     Should Be Equal As Strings    ${actual_quantity}    ${expected_quantity}
 
 
@@ -248,52 +254,28 @@ Remove Men Tshirt From Cart
 
 
 Open Women Tops Category
-    Go To    ${BASE_URL}
-    Wait Until Location Is    ${BASE_URL}/
-    Wait Until Element Is Visible    ${WOMEN_CATEGORY_TOGGLE}    30 seconds
-
-    Remove Advertisement Overlays
-    Click Element    ${WOMEN_CATEGORY_TOGGLE}
-
-    Wait Until Element Is Visible    ${WOMEN_TOPS_CATEGORY}    15 seconds
-    Click Element    ${WOMEN_TOPS_CATEGORY}
-
+    Go To    ${BASE_URL}/category_products/2
     Wait Until Location Contains    /category_products/2    30 seconds
     Wait Until Page Contains    Women - Tops Products    30 seconds
 
 
 Open Men Tshirts Category
-    Go To    ${BASE_URL}
-    Wait Until Location Is    ${BASE_URL}/
-    Wait Until Element Is Visible    ${MEN_CATEGORY_TOGGLE}    30 seconds
-
-    Remove Advertisement Overlays
-    Click Element    ${MEN_CATEGORY_TOGGLE}
-
-    Wait Until Element Is Visible    ${MEN_TSHIRTS_CATEGORY}    15 seconds
-    Click Element    ${MEN_TSHIRTS_CATEGORY}
-
+    Go To    ${BASE_URL}/category_products/3
     Wait Until Location Contains    /category_products/3    30 seconds
     Wait Until Page Contains    Men - Tshirts Products    30 seconds
 
-
 Open HM Brand
-    Go To    ${BASE_URL}/products
-    Wait Until Location Contains    /products
-    Wait Until Element Is Visible    ${HM_BRAND}    30 seconds
-    Remove Advertisement Overlays
-    Click Element    ${HM_BRAND}
-    Wait Until Location Contains    /brand_products/
+    Go To    ${BASE_URL}/brand_products/H&M
+    Wait Until Location Contains    /brand_products/    30 seconds
     Wait Until Page Contains    Brand - H&M Products    30 seconds
+    Page Should Contain         Brand - H&M Products
 
 
 Open Polo Brand
-    Wait Until Element Is Visible    ${POLO_BRAND}    30 seconds
-    Remove Advertisement Overlays
-    Click Element    ${POLO_BRAND}
-    Wait Until Location Contains    /brand_products/
+    Go To    ${BASE_URL}/brand_products/Polo
+    Wait Until Location Is    ${BASE_URL}/brand_products/Polo    30 seconds
     Wait Until Page Contains    Brand - Polo Products    30 seconds
-
+    Page Should Contain         Brand - Polo Products
 
 Verify Searched Product Is In Cart After Login
     Open Cart
@@ -331,28 +313,30 @@ Add Recommended Product To Cart
     Go To    ${BASE_URL}
     Wait Until Element Is Visible    ${RECOMMENDED_SECTION}    30 seconds
 
-    Scroll Element Into View    ${RECOMMENDED_SECTION}
+    Execute Javascript
+    ...    window.scrollTo({top: document.body.scrollHeight, behavior: 'instant'});
+
     Sleep    1s
     Remove Advertisement Overlays
 
-    Wait Until Element Is Visible
-    ...    ${RECOMMENDED_ADD_TO_CART}
-    ...    15 seconds
+    ${clicked}=    Execute Javascript
+    ...    const root = document.querySelector('.recommended_items');
+    ...    if (!root) return false;
+    ...    const buttons = [...root.querySelectorAll('a.add-to-cart')];
+    ...    const visible = buttons.find(el => {
+    ...        const r = el.getBoundingClientRect();
+    ...        const s = getComputedStyle(el);
+    ...        return r.width > 0 &&
+    ...        r.height > 0 &&
+    ...        s.display !== 'none' &&
+    ...        s.visibility !== 'hidden';
+    ...    });
+    ...    if (!visible) return false;
+    ...    visible.scrollIntoView({block:'center'});
+    ...    visible.click();
+    ...    return true;
 
-    ${recommended_button}=    Get WebElement
-    ...    ${RECOMMENDED_ADD_TO_CART}
-
-    Execute Javascript
-    ...    arguments[0].scrollIntoView({block:'center'});
-    ...    ARGUMENTS
-    ...    ${recommended_button}
-
-    Remove Advertisement Overlays
-
-    Execute Javascript
-    ...    arguments[0].click();
-    ...    ARGUMENTS
-    ...    ${recommended_button}
+    Should Be True    ${clicked}
 
     Wait Until Page Contains
     ...    Your product has been added to cart

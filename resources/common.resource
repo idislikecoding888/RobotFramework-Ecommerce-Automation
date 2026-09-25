@@ -73,6 +73,9 @@ Open Application
     Open Browser    ${BASE_URL}    ${BROWSER}
     Maximize Browser Window
     Set Selenium Timeout    15 seconds
+    Delete All Cookies
+    Go To    ${BASE_URL}
+    Wait Until Location Is    ${BASE_URL}/
 
 
 Close Application

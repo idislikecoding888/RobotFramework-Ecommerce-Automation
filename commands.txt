@@ -1,0 +1,6 @@
+python -m venv venv
+venv\Scripts\activate
+pip install robotframework
+pip install robotframework-seleniumlibrary
+pip install robotframework-ride
+robot --outputdir results tests

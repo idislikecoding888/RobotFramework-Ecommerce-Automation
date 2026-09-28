@@ -1,75 +1,42 @@
-import { tests, type TestStatus } from "./mockData";
+import { startRun, streamRun } from "./api";
+import type { TestStatus } from "./mockData";
 
-type Listener = (event: {
+export type RunnerEvent = {
   type: "log" | "status" | "done";
-  id?: string;
+  testId?: string;
   status?: TestStatus;
   message?: string;
-}) => void;
+  summary?: Record<string, unknown>;
+};
 
-export async function runMockSuite(
+export async function runSuite(
   ids: string[],
-  listener: Listener,
-  targetUrl = ""
+  targetUrl: string,
+  listener: (event: RunnerEvent) => void,
 ) {
-  const chosen = tests.filter((test) => ids.includes(test.id));
+  const { runId } = await startRun(ids, targetUrl);
 
-  listener({
-    type: "log",
-    message: "> run request accepted",
-  });
+  return new Promise<Record<string, unknown> | null>((resolve, reject) => {
+    const source = streamRun(runId, (event) => {
+      const normalized: RunnerEvent = {
+        type: event.type as RunnerEvent["type"],
+        testId: typeof event.testId === "string" ? event.testId : undefined,
+        status: typeof event.status === "string" ? event.status as TestStatus : undefined,
+        message: typeof event.message === "string" ? event.message : undefined,
+        summary: typeof event.summary === "object" && event.summary ? event.summary as Record<string, unknown> : undefined,
+      };
 
-  listener({
-    type: "log",
-    message: `> target: ${targetUrl || "(not configured)"}`,
-  });
+      listener(normalized);
 
-  listener({
-    type: "log",
-    message: `> executing ${chosen.length} selected test${
-      chosen.length === 1 ? "" : "s"
-    }`,
-  });
-
-  for (const test of chosen) {
-    listener({
-      type: "status",
-      id: test.id,
-      status: "running",
+      if (normalized.type === "done") {
+        source.close();
+        resolve(normalized.summary || null);
+      }
     });
 
-    listener({
-      type: "log",
-      message: `> ${test.id} ${test.name} ...`,
-    });
-
-    await wait(280);
-
-    listener({
-      type: "status",
-      id: test.id,
-      status: test.status,
-    });
-
-    listener({
-      type: "log",
-      message:
-        test.status === "failed"
-          ? `  [FAIL] ${test.id} ${test.name}`
-          : `  [PASS] ${test.id} ${test.name}`,
-    });
-  }
-
-  listener({
-    type: "log",
-    message: "> run complete",
+    source.onerror = () => {
+      source.close();
+      reject(new Error("Lost connection to the Selenator execution stream."));
+    };
   });
-
-  listener({
-    type: "done",
-  });
-}
-
-function wait(ms: number) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
 }

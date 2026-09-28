@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.6 on win32)" generated="2026-09-26T03:37:00.573501" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Projects\Internship_proj\RobotFramework-Ecommerce-Automation\tests">
+<suite id="s1-s1" name="Ecommerce Tests" source="C:\Projects\Internship_proj\RobotFramework-Ecommerce-Automation\tests\ecommerce_tests.robot">
+<test id="s1-s1-t1" name="TC05 - Register New User" line="36">
+<kw name="Open Application" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:00.920330" level="INFO">Opening browser 'chrome' to base url 'https://automationexercise.com'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-26T03:37:00.919923" elapsed="10.028083"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-26T03:37:10.948298" elapsed="0.036400"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>15 seconds</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2026-09-26T03:37:10.984917" elapsed="0.001511"/>
+</kw>
+<kw name="Delete All Cookies" owner="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" start="2026-09-26T03:37:10.986572" elapsed="0.044953"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:11.031899" level="INFO">Opening url 'https://automationexercise.com'</msg>
+<arg>${BASE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-26T03:37:11.031726" elapsed="3.874109"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${BASE_URL}/</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-09-26T03:37:14.906048" elapsed="0.004019"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:37:00.918177" elapsed="13.992022"/>
+</kw>
+<kw name="Generate Unique Registration Data" owner="common">
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2026-09-26T03:37:14.911643" level="INFO">${timestamp} = 20260926033714</msg>
+<var>${timestamp}</var>
+<arg>result_format=%Y%m%d%H%M%S</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2026-09-26T03:37:14.911222" elapsed="0.000506"/>
+</kw>
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2026-09-26T03:37:14.912356" level="INFO">${unique_email} = robotuser20260926033714@example.com</msg>
+<var>${unique_email}</var>
+<arg>SEPARATOR=</arg>
+<arg>robotuser</arg>
+<arg>${timestamp}</arg>
+<arg>@example.com</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="PASS" start="2026-09-26T03:37:14.911888" elapsed="0.000577"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2026-09-26T03:37:14.913597" level="INFO">${REG_NAME} = Robot Test User</msg>
+<arg>${REG_NAME}</arg>
+<arg>Robot Test User</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2026-09-26T03:37:14.912605" elapsed="0.001033"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2026-09-26T03:37:14.914760" level="INFO">${REG_EMAIL} = robotuser20260926033714@example.com</msg>
+<arg>${REG_EMAIL}</arg>
+<arg>${unique_email}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2026-09-26T03:37:14.913738" elapsed="0.001067"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2026-09-26T03:37:14.915877" level="INFO">${REG_PASSWORD} = Test@12345</msg>
+<arg>${REG_PASSWORD}</arg>
+<arg>Test@12345</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2026-09-26T03:37:14.914911" elapsed="0.001011"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:37:14.910816" elapsed="0.005176"/>
+</kw>
+<kw name="Register New User" owner="common">
+<kw name="Remove Advertisement Overlays" owner="common">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:14.916751" level="INFO">Executing JavaScript:
+const selectors = ['iframe[id^="aswift"]','div[id^="aswift"]','ins.adsbygoogle','[id^="google_ads_iframe"]','[id*="google_ads_iframe"]','[data-google-vignette]','[class*="google-anno"]','[class*="ad-modal-overlay"]'];document.querySelectorAll(selectors.join(',')).forEach(el =&gt; {el.remove();});
+Without any arguments.</msg>
+<arg>const selectors = [</arg>
+<arg>'iframe[id^="aswift"]',</arg>
+<arg>'div[id^="aswift"]',</arg>
+<arg>'ins.adsbygoogle',</arg>
+<arg>'[id^="google_ads_iframe"]',</arg>
+<arg>'[id*="google_ads_iframe"]',</arg>
+<arg>'[data-google-vignette]',</arg>
+<arg>'[class*="google-anno"]',</arg>
+<arg>'[class*="ad-modal-overlay"]'</arg>
+<arg>];</arg>
+<arg>document.querySelectorAll(selectors.join(',')).forEach(el =&gt; {</arg>
+<arg>el.remove();</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:37:14.916562" elapsed="0.031695"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:14.948750" level="INFO">Executing JavaScript:
+document.querySelectorAll('[class*="google-anno"], [data-google-vignette], [id*="google_ads_iframe"]').forEach(el =&gt; {el.style.setProperty('pointer-events', 'none', 'important');el.style.setProperty('display', 'none', 'important');});
+Without any arguments.</msg>
+<arg>document.querySelectorAll('[class*="google-anno"], [data-google-vignette], [id*="google_ads_iframe"]').forEach(el =&gt; {</arg>
+<arg>el.style.setProperty('pointer-events', 'none', 'important');</arg>
+<arg>el.style.setProperty('display', 'none', 'important');</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:37:14.948530" elapsed="0.004458"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:14.953369" level="INFO">Executing JavaScript:
+document.querySelectorAll('body &gt; *').forEach(el =&gt; {const s = getComputedStyle(el);if (s.position === 'fixed' &amp;&amp;parseInt(s.zIndex || '0') &gt; 100000) {el.remove();}});
+Without any arguments.</msg>
+<arg>document.querySelectorAll('body &gt; *').forEach(el =&gt; {</arg>
+<arg>const s = getComputedStyle(el);</arg>
+<arg>if (</arg>
+<arg>s.position === 'fixed' &amp;&amp;</arg>
+<arg>parseInt(s.zIndex || '0') &gt; 100000</arg>
+<arg>) {</arg>
+<arg>el.remove();</arg>
+<arg>}</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:37:14.953172" elapsed="0.003735"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:37:14.916389" elapsed="0.040740"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:14.957900" level="INFO">Clicking element 'xpath=//a[contains(.,'Signup / Login')]'.</msg>
+<arg>${LOGIN_LINK}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-26T03:37:14.957329" elapsed="25.928688"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SIGNUP_NAME_FIELD}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-09-26T03:37:40.886230" elapsed="0.020523"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:40.907264" level="INFO">Typing text 'Robot Test User' into text field 'css=input[data-qa="signup-name"]'.</msg>
+<arg>${SIGNUP_NAME_FIELD}</arg>
+<arg>${REG_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-26T03:37:40.906968" elapsed="0.080602"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:40.988204" level="INFO">Typing text 'robotuser20260926033714@example.com' into text field 'css=input[data-qa="signup-email"]'.</msg>
+<arg>${SIGNUP_EMAIL_FIELD}</arg>
+<arg>${REG_EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-26T03:37:40.987826" elapsed="0.114954"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:41.103242" level="INFO">Clicking element 'css=button[data-qa="signup-button"]'.</msg>
+<arg>${SIGNUP_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-26T03:37:41.102985" elapsed="0.039836"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${MR_RADIO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-09-26T03:37:41.143100" elapsed="2.446702"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:43.590387" level="INFO">Clicking element 'id=id_gender1'.</msg>
+<arg>${MR_RADIO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-26T03:37:43.590051" elapsed="0.049411"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:43.640175" level="INFO">Typing text 'Test@12345' into text field 'id=password'.</msg>
+<arg>${REG_PASSWORD_FIELD}</arg>
+<arg>${REG_PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-26T03:37:43.639793" elapsed="0.100079"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:43.740411" level="INFO">Selecting options from selection list 'id=days' by value 10.</msg>
+<arg>${DAY_DROPDOWN}</arg>
+<arg>10</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2026-09-26T03:37:43.740093" elapsed="0.085845"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:43.826432" level="INFO">Selecting options from selection list 'id=months' by value 5.</msg>
+<arg>${MONTH_DROPDOWN}</arg>
+<arg>5</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2026-09-26T03:37:43.826161" elapsed="0.071181"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:43.897865" level="INFO">Selecting options from selection list 'id=years' by value 2000.</msg>
+<arg>${YEAR_DROPDOWN}</arg>
+<arg>2000</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2026-09-26T03:37:43.897571" elapsed="0.067152"/>
+</kw>
+<kw name="Select Registration Checkbox" owner="common">
+<kw name="Remove Advertisement Overlays" owner="common">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:43.966663" level="INFO">Executing JavaScript:
+const selectors = ['iframe[id^="aswift"]','div[id^="aswift"]','ins.adsbygoogle','[id^="google_ads_iframe"]','[id*="google_ads_iframe"]','[data-google-vignette]','[class*="google-anno"]','[class*="ad-modal-overlay"]'];document.querySelectorAll(selectors.join(',')).forEach(el =&gt; {el.remove();});
+Without any arguments.</msg>
+<arg>const selectors = [</arg>
+<arg>'iframe[id^="aswift"]',</arg>
+<arg>'div[id^="aswift"]',</arg>
+<arg>'ins.adsbygoogle',</arg>
+<arg>'[id^="google_ads_iframe"]',</arg>
+<arg>'[id*="google_ads_iframe"]',</arg>
+<arg>'[data-google-vignette]',</arg>
+<arg>'[class*="google-anno"]',</arg>
+<arg>'[class*="ad-modal-overlay"]'</arg>
+<arg>];</arg>
+<arg>document.querySelectorAll(selectors.join(',')).forEach(el =&gt; {</arg>
+<arg>el.remove();</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:37:43.966292" elapsed="0.022401"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:43.989142" level="INFO">Executing JavaScript:
+document.querySelectorAll('[class*="google-anno"], [data-google-vignette], [id*="google_ads_iframe"]').forEach(el =&gt; {el.style.setProperty('pointer-events', 'none', 'important');el.style.setProperty('display', 'none', 'important');});
+Without any arguments.</msg>
+<arg>document.querySelectorAll('[class*="google-anno"], [data-google-vignette], [id*="google_ads_iframe"]').forEach(el =&gt; {</arg>
+<arg>el.style.setProperty('pointer-events', 'none', 'important');</arg>
+<arg>el.style.setProperty('display', 'none', 'important');</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:37:43.988941" elapsed="0.006716"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:43.996094" level="INFO">Executing JavaScript:
+document.querySelectorAll('body &gt; *').forEach(el =&gt; {const s = getComputedStyle(el);if (s.position === 'fixed' &amp;&amp;parseInt(s.zIndex || '0') &gt; 100000) {el.remove();}});
+Without any arguments.</msg>
+<arg>document.querySelectorAll('body &gt; *').forEach(el =&gt; {</arg>
+<arg>const s = getComputedStyle(el);</arg>
+<arg>if (</arg>
+<arg>s.position === 'fixed' &amp;&amp;</arg>
+<arg>parseInt(s.zIndex || '0') &gt; 100000</arg>
+<arg>) {</arg>
+<arg>el.remove();</arg>
+<arg>}</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:37:43.995880" elapsed="0.004833"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:37:43.965897" elapsed="0.035050"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:44.009810" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="e2efa470cd2b28026fc8129eb6e3f22c", element="f.383EC2252FEB883768DCCAC683094E7A.d.FFA268AE3F2162CABFA25C4DC1F1218F.e.125")&gt;</msg>
+<var>${element}</var>
+<arg>${locator}</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2026-09-26T03:37:44.001199" elapsed="0.008829"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:44.010901" level="INFO">Executing JavaScript:
+if (!arguments[0].checked) { arguments[0].click(); }
+By using argument:
+'&lt;selenium.webdriver.remote.webelement.WebElement (session="e2efa470cd2b28026fc8129eb6e3f22c", element="f.383EC2252FEB883768DCCAC683094E7A.d.FFA268AE3F2162CABFA25C4DC1F1218F.e.125")&gt;'</msg>
+<arg>if (!arguments[0].checked) { arguments[0].click(); }</arg>
+<arg>ARGUMENTS</arg>
+<arg>${element}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:37:44.010405" elapsed="0.007628"/>
+</kw>
+<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:44.018846" level="INFO">Verifying checkbox 'id=newsletter' is selected.</msg>
+<arg>${locator}</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="PASS" start="2026-09-26T03:37:44.018396" elapsed="0.028531"/>
+</kw>
+<arg>${NEWSLETTER_CHECKBOX}</arg>
+<status status="PASS" start="2026-09-26T03:37:43.965238" elapsed="0.081865"/>
+</kw>
+<kw name="Select Registration Checkbox" owner="common">
+<kw name="Remove Advertisement Overlays" owner="common">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:44.049513" level="INFO">Executing JavaScript:
+const selectors = ['iframe[id^="aswift"]','div[id^="aswift"]','ins.adsbygoogle','[id^="google_ads_iframe"]','[id*="google_ads_iframe"]','[data-google-vignette]','[class*="google-anno"]','[class*="ad-modal-overlay"]'];document.querySelectorAll(selectors.join(',')).forEach(el =&gt; {el.remove();});
+Without any arguments.</msg>
+<arg>const selectors = [</arg>
+<arg>'iframe[id^="aswift"]',</arg>
+<arg>'div[id^="aswift"]',</arg>
+<arg>'ins.adsbygoogle',</arg>
+<arg>'[id^="google_ads_iframe"]',</arg>
+<arg>'[id*="google_ads_iframe"]',</arg>
+<arg>'[data-google-vignette]',</arg>
+<arg>'[class*="google-anno"]',</arg>
+<arg>'[class*="ad-modal-overlay"]'</arg>
+<arg>];</arg>
+<arg>document.querySelectorAll(selectors.join(',')).forEach(el =&gt; {</arg>
+<arg>el.remove();</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:37:44.049026" elapsed="0.006472"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:44.056154" level="INFO">Executing JavaScript:
+document.querySelectorAll('[class*="google-anno"], [data-google-vignette], [id*="google_ads_iframe"]').forEach(el =&gt; {el.style.setProperty('pointer-events', 'none', 'important');el.style.setProperty('display', 'none', 'important');});
+Without any arguments.</msg>
+<arg>document.querySelectorAll('[class*="google-anno"], [data-google-vignette], [id*="google_ads_iframe"]').forEach(el =&gt; {</arg>
+<arg>el.style.setProperty('pointer-events', 'none', 'important');</arg>
+<arg>el.style.setProperty('display', 'none', 'important');</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:37:44.055872" elapsed="0.005000"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:44.061532" level="INFO">Executing JavaScript:
+document.querySelectorAll('body &gt; *').forEach(el =&gt; {const s = getComputedStyle(el);if (s.position === 'fixed' &amp;&amp;parseInt(s.zIndex || '0') &gt; 100000) {el.remove();}});
+Without any arguments.</msg>
+<arg>document.querySelectorAll('body &gt; *').forEach(el =&gt; {</arg>
+<arg>const s = getComputedStyle(el);</arg>
+<arg>if (</arg>
+<arg>s.position === 'fixed' &amp;&amp;</arg>
+<arg>parseInt(s.zIndex || '0') &gt; 100000</arg>
+<arg>) {</arg>
+<arg>el.remove();</arg>
+<arg>}</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:37:44.061162" elapsed="0.006782"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:37:44.048539" elapsed="0.019614"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:44.079007" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="e2efa470cd2b28026fc8129eb6e3f22c", element="f.383EC2252FEB883768DCCAC683094E7A.d.FFA268AE3F2162CABFA25C4DC1F1218F.e.126")&gt;</msg>
+<var>${element}</var>
+<arg>${locator}</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2026-09-26T03:37:44.068371" elapsed="0.010718"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:44.079690" level="INFO">Executing JavaScript:
+if (!arguments[0].checked) { arguments[0].click(); }
+By using argument:
+'&lt;selenium.webdriver.remote.webelement.WebElement (session="e2efa470cd2b28026fc8129eb6e3f22c", element="f.383EC2252FEB883768DCCAC683094E7A.d.FFA268AE3F2162CABFA25C4DC1F1218F.e.126")&gt;'</msg>
+<arg>if (!arguments[0].checked) { arguments[0].click(); }</arg>
+<arg>ARGUMENTS</arg>
+<arg>${element}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:37:44.079376" elapsed="0.007953"/>
+</kw>
+<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:44.088132" level="INFO">Verifying checkbox 'id=optin' is selected.</msg>
+<arg>${locator}</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="PASS" start="2026-09-26T03:37:44.087675" elapsed="0.029710"/>
+</kw>
+<arg>${OFFERS_CHECKBOX}</arg>
+<status status="PASS" start="2026-09-26T03:37:44.047596" elapsed="0.069996"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:44.118342" level="INFO">Typing text 'Robot' into text field 'id=first_name'.</msg>
+<arg>${FIRST_NAME_FIELD}</arg>
+<arg>Robot</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-26T03:37:44.117854" elapsed="0.068012"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:44.186398" level="INFO">Typing text 'Automation' into text field 'id=last_name'.</msg>
+<arg>${LAST_NAME_FIELD}</arg>
+<arg>Automation</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-26T03:37:44.186118" elapsed="0.063764"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:44.250365" level="INFO">Typing text 'Capstone Project' into text field 'id=company'.</msg>
+<arg>${COMPANY_FIELD}</arg>
+<arg>Capstone Project</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-26T03:37:44.250092" elapsed="0.076209"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:44.327513" level="INFO">Typing text 'Kolkata' into text field 'id=address1'.</msg>
+<arg>${ADDRESS1_FIELD}</arg>
+<arg>Kolkata</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-26T03:37:44.326884" elapsed="0.073588"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:44.400957" level="INFO">Typing text 'Salt Lake' into text field 'id=address2'.</msg>
+<arg>${ADDRESS2_FIELD}</arg>
+<arg>Salt Lake</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-26T03:37:44.400678" elapsed="0.082922"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:44.484396" level="INFO">Selecting options from selection list 'id=country' by label India.</msg>
+<arg>${COUNTRY_DROPDOWN}</arg>
+<arg>India</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2026-09-26T03:37:44.483936" elapsed="0.073590"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:44.558335" level="INFO">Typing text 'West Bengal' into text field 'id=state'.</msg>
+<arg>${STATE_FIELD}</arg>
+<arg>West Bengal</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-26T03:37:44.557905" elapsed="0.088531"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:44.647096" level="INFO">Typing text 'Kolkata' into text field 'id=city'.</msg>
+<arg>${CITY_FIELD}</arg>
+<arg>Kolkata</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-26T03:37:44.646712" elapsed="0.079674"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:44.727342" level="INFO">Typing text '700091' into text field 'id=zipcode'.</msg>
+<arg>${ZIPCODE_FIELD}</arg>
+<arg>700091</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-26T03:37:44.726969" elapsed="0.066723"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:44.794232" level="INFO">Typing text '9876543210' into text field 'id=mobile_number'.</msg>
+<arg>${MOBILE_FIELD}</arg>
+<arg>9876543210</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-26T03:37:44.793936" elapsed="0.080346"/>
+</kw>
+<kw name="Remove Advertisement Overlays" owner="common">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:44.875125" level="INFO">Executing JavaScript:
+const selectors = ['iframe[id^="aswift"]','div[id^="aswift"]','ins.adsbygoogle','[id^="google_ads_iframe"]','[id*="google_ads_iframe"]','[data-google-vignette]','[class*="google-anno"]','[class*="ad-modal-overlay"]'];document.querySelectorAll(selectors.join(',')).forEach(el =&gt; {el.remove();});
+Without any arguments.</msg>
+<arg>const selectors = [</arg>
+<arg>'iframe[id^="aswift"]',</arg>
+<arg>'div[id^="aswift"]',</arg>
+<arg>'ins.adsbygoogle',</arg>
+<arg>'[id^="google_ads_iframe"]',</arg>
+<arg>'[id*="google_ads_iframe"]',</arg>
+<arg>'[data-google-vignette]',</arg>
+<arg>'[class*="google-anno"]',</arg>
+<arg>'[class*="ad-modal-overlay"]'</arg>
+<arg>];</arg>
+<arg>document.querySelectorAll(selectors.join(',')).forEach(el =&gt; {</arg>
+<arg>el.remove();</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:37:44.874903" elapsed="0.007415"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:44.883028" level="INFO">Executing JavaScript:
+document.querySelectorAll('[class*="google-anno"], [data-google-vignette], [id*="google_ads_iframe"]').forEach(el =&gt; {el.style.setProperty('pointer-events', 'none', 'important');el.style.setProperty('display', 'none', 'important');});
+Without any arguments.</msg>
+<arg>document.querySelectorAll('[class*="google-anno"], [data-google-vignette], [id*="google_ads_iframe"]').forEach(el =&gt; {</arg>
+<arg>el.style.setProperty('pointer-events', 'none', 'important');</arg>
+<arg>el.style.setProperty('display', 'none', 'important');</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:37:44.882714" elapsed="0.005087"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:44.888527" level="INFO">Executing JavaScript:
+document.querySelectorAll('body &gt; *').forEach(el =&gt; {const s = getComputedStyle(el);if (s.position === 'fixed' &amp;&amp;parseInt(s.zIndex || '0') &gt; 100000) {el.remove();}});
+Without any arguments.</msg>
+<arg>document.querySelectorAll('body &gt; *').forEach(el =&gt; {</arg>
+<arg>const s = getComputedStyle(el);</arg>
+<arg>if (</arg>
+<arg>s.position === 'fixed' &amp;&amp;</arg>
+<arg>parseInt(s.zIndex || '0') &gt; 100000</arg>
+<arg>) {</arg>
+<arg>el.remove();</arg>
+<arg>}</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:37:44.888191" elapsed="0.004488"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:37:44.874580" elapsed="0.018277"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CREATE_ACCOUNT_BUTTON}</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-09-26T03:37:44.893052" elapsed="0.019046"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${CREATE_ACCOUNT_BUTTON}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-09-26T03:37:44.912377" elapsed="0.293951"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:45.217960" level="INFO">${create_button} = &lt;selenium.webdriver.remote.webelement.WebElement (session="e2efa470cd2b28026fc8129eb6e3f22c", element="f.383EC2252FEB883768DCCAC683094E7A.d.FFA268AE3F2162CABFA25C4DC1F1218F.e.134")&gt;</msg>
+<var>${create_button}</var>
+<arg>${CREATE_ACCOUNT_BUTTON}</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2026-09-26T03:37:45.206635" elapsed="0.011414"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:45.218711" level="INFO">Executing JavaScript:
+arguments[0].click();
+By using argument:
+'&lt;selenium.webdriver.remote.webelement.WebElement (session="e2efa470cd2b28026fc8129eb6e3f22c", element="f.383EC2252FEB883768DCCAC683094E7A.d.FFA268AE3F2162CABFA25C4DC1F1218F.e.134")&gt;'</msg>
+<arg>arguments[0].click();</arg>
+<arg>ARGUMENTS</arg>
+<arg>${create_button}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:37:45.218351" elapsed="2.755586"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:37:14.916178" elapsed="33.057917"/>
+</kw>
+<kw name="Verify Account Created" owner="common">
+<kw name="Remove Advertisement Overlays" owner="common">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:47.975218" level="INFO">Executing JavaScript:
+const selectors = ['iframe[id^="aswift"]','div[id^="aswift"]','ins.adsbygoogle','[id^="google_ads_iframe"]','[id*="google_ads_iframe"]','[data-google-vignette]','[class*="google-anno"]','[class*="ad-modal-overlay"]'];document.querySelectorAll(selectors.join(',')).forEach(el =&gt; {el.remove();});
+Without any arguments.</msg>
+<arg>const selectors = [</arg>
+<arg>'iframe[id^="aswift"]',</arg>
+<arg>'div[id^="aswift"]',</arg>
+<arg>'ins.adsbygoogle',</arg>
+<arg>'[id^="google_ads_iframe"]',</arg>
+<arg>'[id*="google_ads_iframe"]',</arg>
+<arg>'[data-google-vignette]',</arg>
+<arg>'[class*="google-anno"]',</arg>
+<arg>'[class*="ad-modal-overlay"]'</arg>
+<arg>];</arg>
+<arg>document.querySelectorAll(selectors.join(',')).forEach(el =&gt; {</arg>
+<arg>el.remove();</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:37:47.974964" elapsed="0.013601"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:47.989101" level="INFO">Executing JavaScript:
+document.querySelectorAll('[class*="google-anno"], [data-google-vignette], [id*="google_ads_iframe"]').forEach(el =&gt; {el.style.setProperty('pointer-events', 'none', 'important');el.style.setProperty('display', 'none', 'important');});
+Without any arguments.</msg>
+<arg>document.querySelectorAll('[class*="google-anno"], [data-google-vignette], [id*="google_ads_iframe"]').forEach(el =&gt; {</arg>
+<arg>el.style.setProperty('pointer-events', 'none', 'important');</arg>
+<arg>el.style.setProperty('display', 'none', 'important');</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:37:47.988855" elapsed="0.004088"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:47.993771" level="INFO">Executing JavaScript:
+document.querySelectorAll('body &gt; *').forEach(el =&gt; {const s = getComputedStyle(el);if (s.position === 'fixed' &amp;&amp;parseInt(s.zIndex || '0') &gt; 100000) {el.remove();}});
+Without any arguments.</msg>
+<arg>document.querySelectorAll('body &gt; *').forEach(el =&gt; {</arg>
+<arg>const s = getComputedStyle(el);</arg>
+<arg>if (</arg>
+<arg>s.position === 'fixed' &amp;&amp;</arg>
+<arg>parseInt(s.zIndex || '0') &gt; 100000</arg>
+<arg>) {</arg>
+<arg>el.remove();</arg>
+<arg>}</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:37:47.993485" elapsed="0.007199"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:37:47.974697" elapsed="0.026172"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ACCOUNT_CREATED_TEXT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-09-26T03:37:48.001055" elapsed="0.015319"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:48.031640" level="INFO">Element 'xpath=//b[contains(normalize-space(.),"Account Created!")]' is displayed.</msg>
+<arg>${ACCOUNT_CREATED_TEXT}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-09-26T03:37:48.016687" elapsed="0.015101"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:37:47.974336" elapsed="0.057588"/>
+</kw>
+<kw name="Continue After Registration" owner="common">
+<kw name="Remove Advertisement Overlays" owner="common">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:48.033115" level="INFO">Executing JavaScript:
+const selectors = ['iframe[id^="aswift"]','div[id^="aswift"]','ins.adsbygoogle','[id^="google_ads_iframe"]','[id*="google_ads_iframe"]','[data-google-vignette]','[class*="google-anno"]','[class*="ad-modal-overlay"]'];document.querySelectorAll(selectors.join(',')).forEach(el =&gt; {el.remove();});
+Without any arguments.</msg>
+<arg>const selectors = [</arg>
+<arg>'iframe[id^="aswift"]',</arg>
+<arg>'div[id^="aswift"]',</arg>
+<arg>'ins.adsbygoogle',</arg>
+<arg>'[id^="google_ads_iframe"]',</arg>
+<arg>'[id*="google_ads_iframe"]',</arg>
+<arg>'[data-google-vignette]',</arg>
+<arg>'[class*="google-anno"]',</arg>
+<arg>'[class*="ad-modal-overlay"]'</arg>
+<arg>];</arg>
+<arg>document.querySelectorAll(selectors.join(',')).forEach(el =&gt; {</arg>
+<arg>el.remove();</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:37:48.032841" elapsed="0.005944"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:48.039481" level="INFO">Executing JavaScript:
+document.querySelectorAll('[class*="google-anno"], [data-google-vignette], [id*="google_ads_iframe"]').forEach(el =&gt; {el.style.setProperty('pointer-events', 'none', 'important');el.style.setProperty('display', 'none', 'important');});
+Without any arguments.</msg>
+<arg>document.querySelectorAll('[class*="google-anno"], [data-google-vignette], [id*="google_ads_iframe"]').forEach(el =&gt; {</arg>
+<arg>el.style.setProperty('pointer-events', 'none', 'important');</arg>
+<arg>el.style.setProperty('display', 'none', 'important');</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:37:48.039159" elapsed="0.006373"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:48.046352" level="INFO">Executing JavaScript:
+document.querySelectorAll('body &gt; *').forEach(el =&gt; {const s = getComputedStyle(el);if (s.position === 'fixed' &amp;&amp;parseInt(s.zIndex || '0') &gt; 100000) {el.remove();}});
+Without any arguments.</msg>
+<arg>document.querySelectorAll('body &gt; *').forEach(el =&gt; {</arg>
+<arg>const s = getComputedStyle(el);</arg>
+<arg>if (</arg>
+<arg>s.position === 'fixed' &amp;&amp;</arg>
+<arg>parseInt(s.zIndex || '0') &gt; 100000</arg>
+<arg>) {</arg>
+<arg>el.remove();</arg>
+<arg>}</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:37:48.045888" elapsed="0.006013"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:37:48.032578" elapsed="0.019559"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CONTINUE_BUTTON}</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-09-26T03:37:48.052407" elapsed="0.077794"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${CONTINUE_BUTTON}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-09-26T03:37:48.130476" elapsed="0.274611"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:48.418956" level="INFO">${continue_button} = &lt;selenium.webdriver.remote.webelement.WebElement (session="e2efa470cd2b28026fc8129eb6e3f22c", element="f.383EC2252FEB883768DCCAC683094E7A.d.44DF001D07EF50D4AC3053B66A3688A4.e.172")&gt;</msg>
+<var>${continue_button}</var>
+<arg>${CONTINUE_BUTTON}</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2026-09-26T03:37:48.405433" elapsed="0.013605"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:48.419669" level="INFO">Executing JavaScript:
+arguments[0].scrollIntoView({block:"center", inline:"center"});arguments[0].click();
+By using argument:
+'&lt;selenium.webdriver.remote.webelement.WebElement (session="e2efa470cd2b28026fc8129eb6e3f22c", element="f.383EC2252FEB883768DCCAC683094E7A.d.44DF001D07EF50D4AC3053B66A3688A4.e.172")&gt;'</msg>
+<arg>arguments[0].scrollIntoView({block:"center", inline:"center"});</arg>
+<arg>arguments[0].click();</arg>
+<arg>ARGUMENTS</arg>
+<arg>${continue_button}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:37:48.419327" elapsed="2.104739"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${BASE_URL}/</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-09-26T03:37:50.524290" elapsed="0.008327"/>
+</kw>
+<kw name="Remove Advertisement Overlays" owner="common">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:50.533356" level="INFO">Executing JavaScript:
+const selectors = ['iframe[id^="aswift"]','div[id^="aswift"]','ins.adsbygoogle','[id^="google_ads_iframe"]','[id*="google_ads_iframe"]','[data-google-vignette]','[class*="google-anno"]','[class*="ad-modal-overlay"]'];document.querySelectorAll(selectors.join(',')).forEach(el =&gt; {el.remove();});
+Without any arguments.</msg>
+<arg>const selectors = [</arg>
+<arg>'iframe[id^="aswift"]',</arg>
+<arg>'div[id^="aswift"]',</arg>
+<arg>'ins.adsbygoogle',</arg>
+<arg>'[id^="google_ads_iframe"]',</arg>
+<arg>'[id*="google_ads_iframe"]',</arg>
+<arg>'[data-google-vignette]',</arg>
+<arg>'[class*="google-anno"]',</arg>
+<arg>'[class*="ad-modal-overlay"]'</arg>
+<arg>];</arg>
+<arg>document.querySelectorAll(selectors.join(',')).forEach(el =&gt; {</arg>
+<arg>el.remove();</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:37:50.533128" elapsed="0.007418"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:50.541270" level="INFO">Executing JavaScript:
+document.querySelectorAll('[class*="google-anno"], [data-google-vignette], [id*="google_ads_iframe"]').forEach(el =&gt; {el.style.setProperty('pointer-events', 'none', 'important');el.style.setProperty('display', 'none', 'important');});
+Without any arguments.</msg>
+<arg>document.querySelectorAll('[class*="google-anno"], [data-google-vignette], [id*="google_ads_iframe"]').forEach(el =&gt; {</arg>
+<arg>el.style.setProperty('pointer-events', 'none', 'important');</arg>
+<arg>el.style.setProperty('display', 'none', 'important');</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:37:50.540953" elapsed="0.005795"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:50.547475" level="INFO">Executing JavaScript:
+document.querySelectorAll('body &gt; *').forEach(el =&gt; {const s = getComputedStyle(el);if (s.position === 'fixed' &amp;&amp;parseInt(s.zIndex || '0') &gt; 100000) {el.remove();}});
+Without any arguments.</msg>
+<arg>document.querySelectorAll('body &gt; *').forEach(el =&gt; {</arg>
+<arg>const s = getComputedStyle(el);</arg>
+<arg>if (</arg>
+<arg>s.position === 'fixed' &amp;&amp;</arg>
+<arg>parseInt(s.zIndex || '0') &gt; 100000</arg>
+<arg>) {</arg>
+<arg>el.remove();</arg>
+<arg>}</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:37:50.547112" elapsed="0.003715"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:37:50.532866" elapsed="0.018059"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:37:48.032198" elapsed="2.518763"/>
+</kw>
+<kw name="Verify User Is Logged In" owner="common">
+<kw name="Remove Advertisement Overlays" owner="common">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:50.551835" level="INFO">Executing JavaScript:
+const selectors = ['iframe[id^="aswift"]','div[id^="aswift"]','ins.adsbygoogle','[id^="google_ads_iframe"]','[id*="google_ads_iframe"]','[data-google-vignette]','[class*="google-anno"]','[class*="ad-modal-overlay"]'];document.querySelectorAll(selectors.join(',')).forEach(el =&gt; {el.remove();});
+Without any arguments.</msg>
+<arg>const selectors = [</arg>
+<arg>'iframe[id^="aswift"]',</arg>
+<arg>'div[id^="aswift"]',</arg>
+<arg>'ins.adsbygoogle',</arg>
+<arg>'[id^="google_ads_iframe"]',</arg>
+<arg>'[id*="google_ads_iframe"]',</arg>
+<arg>'[data-google-vignette]',</arg>
+<arg>'[class*="google-anno"]',</arg>
+<arg>'[class*="ad-modal-overlay"]'</arg>
+<arg>];</arg>
+<arg>document.querySelectorAll(selectors.join(',')).forEach(el =&gt; {</arg>
+<arg>el.remove();</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:37:50.551661" elapsed="0.003609"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:50.555786" level="INFO">Executing JavaScript:
+document.querySelectorAll('[class*="google-anno"], [data-google-vignette], [id*="google_ads_iframe"]').forEach(el =&gt; {el.style.setProperty('pointer-events', 'none', 'important');el.style.setProperty('display', 'none', 'important');});
+Without any arguments.</msg>
+<arg>document.querySelectorAll('[class*="google-anno"], [data-google-vignette], [id*="google_ads_iframe"]').forEach(el =&gt; {</arg>
+<arg>el.style.setProperty('pointer-events', 'none', 'important');</arg>
+<arg>el.style.setProperty('display', 'none', 'important');</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:37:50.555565" elapsed="0.003315"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:50.559334" level="INFO">Executing JavaScript:
+document.querySelectorAll('body &gt; *').forEach(el =&gt; {const s = getComputedStyle(el);if (s.position === 'fixed' &amp;&amp;parseInt(s.zIndex || '0') &gt; 100000) {el.remove();}});
+Without any arguments.</msg>
+<arg>document.querySelectorAll('body &gt; *').forEach(el =&gt; {</arg>
+<arg>const s = getComputedStyle(el);</arg>
+<arg>if (</arg>
+<arg>s.position === 'fixed' &amp;&amp;</arg>
+<arg>parseInt(s.zIndex || '0') &gt; 100000</arg>
+<arg>) {</arg>
+<arg>el.remove();</arg>
+<arg>}</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:37:50.559086" elapsed="0.005866"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:37:50.551464" elapsed="0.013608"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${LOGOUT_LINK}</arg>
+<arg>15 seconds</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-09-26T03:37:50.565824" elapsed="0.007215"/>
+</kw>
+<msg time="2026-09-26T03:37:50.573179" level="INFO">${logout_visible} = True</msg>
+<var>${logout_visible}</var>
+<arg>Wait Until Page Contains Element</arg>
+<arg>${LOGOUT_LINK}</arg>
+<arg>15 seconds</arg>
+<doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-09-26T03:37:50.565209" elapsed="0.007992"/>
+</kw>
+<if>
+<branch type="IF" condition="${logout_visible}">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:37:50.584255" level="INFO">Element 'xpath=//a[@href="/logout"]' is displayed.</msg>
+<arg>${LOGOUT_LINK}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-09-26T03:37:50.573466" elapsed="0.010880"/>
+</kw>
+<return>
+<status status="PASS" start="2026-09-26T03:37:50.584432" elapsed="0.000130"/>
+</return>
+<status status="PASS" start="2026-09-26T03:37:50.573313" elapsed="0.011343"/>
+</branch>
+<status status="PASS" start="2026-09-26T03:37:50.573278" elapsed="0.011435"/>
+</if>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${header_visible}</var>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${LOGGED_IN_TEXT}</arg>
+<arg>15 seconds</arg>
+<doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2026-09-26T03:37:50.584893" elapsed="0.000037"/>
+</kw>
+<if>
+<branch type="IF" condition="${header_visible}">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${LOGGED_IN_TEXT}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-09-26T03:37:50.585142" elapsed="0.000026"/>
+</kw>
+<return>
+<status status="NOT RUN" start="2026-09-26T03:37:50.585212" elapsed="0.000022"/>
+</return>
+<status status="NOT RUN" start="2026-09-26T03:37:50.585028" elapsed="0.000236"/>
+</branch>
+<status status="NOT RUN" start="2026-09-26T03:37:50.585007" elapsed="0.000288"/>
+</if>
+<kw name="Fail" owner="BuiltIn">
+<arg>Registration completed, but the authenticated session was not visible after Continue.</arg>
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="NOT RUN" start="2026-09-26T03:37:50.585379" elapsed="0.000024"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:37:50.551226" elapsed="0.034253"/>
+</kw>
+<kw name="Cleanup Test" type="TEARDOWN">
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${TEST STATUS}' == 'FAIL'</arg>
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-09-26T03:37:50.586038" elapsed="0.000371"/>
+</kw>
+<kw name="Close Application" owner="common">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-09-26T03:37:50.586795" elapsed="2.512256"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:37:50.586555" elapsed="2.512734"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:37:50.585757" elapsed="2.513624"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:37:00.916326" elapsed="52.183126"/>
+</test>
+<status status="PASS" start="2026-09-26T03:37:00.616482" elapsed="52.486338"/>
+</suite>
+<status status="PASS" start="2026-09-26T03:37:00.574933" elapsed="52.528743"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
+<stat name="Ecommerce Tests" id="s1-s1" pass="1" fail="0" skip="0">Tests.Ecommerce Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

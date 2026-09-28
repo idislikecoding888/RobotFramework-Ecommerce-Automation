@@ -1,0 +1,493 @@
+[
+  {
+    "type": "log",
+    "message": "> target: https://automationexercise.com",
+    "at": "2026-09-27T19:21:03.916Z"
+  },
+  {
+    "type": "log",
+    "message": "> executing 18 tests",
+    "at": "2026-09-27T19:21:03.916Z"
+  },
+  {
+    "type": "log",
+    "message": "> python: python -m robot ...",
+    "at": "2026-09-27T19:21:03.916Z"
+  },
+  {
+    "type": "log",
+    "message": "> initializing Robot Framework...",
+    "at": "2026-09-27T19:21:03.916Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC01",
+    "status": "running",
+    "at": "2026-09-27T19:21:03.916Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC02",
+    "status": "running",
+    "at": "2026-09-27T19:21:03.916Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC03",
+    "status": "running",
+    "at": "2026-09-27T19:21:03.916Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC04",
+    "status": "running",
+    "at": "2026-09-27T19:21:03.916Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC05",
+    "status": "running",
+    "at": "2026-09-27T19:21:03.916Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC06",
+    "status": "running",
+    "at": "2026-09-27T19:21:03.916Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC07",
+    "status": "running",
+    "at": "2026-09-27T19:21:03.916Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC08",
+    "status": "running",
+    "at": "2026-09-27T19:21:03.916Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC09",
+    "status": "running",
+    "at": "2026-09-27T19:21:03.916Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC10",
+    "status": "running",
+    "at": "2026-09-27T19:21:03.916Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC11",
+    "status": "running",
+    "at": "2026-09-27T19:21:03.916Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC12",
+    "status": "running",
+    "at": "2026-09-27T19:21:03.916Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC13",
+    "status": "running",
+    "at": "2026-09-27T19:21:03.916Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC14",
+    "status": "running",
+    "at": "2026-09-27T19:21:03.916Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC15",
+    "status": "running",
+    "at": "2026-09-27T19:21:03.916Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC16",
+    "status": "running",
+    "at": "2026-09-27T19:21:03.916Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC17",
+    "status": "running",
+    "at": "2026-09-27T19:21:03.916Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC18",
+    "status": "running",
+    "at": "2026-09-27T19:21:03.916Z"
+  },
+  {
+    "type": "log",
+    "message": "==============================================================================",
+    "at": "2026-09-27T19:21:04.891Z"
+  },
+  {
+    "type": "log",
+    "message": "Tests",
+    "at": "2026-09-27T19:21:04.892Z"
+  },
+  {
+    "type": "log",
+    "message": "==============================================================================",
+    "at": "2026-09-27T19:21:04.892Z"
+  },
+  {
+    "type": "log",
+    "message": "Tests.Ecommerce Tests",
+    "at": "2026-09-27T19:21:05.507Z"
+  },
+  {
+    "type": "log",
+    "message": "==============================================================================",
+    "at": "2026-09-27T19:21:05.507Z"
+  },
+  {
+    "type": "log",
+    "message": "TC01 - Verify Login                                                   | PASS |",
+    "at": "2026-09-27T19:21:23.983Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC01",
+    "status": "passed",
+    "at": "2026-09-27T19:21:23.983Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-27T19:21:23.983Z"
+  },
+  {
+    "type": "log",
+    "message": "TC02 - Verify Product Search                                          | PASS |",
+    "at": "2026-09-27T19:22:25.525Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC02",
+    "status": "passed",
+    "at": "2026-09-27T19:22:25.526Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-27T19:22:25.526Z"
+  },
+  {
+    "type": "log",
+    "message": "TC03 - Verify Product Can Be Added To Cart                            | PASS |",
+    "at": "2026-09-27T19:22:48.092Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC03",
+    "status": "passed",
+    "at": "2026-09-27T19:22:48.093Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-27T19:22:48.093Z"
+  },
+  {
+    "type": "log",
+    "message": "TC04 - Complete E-Commerce User Journey                               | PASS |",
+    "at": "2026-09-27T19:23:35.608Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC04",
+    "status": "passed",
+    "at": "2026-09-27T19:23:35.608Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-27T19:23:35.608Z"
+  },
+  {
+    "type": "log",
+    "message": "TC05 - Register New User                                              | PASS |",
+    "at": "2026-09-27T19:24:19.066Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC05",
+    "status": "passed",
+    "at": "2026-09-27T19:24:19.066Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-27T19:24:19.066Z"
+  },
+  {
+    "type": "log",
+    "message": "TC06 - Data Driven Product Search                                     | PASS |",
+    "at": "2026-09-27T19:25:02.295Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC06",
+    "status": "passed",
+    "at": "2026-09-27T19:25:02.295Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-27T19:25:02.295Z"
+  },
+  {
+    "type": "log",
+    "message": "TC07 - Invalid Login                                                  | PASS |",
+    "at": "2026-09-27T19:25:18.600Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC07",
+    "status": "passed",
+    "at": "2026-09-27T19:25:18.600Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-27T19:25:18.600Z"
+  },
+  {
+    "type": "log",
+    "message": "TC08 - Logout User                                                    | PASS |",
+    "at": "2026-09-27T19:25:58.899Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC08",
+    "status": "passed",
+    "at": "2026-09-27T19:25:58.900Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-27T19:25:58.900Z"
+  },
+  {
+    "type": "log",
+    "message": "TC09 - Verify Product Details Page                                    | PASS |",
+    "at": "2026-09-27T19:26:34.895Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC09",
+    "status": "passed",
+    "at": "2026-09-27T19:26:34.895Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-27T19:26:34.895Z"
+  },
+  {
+    "type": "log",
+    "message": "TC10 - Verify Home Page Subscription                                  | PASS |",
+    "at": "2026-09-27T19:26:48.336Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC10",
+    "status": "passed",
+    "at": "2026-09-27T19:26:48.336Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-27T19:26:48.336Z"
+  },
+  {
+    "type": "log",
+    "message": "TC11 - Add Multiple Products To Cart                                  | PASS |",
+    "at": "2026-09-27T19:27:25.356Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC11",
+    "status": "passed",
+    "at": "2026-09-27T19:27:25.356Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-27T19:27:25.356Z"
+  },
+  {
+    "type": "log",
+    "message": "TC12 - Verify Product Quantity In Cart                                | PASS |",
+    "at": "2026-09-27T19:28:06.161Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC12",
+    "status": "passed",
+    "at": "2026-09-27T19:28:06.161Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-27T19:28:06.161Z"
+  },
+  {
+    "type": "log",
+    "message": "TC13 - Remove Product From Cart                                       | PASS |",
+    "at": "2026-09-27T19:28:43.721Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC13",
+    "status": "passed",
+    "at": "2026-09-27T19:28:43.721Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-27T19:28:43.721Z"
+  },
+  {
+    "type": "log",
+    "message": "TC14 - Verify No Results For Invalid Product Search                   | PASS |",
+    "at": "2026-09-27T19:29:19.822Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC14",
+    "status": "passed",
+    "at": "2026-09-27T19:29:19.823Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-27T19:29:19.823Z"
+  },
+  {
+    "type": "log",
+    "message": "TC15 - Verify Cart Total Price Calculation                            | PASS |",
+    "at": "2026-09-27T19:30:21.715Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC15",
+    "status": "passed",
+    "at": "2026-09-27T19:30:21.715Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-27T19:30:21.715Z"
+  },
+  {
+    "type": "log",
+    "message": "TC16 - Verify Cart Persistence After Login                            | FAIL |",
+    "at": "2026-09-27T19:31:07.203Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC16",
+    "status": "failed",
+    "at": "2026-09-27T19:31:07.203Z"
+  },
+  {
+    "type": "log",
+    "message": "No keyword with name 'xpath=//*[contains(text(),\"Logged in as\")]' found.",
+    "at": "2026-09-27T19:31:07.203Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-27T19:31:07.203Z"
+  },
+  {
+    "type": "log",
+    "message": "TC17 - Add Product Review                                             | PASS |",
+    "at": "2026-09-27T19:31:44.716Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC17",
+    "status": "passed",
+    "at": "2026-09-27T19:31:44.716Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-27T19:31:44.716Z"
+  },
+  {
+    "type": "log",
+    "message": "TC18 - Add Recommended Product To Cart                                | PASS |",
+    "at": "2026-09-27T19:32:22.586Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC18",
+    "status": "passed",
+    "at": "2026-09-27T19:32:22.586Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-27T19:32:22.586Z"
+  },
+  {
+    "type": "log",
+    "message": "Tests.Ecommerce Tests                                                 | FAIL |",
+    "at": "2026-09-27T19:32:22.587Z"
+  },
+  {
+    "type": "log",
+    "message": "18 tests, 17 passed, 1 failed",
+    "at": "2026-09-27T19:32:22.587Z"
+  },
+  {
+    "type": "log",
+    "message": "==============================================================================",
+    "at": "2026-09-27T19:32:22.587Z"
+  },
+  {
+    "type": "log",
+    "message": "Tests                                                                 | FAIL |",
+    "at": "2026-09-27T19:32:22.588Z"
+  },
+  {
+    "type": "log",
+    "message": "18 tests, 17 passed, 1 failed",
+    "at": "2026-09-27T19:32:22.588Z"
+  },
+  {
+    "type": "log",
+    "message": "==============================================================================",
+    "at": "2026-09-27T19:32:22.588Z"
+  },
+  {
+    "type": "log",
+    "message": "Output:  C:\\Projects\\Internship_proj\\RobotFramework-Ecommerce-Automation\\results\\selenator\\20260927192103-b977ba\\output.xml",
+    "at": "2026-09-27T19:32:22.596Z"
+  },
+  {
+    "type": "log",
+    "message": "Log:     C:\\Projects\\Internship_proj\\RobotFramework-Ecommerce-Automation\\results\\selenator\\20260927192103-b977ba\\log.html",
+    "at": "2026-09-27T19:32:24.019Z"
+  },
+  {
+    "type": "log",
+    "message": "Report:  C:\\Projects\\Internship_proj\\RobotFramework-Ecommerce-Automation\\results\\selenator\\20260927192103-b977ba\\report.html",
+    "at": "2026-09-27T19:32:24.562Z"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "name": "selenator-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local Node.js orchestration backend for Selenator Robot Framework automation",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

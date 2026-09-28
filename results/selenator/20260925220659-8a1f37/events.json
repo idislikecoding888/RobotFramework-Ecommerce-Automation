@@ -1,0 +1,114 @@
+[
+  {
+    "type": "log",
+    "message": "> target: https://automationexercise.com",
+    "at": "2026-09-25T22:06:59.892Z"
+  },
+  {
+    "type": "log",
+    "message": "> executing 1 test",
+    "at": "2026-09-25T22:06:59.892Z"
+  },
+  {
+    "type": "log",
+    "message": "> python: python -m robot ...",
+    "at": "2026-09-25T22:06:59.892Z"
+  },
+  {
+    "type": "log",
+    "message": "> initializing Robot Framework...",
+    "at": "2026-09-25T22:06:59.892Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC05",
+    "status": "running",
+    "at": "2026-09-25T22:06:59.892Z"
+  },
+  {
+    "type": "log",
+    "message": "==============================================================================",
+    "at": "2026-09-25T22:07:00.615Z"
+  },
+  {
+    "type": "log",
+    "message": "Tests",
+    "at": "2026-09-25T22:07:00.616Z"
+  },
+  {
+    "type": "log",
+    "message": "==============================================================================",
+    "at": "2026-09-25T22:07:00.616Z"
+  },
+  {
+    "type": "log",
+    "message": "Tests.Ecommerce Tests",
+    "at": "2026-09-25T22:07:00.915Z"
+  },
+  {
+    "type": "log",
+    "message": "==============================================================================",
+    "at": "2026-09-25T22:07:00.915Z"
+  },
+  {
+    "type": "log",
+    "message": "TC05 - Register New User                                              | PASS |",
+    "at": "2026-09-25T22:07:53.099Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC05",
+    "status": "passed",
+    "at": "2026-09-25T22:07:53.099Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-25T22:07:53.099Z"
+  },
+  {
+    "type": "log",
+    "message": "Tests.Ecommerce Tests                                                 | PASS |",
+    "at": "2026-09-25T22:07:53.102Z"
+  },
+  {
+    "type": "log",
+    "message": "1 test, 1 passed, 0 failed",
+    "at": "2026-09-25T22:07:53.102Z"
+  },
+  {
+    "type": "log",
+    "message": "==============================================================================",
+    "at": "2026-09-25T22:07:53.103Z"
+  },
+  {
+    "type": "log",
+    "message": "Tests                                                                 | PASS |",
+    "at": "2026-09-25T22:07:53.103Z"
+  },
+  {
+    "type": "log",
+    "message": "1 test, 1 passed, 0 failed",
+    "at": "2026-09-25T22:07:53.103Z"
+  },
+  {
+    "type": "log",
+    "message": "==============================================================================",
+    "at": "2026-09-25T22:07:53.103Z"
+  },
+  {
+    "type": "log",
+    "message": "Output:  C:\\Projects\\Internship_proj\\RobotFramework-Ecommerce-Automation\\results\\selenator\\20260925220659-8a1f37\\output.xml",
+    "at": "2026-09-25T22:07:53.111Z"
+  },
+  {
+    "type": "log",
+    "message": "Log:     C:\\Projects\\Internship_proj\\RobotFramework-Ecommerce-Automation\\results\\selenator\\20260925220659-8a1f37\\log.html",
+    "at": "2026-09-25T22:07:53.412Z"
+  },
+  {
+    "type": "log",
+    "message": "Report:  C:\\Projects\\Internship_proj\\RobotFramework-Ecommerce-Automation\\results\\selenator\\20260925220659-8a1f37\\report.html",
+    "at": "2026-09-25T22:07:53.660Z"
+  }
+]

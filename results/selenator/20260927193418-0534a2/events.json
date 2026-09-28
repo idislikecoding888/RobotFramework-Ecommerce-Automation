@@ -1,0 +1,119 @@
+[
+  {
+    "type": "log",
+    "message": "> target: https://automationexercise.com",
+    "at": "2026-09-27T19:34:18.089Z"
+  },
+  {
+    "type": "log",
+    "message": "> executing 1 test",
+    "at": "2026-09-27T19:34:18.089Z"
+  },
+  {
+    "type": "log",
+    "message": "> python: python -m robot ...",
+    "at": "2026-09-27T19:34:18.089Z"
+  },
+  {
+    "type": "log",
+    "message": "> initializing Robot Framework...",
+    "at": "2026-09-27T19:34:18.089Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC16",
+    "status": "running",
+    "at": "2026-09-27T19:34:18.089Z"
+  },
+  {
+    "type": "log",
+    "message": "==============================================================================",
+    "at": "2026-09-27T19:34:18.609Z"
+  },
+  {
+    "type": "log",
+    "message": "Tests",
+    "at": "2026-09-27T19:34:18.609Z"
+  },
+  {
+    "type": "log",
+    "message": "==============================================================================",
+    "at": "2026-09-27T19:34:18.609Z"
+  },
+  {
+    "type": "log",
+    "message": "Tests.Ecommerce Tests",
+    "at": "2026-09-27T19:34:18.936Z"
+  },
+  {
+    "type": "log",
+    "message": "==============================================================================",
+    "at": "2026-09-27T19:34:18.936Z"
+  },
+  {
+    "type": "log",
+    "message": "TC16 - Verify Cart Persistence After Login                            | FAIL |",
+    "at": "2026-09-27T19:35:04.594Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC16",
+    "status": "failed",
+    "at": "2026-09-27T19:35:04.594Z"
+  },
+  {
+    "type": "log",
+    "message": "No keyword with name 'xpath=//*[contains(text(),\"Logged in as\")]' found.",
+    "at": "2026-09-27T19:35:04.594Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-27T19:35:04.594Z"
+  },
+  {
+    "type": "log",
+    "message": "Tests.Ecommerce Tests                                                 | FAIL |",
+    "at": "2026-09-27T19:35:04.596Z"
+  },
+  {
+    "type": "log",
+    "message": "1 test, 0 passed, 1 failed",
+    "at": "2026-09-27T19:35:04.596Z"
+  },
+  {
+    "type": "log",
+    "message": "==============================================================================",
+    "at": "2026-09-27T19:35:04.596Z"
+  },
+  {
+    "type": "log",
+    "message": "Tests                                                                 | FAIL |",
+    "at": "2026-09-27T19:35:04.596Z"
+  },
+  {
+    "type": "log",
+    "message": "1 test, 0 passed, 1 failed",
+    "at": "2026-09-27T19:35:04.596Z"
+  },
+  {
+    "type": "log",
+    "message": "==============================================================================",
+    "at": "2026-09-27T19:35:04.596Z"
+  },
+  {
+    "type": "log",
+    "message": "Output:  C:\\Projects\\Internship_proj\\RobotFramework-Ecommerce-Automation\\results\\selenator\\20260927193418-0534a2\\output.xml",
+    "at": "2026-09-27T19:35:04.619Z"
+  },
+  {
+    "type": "log",
+    "message": "Log:     C:\\Projects\\Internship_proj\\RobotFramework-Ecommerce-Automation\\results\\selenator\\20260927193418-0534a2\\log.html",
+    "at": "2026-09-27T19:35:04.934Z"
+  },
+  {
+    "type": "log",
+    "message": "Report:  C:\\Projects\\Internship_proj\\RobotFramework-Ecommerce-Automation\\results\\selenator\\20260927193418-0534a2\\report.html",
+    "at": "2026-09-27T19:35:05.232Z"
+  }
+]

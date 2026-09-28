@@ -300,13 +300,31 @@ Add Product Review
     ...    Automated review submitted by the Robot Framework capstone test suite.
 
     Remove Advertisement Overlays
-    Click Element    ${REVIEW_SUBMIT_BUTTON}
+    Click Review Button
+
+Click Review Button
+    Remove Advertisement Overlays
+
+    Wait Until Element Is Visible    ${REVIEW_SUBMIT_BUTTON}    30 seconds
+    Scroll Element Into View         ${REVIEW_SUBMIT_BUTTON}
+
+    Remove Advertisement Overlays
+
+    ${review_button}=    Get WebElement    ${REVIEW_SUBMIT_BUTTON}
+
+    Execute Javascript
+    ...    arguments[0].scrollIntoView({block:"center", inline:"center"});
+    ...    arguments[0].click();
+    ...    ARGUMENTS
+    ...    ${review_button}
+
+    Remove Advertisement Overlays
 
 
 Verify Product Review Submitted
-    Wait Until Element Is Visible
-    ...    ${REVIEW_SUCCESS_MESSAGE}
-    ...    15 seconds
+    Remove Advertisement Overlays
+    Wait Until Element Is Visible    ${REVIEW_SUCCESS_MESSAGE}    20 seconds
+    Element Should Be Visible         ${REVIEW_SUCCESS_MESSAGE}
 
 
 Add Recommended Product To Cart

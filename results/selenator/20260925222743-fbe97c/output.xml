@@ -1,0 +1,3014 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.6 on win32)" generated="2026-09-26T03:57:44.292149" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Projects\Internship_proj\RobotFramework-Ecommerce-Automation\tests">
+<suite id="s1-s1" name="Ecommerce Tests" source="C:\Projects\Internship_proj\RobotFramework-Ecommerce-Automation\tests\ecommerce_tests.robot">
+<test id="s1-s1-t1" name="TC01 - Verify Login" line="13">
+<kw name="Open Application" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:57:44.610329" level="INFO">Opening browser 'chrome' to base url 'https://www.zengmerch.in'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-26T03:57:44.609020" elapsed="2.230391"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-26T03:57:46.839685" elapsed="0.032403"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>15 seconds</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2026-09-26T03:57:46.873424" elapsed="0.010647"/>
+</kw>
+<kw name="Delete All Cookies" owner="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" start="2026-09-26T03:57:46.884466" elapsed="0.129585"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:57:47.014537" level="INFO">Opening url 'https://www.zengmerch.in'</msg>
+<arg>${BASE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-26T03:57:47.014341" elapsed="0.360461"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${BASE_URL}/</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-09-26T03:57:47.375007" elapsed="0.006168"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:57:44.608166" elapsed="2.773163"/>
+</kw>
+<kw name="Login To Application" owner="common">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:57:47.382327" level="INFO">Clicking element 'xpath=//a[contains(.,'Signup / Login')]'.</msg>
+<msg time="2026-09-26T03:57:47.493926" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-09-26T03:57:47.494133" level="FAIL">Element with locator 'xpath=//a[contains(.,'Signup / Login')]' not found.</msg>
+<arg>${LOGIN_LINK}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-09-26T03:57:47.381928" elapsed="0.135718">Element with locator 'xpath=//a[contains(.,'Signup / Login')]' not found.</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${EMAIL_FIELD}</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-09-26T03:57:47.517913" elapsed="0.000040"/>
+</kw>
+<kw name="Remove Advertisement Overlays" owner="common">
+<status status="NOT RUN" start="2026-09-26T03:57:47.518137" elapsed="0.000034"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${EMAIL_FIELD}</arg>
+<arg>${VALID_EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T03:57:47.518264" elapsed="0.000023"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${VALID_PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T03:57:47.518372" elapsed="0.000021"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" start="2026-09-26T03:57:47.518474" elapsed="0.000018"/>
+</kw>
+<kw name="Remove Advertisement Overlays" owner="common">
+<status status="NOT RUN" start="2026-09-26T03:57:47.518595" elapsed="0.000023"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<var>${login_button}</var>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T03:57:47.518691" elapsed="0.000019"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>arguments[0].click();</arg>
+<arg>ARGUMENTS</arg>
+<arg>${login_button}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2026-09-26T03:57:47.518788" elapsed="0.000020"/>
+</kw>
+<status status="FAIL" start="2026-09-26T03:57:47.381579" elapsed="0.137363">Element with locator 'xpath=//a[contains(.,'Signup / Login')]' not found.</status>
+</kw>
+<kw name="Verify User Is Logged In" owner="common">
+<status status="NOT RUN" start="2026-09-26T03:57:47.519180" elapsed="0.000025"/>
+</kw>
+<kw name="Cleanup Test" type="TEARDOWN">
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:57:47.648254" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-26T03:57:47.520239" elapsed="0.128134"/>
+</kw>
+<arg>'${TEST STATUS}' == 'FAIL'</arg>
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-09-26T03:57:47.519695" elapsed="0.128754"/>
+</kw>
+<kw name="Close Application" owner="common">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-09-26T03:57:47.648903" elapsed="2.278222"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:57:47.648631" elapsed="2.278631"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:57:47.519431" elapsed="2.407881"/>
+</kw>
+<status status="FAIL" start="2026-09-26T03:57:44.607118" elapsed="5.320241">Element with locator 'xpath=//a[contains(.,'Signup / Login')]' not found.</status>
+</test>
+<test id="s1-s1-t2" name="TC02 - Verify Product Search" line="17">
+<kw name="Open Application" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:57:49.928418" level="INFO">Opening browser 'chrome' to base url 'https://www.zengmerch.in'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-26T03:57:49.928236" elapsed="3.429914"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-26T03:57:53.358499" elapsed="0.127899"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>15 seconds</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2026-09-26T03:57:53.486612" elapsed="0.001068"/>
+</kw>
+<kw name="Delete All Cookies" owner="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" start="2026-09-26T03:57:53.487875" elapsed="0.050582"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:57:53.538844" level="INFO">Opening url 'https://www.zengmerch.in'</msg>
+<arg>${BASE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-26T03:57:53.538660" elapsed="0.396265"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${BASE_URL}/</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-09-26T03:57:53.935213" elapsed="0.005464"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:57:49.928021" elapsed="4.012871"/>
+</kw>
+<kw name="Login To Application" owner="common">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:57:53.942094" level="INFO">Clicking element 'xpath=//a[contains(.,'Signup / Login')]'.</msg>
+<msg time="2026-09-26T03:57:54.064412" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-09-26T03:57:54.064663" level="FAIL">Element with locator 'xpath=//a[contains(.,'Signup / Login')]' not found.</msg>
+<arg>${LOGIN_LINK}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-09-26T03:57:53.941694" elapsed="0.124609">Element with locator 'xpath=//a[contains(.,'Signup / Login')]' not found.</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${EMAIL_FIELD}</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-09-26T03:57:54.066595" elapsed="0.000049"/>
+</kw>
+<kw name="Remove Advertisement Overlays" owner="common">
+<status status="NOT RUN" start="2026-09-26T03:57:54.066859" elapsed="0.000041"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${EMAIL_FIELD}</arg>
+<arg>${VALID_EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T03:57:54.067013" elapsed="0.000029"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${VALID_PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T03:57:54.067150" elapsed="0.000026"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" start="2026-09-26T03:57:54.067283" elapsed="0.000028"/>
+</kw>
+<kw name="Remove Advertisement Overlays" owner="common">
+<status status="NOT RUN" start="2026-09-26T03:57:54.067452" elapsed="0.000032"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<var>${login_button}</var>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T03:57:54.067587" elapsed="0.000028"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>arguments[0].click();</arg>
+<arg>ARGUMENTS</arg>
+<arg>${login_button}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2026-09-26T03:57:54.067721" elapsed="0.000028"/>
+</kw>
+<status status="FAIL" start="2026-09-26T03:57:53.941267" elapsed="0.126622">Element with locator 'xpath=//a[contains(.,'Signup / Login')]' not found.</status>
+</kw>
+<kw name="Search For Product" owner="common">
+<status status="NOT RUN" start="2026-09-26T03:57:54.068074" elapsed="0.000029"/>
+</kw>
+<kw name="Cleanup Test" type="TEARDOWN">
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:57:54.230464" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-26T03:57:54.069163" elapsed="0.161416"/>
+</kw>
+<arg>'${TEST STATUS}' == 'FAIL'</arg>
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-09-26T03:57:54.068665" elapsed="0.161991"/>
+</kw>
+<kw name="Close Application" owner="common">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-09-26T03:57:54.231194" elapsed="2.373841"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:57:54.230922" elapsed="2.374278"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:57:54.068358" elapsed="2.536893"/>
+</kw>
+<status status="FAIL" start="2026-09-26T03:57:49.927673" elapsed="6.677626">Element with locator 'xpath=//a[contains(.,'Signup / Login')]' not found.</status>
+</test>
+<test id="s1-s1-t3" name="TC03 - Verify Product Can Be Added To Cart" line="21">
+<kw name="Open Application" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:57:56.606669" level="INFO">Opening browser 'chrome' to base url 'https://www.zengmerch.in'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-26T03:57:56.606440" elapsed="3.112763"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-26T03:57:59.719486" elapsed="0.034795"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>15 seconds</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2026-09-26T03:57:59.754516" elapsed="0.004879"/>
+</kw>
+<kw name="Delete All Cookies" owner="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" start="2026-09-26T03:57:59.759607" elapsed="0.027466"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:57:59.787436" level="INFO">Opening url 'https://www.zengmerch.in'</msg>
+<arg>${BASE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-26T03:57:59.787268" elapsed="0.360402"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${BASE_URL}/</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-09-26T03:58:00.147872" elapsed="0.005168"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:57:56.606037" elapsed="3.547122"/>
+</kw>
+<kw name="Login To Application" owner="common">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:58:00.153838" level="INFO">Clicking element 'xpath=//a[contains(.,'Signup / Login')]'.</msg>
+<msg time="2026-09-26T03:58:00.301671" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-09-26T03:58:00.301901" level="FAIL">Element with locator 'xpath=//a[contains(.,'Signup / Login')]' not found.</msg>
+<arg>${LOGIN_LINK}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-09-26T03:58:00.153623" elapsed="0.149944">Element with locator 'xpath=//a[contains(.,'Signup / Login')]' not found.</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${EMAIL_FIELD}</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-09-26T03:58:00.303876" elapsed="0.000054"/>
+</kw>
+<kw name="Remove Advertisement Overlays" owner="common">
+<status status="NOT RUN" start="2026-09-26T03:58:00.304168" elapsed="0.000047"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${EMAIL_FIELD}</arg>
+<arg>${VALID_EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T03:58:00.304342" elapsed="0.000035"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${VALID_PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T03:58:00.304502" elapsed="0.000028"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" start="2026-09-26T03:58:00.304650" elapsed="0.000028"/>
+</kw>
+<kw name="Remove Advertisement Overlays" owner="common">
+<status status="NOT RUN" start="2026-09-26T03:58:00.304862" elapsed="0.000035"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<var>${login_button}</var>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T03:58:00.305002" elapsed="0.000026"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>arguments[0].click();</arg>
+<arg>ARGUMENTS</arg>
+<arg>${login_button}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2026-09-26T03:58:00.305136" elapsed="0.000026"/>
+</kw>
+<status status="FAIL" start="2026-09-26T03:58:00.153374" elapsed="0.151922">Element with locator 'xpath=//a[contains(.,'Signup / Login')]' not found.</status>
+</kw>
+<kw name="Search For Product" owner="common">
+<status status="NOT RUN" start="2026-09-26T03:58:00.305472" elapsed="0.000032"/>
+</kw>
+<kw name="Add Product To Cart" owner="common">
+<status status="NOT RUN" start="2026-09-26T03:58:00.305636" elapsed="0.000028"/>
+</kw>
+<kw name="Open Cart" owner="common">
+<status status="NOT RUN" start="2026-09-26T03:58:00.305783" elapsed="0.000029"/>
+</kw>
+<kw name="Verify Product In Cart" owner="common">
+<status status="NOT RUN" start="2026-09-26T03:58:00.305929" elapsed="0.000029"/>
+</kw>
+<kw name="Cleanup Test" type="TEARDOWN">
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:58:00.431976" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-26T03:58:00.307011" elapsed="0.125078"/>
+</kw>
+<arg>'${TEST STATUS}' == 'FAIL'</arg>
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-09-26T03:58:00.306506" elapsed="0.125660"/>
+</kw>
+<kw name="Close Application" owner="common">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-09-26T03:58:00.432663" elapsed="2.396399"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:58:00.432411" elapsed="2.396781"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:58:00.306188" elapsed="2.523049"/>
+</kw>
+<status status="FAIL" start="2026-09-26T03:57:56.605670" elapsed="6.223604">Element with locator 'xpath=//a[contains(.,'Signup / Login')]' not found.</status>
+</test>
+<test id="s1-s1-t4" name="TC04 - Complete E-Commerce User Journey" line="28">
+<kw name="Open Application" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:58:02.830538" level="INFO">Opening browser 'chrome' to base url 'https://www.zengmerch.in'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-26T03:58:02.830352" elapsed="14.852155"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-26T03:58:17.682787" elapsed="0.054708"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>15 seconds</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2026-09-26T03:58:17.737775" elapsed="0.001484"/>
+</kw>
+<kw name="Delete All Cookies" owner="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" start="2026-09-26T03:58:17.739503" elapsed="0.039046"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:58:17.779186" level="INFO">Opening url 'https://www.zengmerch.in'</msg>
+<arg>${BASE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-26T03:58:17.778917" elapsed="0.453489"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${BASE_URL}/</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-09-26T03:58:18.232798" elapsed="0.008669"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:58:02.830118" elapsed="15.411586"/>
+</kw>
+<kw name="Login To Application" owner="common">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:58:18.243230" level="INFO">Clicking element 'xpath=//a[contains(.,'Signup / Login')]'.</msg>
+<msg time="2026-09-26T03:58:18.387836" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-09-26T03:58:18.388031" level="FAIL">Element with locator 'xpath=//a[contains(.,'Signup / Login')]' not found.</msg>
+<arg>${LOGIN_LINK}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-09-26T03:58:18.242871" elapsed="0.146445">Element with locator 'xpath=//a[contains(.,'Signup / Login')]' not found.</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${EMAIL_FIELD}</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-09-26T03:58:18.389549" elapsed="0.000040"/>
+</kw>
+<kw name="Remove Advertisement Overlays" owner="common">
+<status status="NOT RUN" start="2026-09-26T03:58:18.389771" elapsed="0.000035"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${EMAIL_FIELD}</arg>
+<arg>${VALID_EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T03:58:18.389902" elapsed="0.000022"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${VALID_PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T03:58:18.390011" elapsed="0.000022"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" start="2026-09-26T03:58:18.390114" elapsed="0.000019"/>
+</kw>
+<kw name="Remove Advertisement Overlays" owner="common">
+<status status="NOT RUN" start="2026-09-26T03:58:18.390239" elapsed="0.000026"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<var>${login_button}</var>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T03:58:18.390349" elapsed="0.000019"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>arguments[0].click();</arg>
+<arg>ARGUMENTS</arg>
+<arg>${login_button}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2026-09-26T03:58:18.390441" elapsed="0.000017"/>
+</kw>
+<status status="FAIL" start="2026-09-26T03:58:18.242352" elapsed="0.148199">Element with locator 'xpath=//a[contains(.,'Signup / Login')]' not found.</status>
+</kw>
+<kw name="Search For Product" owner="common">
+<status status="NOT RUN" start="2026-09-26T03:58:18.390672" elapsed="0.000021"/>
+</kw>
+<kw name="Add Product To Cart" owner="common">
+<status status="NOT RUN" start="2026-09-26T03:58:18.390782" elapsed="0.000019"/>
+</kw>
+<kw name="Open Cart" owner="common">
+<status status="NOT RUN" start="2026-09-26T03:58:18.390879" elapsed="0.000020"/>
+</kw>
+<kw name="Verify Product In Cart" owner="common">
+<status status="NOT RUN" start="2026-09-26T03:58:18.390975" elapsed="0.000018"/>
+</kw>
+<kw name="Logout From Application" owner="common">
+<status status="NOT RUN" start="2026-09-26T03:58:18.391092" elapsed="0.000021"/>
+</kw>
+<kw name="Cleanup Test" type="TEARDOWN">
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:58:18.571154" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-26T03:58:18.391925" elapsed="0.180363"/>
+</kw>
+<arg>'${TEST STATUS}' == 'FAIL'</arg>
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-09-26T03:58:18.391539" elapsed="0.180904"/>
+</kw>
+<kw name="Close Application" owner="common">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-09-26T03:58:18.573709" elapsed="2.413146"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:58:18.572865" elapsed="2.414108"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:58:18.391299" elapsed="2.595714"/>
+</kw>
+<status status="FAIL" start="2026-09-26T03:58:02.829749" elapsed="18.157302">Element with locator 'xpath=//a[contains(.,'Signup / Login')]' not found.</status>
+</test>
+<test id="s1-s1-t5" name="TC05 - Register New User" line="36">
+<kw name="Open Application" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:58:20.987968" level="INFO">Opening browser 'chrome' to base url 'https://www.zengmerch.in'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-26T03:58:20.987802" elapsed="3.263613"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-26T03:58:24.251764" elapsed="0.038544"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>15 seconds</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2026-09-26T03:58:24.290507" elapsed="0.005733"/>
+</kw>
+<kw name="Delete All Cookies" owner="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" start="2026-09-26T03:58:24.296454" elapsed="0.024092"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:58:24.320934" level="INFO">Opening url 'https://www.zengmerch.in'</msg>
+<arg>${BASE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-26T03:58:24.320761" elapsed="0.369766"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${BASE_URL}/</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-09-26T03:58:24.690735" elapsed="0.007221"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:58:20.987598" elapsed="3.710475"/>
+</kw>
+<kw name="Generate Unique Registration Data" owner="common">
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2026-09-26T03:58:24.699221" level="INFO">${timestamp} = 20260926035824</msg>
+<var>${timestamp}</var>
+<arg>result_format=%Y%m%d%H%M%S</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2026-09-26T03:58:24.698817" elapsed="0.000456"/>
+</kw>
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2026-09-26T03:58:24.699914" level="INFO">${unique_email} = robotuser20260926035824@example.com</msg>
+<var>${unique_email}</var>
+<arg>SEPARATOR=</arg>
+<arg>robotuser</arg>
+<arg>${timestamp}</arg>
+<arg>@example.com</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="PASS" start="2026-09-26T03:58:24.699435" elapsed="0.000518"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2026-09-26T03:58:24.701906" level="INFO">${REG_NAME} = Robot Test User</msg>
+<arg>${REG_NAME}</arg>
+<arg>Robot Test User</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2026-09-26T03:58:24.700127" elapsed="0.001857"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2026-09-26T03:58:24.703755" level="INFO">${REG_EMAIL} = robotuser20260926035824@example.com</msg>
+<arg>${REG_EMAIL}</arg>
+<arg>${unique_email}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2026-09-26T03:58:24.702160" elapsed="0.001655"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2026-09-26T03:58:24.705242" level="INFO">${REG_PASSWORD} = Test@12345</msg>
+<arg>${REG_PASSWORD}</arg>
+<arg>Test@12345</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2026-09-26T03:58:24.703956" elapsed="0.001341"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:58:24.698375" elapsed="0.006994"/>
+</kw>
+<kw name="Register New User" owner="common">
+<kw name="Remove Advertisement Overlays" owner="common">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:58:24.706257" level="INFO">Executing JavaScript:
+const selectors = ['iframe[id^="aswift"]','div[id^="aswift"]','ins.adsbygoogle','[id^="google_ads_iframe"]','[id*="google_ads_iframe"]','[data-google-vignette]','[class*="google-anno"]','[class*="ad-modal-overlay"]'];document.querySelectorAll(selectors.join(',')).forEach(el =&gt; {el.remove();});
+Without any arguments.</msg>
+<arg>const selectors = [</arg>
+<arg>'iframe[id^="aswift"]',</arg>
+<arg>'div[id^="aswift"]',</arg>
+<arg>'ins.adsbygoogle',</arg>
+<arg>'[id^="google_ads_iframe"]',</arg>
+<arg>'[id*="google_ads_iframe"]',</arg>
+<arg>'[data-google-vignette]',</arg>
+<arg>'[class*="google-anno"]',</arg>
+<arg>'[class*="ad-modal-overlay"]'</arg>
+<arg>];</arg>
+<arg>document.querySelectorAll(selectors.join(',')).forEach(el =&gt; {</arg>
+<arg>el.remove();</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:58:24.706033" elapsed="0.007665"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:58:24.714165" level="INFO">Executing JavaScript:
+document.querySelectorAll('[class*="google-anno"], [data-google-vignette], [id*="google_ads_iframe"]').forEach(el =&gt; {el.style.setProperty('pointer-events', 'none', 'important');el.style.setProperty('display', 'none', 'important');});
+Without any arguments.</msg>
+<arg>document.querySelectorAll('[class*="google-anno"], [data-google-vignette], [id*="google_ads_iframe"]').forEach(el =&gt; {</arg>
+<arg>el.style.setProperty('pointer-events', 'none', 'important');</arg>
+<arg>el.style.setProperty('display', 'none', 'important');</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:58:24.713964" elapsed="0.004864"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:58:24.719217" level="INFO">Executing JavaScript:
+document.querySelectorAll('body &gt; *').forEach(el =&gt; {const s = getComputedStyle(el);if (s.position === 'fixed' &amp;&amp;parseInt(s.zIndex || '0') &gt; 100000) {el.remove();}});
+Without any arguments.</msg>
+<arg>document.querySelectorAll('body &gt; *').forEach(el =&gt; {</arg>
+<arg>const s = getComputedStyle(el);</arg>
+<arg>if (</arg>
+<arg>s.position === 'fixed' &amp;&amp;</arg>
+<arg>parseInt(s.zIndex || '0') &gt; 100000</arg>
+<arg>) {</arg>
+<arg>el.remove();</arg>
+<arg>}</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:58:24.719020" elapsed="0.005878"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:58:24.705840" elapsed="0.019348"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:58:24.725836" level="INFO">Clicking element 'xpath=//a[contains(.,'Signup / Login')]'.</msg>
+<msg time="2026-09-26T03:58:24.848232" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-09-26T03:58:24.848386" level="FAIL">Element with locator 'xpath=//a[contains(.,'Signup / Login')]' not found.</msg>
+<arg>${LOGIN_LINK}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-09-26T03:58:24.725515" elapsed="0.123777">Element with locator 'xpath=//a[contains(.,'Signup / Login')]' not found.</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SIGNUP_NAME_FIELD}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-09-26T03:58:24.849500" elapsed="0.000031"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${SIGNUP_NAME_FIELD}</arg>
+<arg>${REG_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T03:58:24.849599" elapsed="0.000015"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${SIGNUP_EMAIL_FIELD}</arg>
+<arg>${REG_EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T03:58:24.849675" elapsed="0.000015"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${SIGNUP_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T03:58:24.849750" elapsed="0.000014"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${MR_RADIO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-09-26T03:58:24.849820" elapsed="0.000014"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${MR_RADIO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T03:58:24.849888" elapsed="0.000013"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${REG_PASSWORD_FIELD}</arg>
+<arg>${REG_PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T03:58:24.849952" elapsed="0.000014"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<arg>${DAY_DROPDOWN}</arg>
+<arg>10</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" start="2026-09-26T03:58:24.850021" elapsed="0.000014"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<arg>${MONTH_DROPDOWN}</arg>
+<arg>5</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" start="2026-09-26T03:58:24.850087" elapsed="0.000013"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<arg>${YEAR_DROPDOWN}</arg>
+<arg>2000</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" start="2026-09-26T03:58:24.850154" elapsed="0.000013"/>
+</kw>
+<kw name="Select Registration Checkbox" owner="common">
+<arg>${NEWSLETTER_CHECKBOX}</arg>
+<status status="NOT RUN" start="2026-09-26T03:58:24.850315" elapsed="0.000022"/>
+</kw>
+<kw name="Select Registration Checkbox" owner="common">
+<arg>${OFFERS_CHECKBOX}</arg>
+<status status="NOT RUN" start="2026-09-26T03:58:24.850420" elapsed="0.000016"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${FIRST_NAME_FIELD}</arg>
+<arg>Robot</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T03:58:24.850491" elapsed="0.000014"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${LAST_NAME_FIELD}</arg>
+<arg>Automation</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T03:58:24.850558" elapsed="0.000014"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${COMPANY_FIELD}</arg>
+<arg>Capstone Project</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T03:58:24.850625" elapsed="0.000014"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${ADDRESS1_FIELD}</arg>
+<arg>Kolkata</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T03:58:24.850699" elapsed="0.000013"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${ADDRESS2_FIELD}</arg>
+<arg>Salt Lake</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T03:58:24.850764" elapsed="0.000012"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<arg>${COUNTRY_DROPDOWN}</arg>
+<arg>India</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" start="2026-09-26T03:58:24.850830" elapsed="0.000013"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${STATE_FIELD}</arg>
+<arg>West Bengal</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T03:58:24.850896" elapsed="0.000013"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${CITY_FIELD}</arg>
+<arg>Kolkata</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T03:58:24.850961" elapsed="0.000012"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${ZIPCODE_FIELD}</arg>
+<arg>700091</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T03:58:24.851024" elapsed="0.000013"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${MOBILE_FIELD}</arg>
+<arg>9876543210</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T03:58:24.851087" elapsed="0.000013"/>
+</kw>
+<kw name="Remove Advertisement Overlays" owner="common">
+<status status="NOT RUN" start="2026-09-26T03:58:24.851172" elapsed="0.000016"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CREATE_ACCOUNT_BUTTON}</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-09-26T03:58:24.851240" elapsed="0.000013"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${CREATE_ACCOUNT_BUTTON}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" start="2026-09-26T03:58:24.851307" elapsed="0.000013"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<var>${create_button}</var>
+<arg>${CREATE_ACCOUNT_BUTTON}</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T03:58:24.851375" elapsed="0.000014"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>arguments[0].click();</arg>
+<arg>ARGUMENTS</arg>
+<arg>${create_button}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2026-09-26T03:58:24.851446" elapsed="0.000013"/>
+</kw>
+<status status="FAIL" start="2026-09-26T03:58:24.705590" elapsed="0.145957">Element with locator 'xpath=//a[contains(.,'Signup / Login')]' not found.</status>
+</kw>
+<kw name="Verify Account Created" owner="common">
+<status status="NOT RUN" start="2026-09-26T03:58:24.851639" elapsed="0.000019"/>
+</kw>
+<kw name="Continue After Registration" owner="common">
+<status status="NOT RUN" start="2026-09-26T03:58:24.851736" elapsed="0.000017"/>
+</kw>
+<kw name="Verify User Is Logged In" owner="common">
+<status status="NOT RUN" start="2026-09-26T03:58:24.851895" elapsed="0.000032"/>
+</kw>
+<kw name="Cleanup Test" type="TEARDOWN">
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:58:24.967329" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-26T03:58:24.852678" elapsed="0.114762"/>
+</kw>
+<arg>'${TEST STATUS}' == 'FAIL'</arg>
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-09-26T03:58:24.852323" elapsed="0.115193"/>
+</kw>
+<kw name="Close Application" owner="common">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-09-26T03:58:24.967952" elapsed="2.325046"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:58:24.967695" elapsed="2.325503"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:58:24.852087" elapsed="2.441201"/>
+</kw>
+<status status="FAIL" start="2026-09-26T03:58:20.987317" elapsed="6.306125">Element with locator 'xpath=//a[contains(.,'Signup / Login')]' not found.</status>
+</test>
+<test id="s1-s1-t6" name="TC06 - Data Driven Product Search" line="43">
+<kw name="Open Application" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:58:27.295573" level="INFO">Opening browser 'chrome' to base url 'https://www.zengmerch.in'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-26T03:58:27.295210" elapsed="6.344722"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-26T03:58:33.640141" elapsed="0.032860"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>15 seconds</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2026-09-26T03:58:33.673209" elapsed="0.001099"/>
+</kw>
+<kw name="Delete All Cookies" owner="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" start="2026-09-26T03:58:33.674496" elapsed="0.043600"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:58:33.718533" level="INFO">Opening url 'https://www.zengmerch.in'</msg>
+<arg>${BASE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-26T03:58:33.718296" elapsed="0.361350"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${BASE_URL}/</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-09-26T03:58:34.079902" elapsed="0.003826"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:58:27.294708" elapsed="6.789197"/>
+</kw>
+<kw name="Search Product With Data" owner="common">
+<kw name="Remove Advertisement Overlays" owner="common">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:58:34.085372" level="INFO">Executing JavaScript:
+const selectors = ['iframe[id^="aswift"]','div[id^="aswift"]','ins.adsbygoogle','[id^="google_ads_iframe"]','[id*="google_ads_iframe"]','[data-google-vignette]','[class*="google-anno"]','[class*="ad-modal-overlay"]'];document.querySelectorAll(selectors.join(',')).forEach(el =&gt; {el.remove();});
+Without any arguments.</msg>
+<arg>const selectors = [</arg>
+<arg>'iframe[id^="aswift"]',</arg>
+<arg>'div[id^="aswift"]',</arg>
+<arg>'ins.adsbygoogle',</arg>
+<arg>'[id^="google_ads_iframe"]',</arg>
+<arg>'[id*="google_ads_iframe"]',</arg>
+<arg>'[data-google-vignette]',</arg>
+<arg>'[class*="google-anno"]',</arg>
+<arg>'[class*="ad-modal-overlay"]'</arg>
+<arg>];</arg>
+<arg>document.querySelectorAll(selectors.join(',')).forEach(el =&gt; {</arg>
+<arg>el.remove();</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:58:34.085026" elapsed="0.006387"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:58:34.091780" level="INFO">Executing JavaScript:
+document.querySelectorAll('[class*="google-anno"], [data-google-vignette], [id*="google_ads_iframe"]').forEach(el =&gt; {el.style.setProperty('pointer-events', 'none', 'important');el.style.setProperty('display', 'none', 'important');});
+Without any arguments.</msg>
+<arg>document.querySelectorAll('[class*="google-anno"], [data-google-vignette], [id*="google_ads_iframe"]').forEach(el =&gt; {</arg>
+<arg>el.style.setProperty('pointer-events', 'none', 'important');</arg>
+<arg>el.style.setProperty('display', 'none', 'important');</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:58:34.091611" elapsed="0.004932"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:58:34.097220" level="INFO">Executing JavaScript:
+document.querySelectorAll('body &gt; *').forEach(el =&gt; {const s = getComputedStyle(el);if (s.position === 'fixed' &amp;&amp;parseInt(s.zIndex || '0') &gt; 100000) {el.remove();}});
+Without any arguments.</msg>
+<arg>document.querySelectorAll('body &gt; *').forEach(el =&gt; {</arg>
+<arg>const s = getComputedStyle(el);</arg>
+<arg>if (</arg>
+<arg>s.position === 'fixed' &amp;&amp;</arg>
+<arg>parseInt(s.zIndex || '0') &gt; 100000</arg>
+<arg>) {</arg>
+<arg>el.remove();</arg>
+<arg>}</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:58:34.096865" elapsed="0.005629"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:58:34.084719" elapsed="0.017909"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:58:34.102960" level="INFO">Opening url 'https://www.zengmerch.in/products'</msg>
+<arg>${BASE_URL}/products</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-26T03:58:34.102772" elapsed="0.549730"/>
+</kw>
+<kw name="Wait Until Location Contains" owner="SeleniumLibrary">
+<arg>/products</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="PASS" start="2026-09-26T03:58:34.652784" elapsed="0.011916"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:59:06.023112" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-09-26T03:59:06.023424" level="FAIL">Element 'id=search_product' not visible after 30 seconds.</msg>
+<arg>${SEARCH_BOX}</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-09-26T03:58:34.664977" elapsed="31.360870">Element 'id=search_product' not visible after 30 seconds.</status>
+</kw>
+<kw name="Remove Advertisement Overlays" owner="common">
+<status status="NOT RUN" start="2026-09-26T03:59:06.026365" elapsed="0.000085"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${SEARCH_BOX}</arg>
+<arg>${product_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T03:59:06.026679" elapsed="0.000051"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${SEARCH_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T03:59:06.026916" elapsed="0.000046"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SEARCHED_PRODUCTS}</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-09-26T03:59:06.027127" elapsed="0.000038"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${product_name}</arg>
+<arg>30 seconds</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-09-26T03:59:06.027354" elapsed="0.000039"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>${product_name}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-09-26T03:59:06.027534" elapsed="0.000035"/>
+</kw>
+<arg>Men Tshirt</arg>
+<status status="FAIL" start="2026-09-26T03:58:34.084267" elapsed="31.943460">Element 'id=search_product' not visible after 30 seconds.</status>
+</kw>
+<kw name="Search Product With Data" owner="common">
+<kw name="Remove Advertisement Overlays" owner="common">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:59:06.028945" level="INFO">Executing JavaScript:
+const selectors = ['iframe[id^="aswift"]','div[id^="aswift"]','ins.adsbygoogle','[id^="google_ads_iframe"]','[id*="google_ads_iframe"]','[data-google-vignette]','[class*="google-anno"]','[class*="ad-modal-overlay"]'];document.querySelectorAll(selectors.join(',')).forEach(el =&gt; {el.remove();});
+Without any arguments.</msg>
+<arg>const selectors = [</arg>
+<arg>'iframe[id^="aswift"]',</arg>
+<arg>'div[id^="aswift"]',</arg>
+<arg>'ins.adsbygoogle',</arg>
+<arg>'[id^="google_ads_iframe"]',</arg>
+<arg>'[id*="google_ads_iframe"]',</arg>
+<arg>'[data-google-vignette]',</arg>
+<arg>'[class*="google-anno"]',</arg>
+<arg>'[class*="ad-modal-overlay"]'</arg>
+<arg>];</arg>
+<arg>document.querySelectorAll(selectors.join(',')).forEach(el =&gt; {</arg>
+<arg>el.remove();</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:59:06.028748" elapsed="0.311656"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:59:06.341072" level="INFO">Executing JavaScript:
+document.querySelectorAll('[class*="google-anno"], [data-google-vignette], [id*="google_ads_iframe"]').forEach(el =&gt; {el.style.setProperty('pointer-events', 'none', 'important');el.style.setProperty('display', 'none', 'important');});
+Without any arguments.</msg>
+<arg>document.querySelectorAll('[class*="google-anno"], [data-google-vignette], [id*="google_ads_iframe"]').forEach(el =&gt; {</arg>
+<arg>el.style.setProperty('pointer-events', 'none', 'important');</arg>
+<arg>el.style.setProperty('display', 'none', 'important');</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:59:06.340750" elapsed="0.329811"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:59:06.671299" level="INFO">Executing JavaScript:
+document.querySelectorAll('body &gt; *').forEach(el =&gt; {const s = getComputedStyle(el);if (s.position === 'fixed' &amp;&amp;parseInt(s.zIndex || '0') &gt; 100000) {el.remove();}});
+Without any arguments.</msg>
+<arg>document.querySelectorAll('body &gt; *').forEach(el =&gt; {</arg>
+<arg>const s = getComputedStyle(el);</arg>
+<arg>if (</arg>
+<arg>s.position === 'fixed' &amp;&amp;</arg>
+<arg>parseInt(s.zIndex || '0') &gt; 100000</arg>
+<arg>) {</arg>
+<arg>el.remove();</arg>
+<arg>}</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:59:06.670925" elapsed="0.305960"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:59:06.028448" elapsed="0.948758"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:59:06.977997" level="INFO">Opening url 'https://www.zengmerch.in/products'</msg>
+<arg>${BASE_URL}/products</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-26T03:59:06.977544" elapsed="0.412695"/>
+</kw>
+<kw name="Wait Until Location Contains" owner="SeleniumLibrary">
+<arg>/products</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="PASS" start="2026-09-26T03:59:07.390626" elapsed="0.333878"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:59:38.278914" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-09-26T03:59:38.279105" level="FAIL">Element 'id=search_product' not visible after 30 seconds.</msg>
+<arg>${SEARCH_BOX}</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-09-26T03:59:07.725110" elapsed="30.554851">Element 'id=search_product' not visible after 30 seconds.</status>
+</kw>
+<kw name="Remove Advertisement Overlays" owner="common">
+<status status="NOT RUN" start="2026-09-26T03:59:38.280257" elapsed="0.000038"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${SEARCH_BOX}</arg>
+<arg>${product_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T03:59:38.280391" elapsed="0.000017"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${SEARCH_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T03:59:38.280557" elapsed="0.000043"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SEARCHED_PRODUCTS}</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-09-26T03:59:38.280694" elapsed="0.000017"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${product_name}</arg>
+<arg>30 seconds</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-09-26T03:59:38.280780" elapsed="0.000015"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>${product_name}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-09-26T03:59:38.280857" elapsed="0.000015"/>
+</kw>
+<arg>Blue Top</arg>
+<status status="FAIL" start="2026-09-26T03:59:06.027999" elapsed="32.252965">Element 'id=search_product' not visible after 30 seconds.</status>
+</kw>
+<kw name="Search Product With Data" owner="common">
+<kw name="Remove Advertisement Overlays" owner="common">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:59:38.283618" level="INFO">Executing JavaScript:
+const selectors = ['iframe[id^="aswift"]','div[id^="aswift"]','ins.adsbygoogle','[id^="google_ads_iframe"]','[id*="google_ads_iframe"]','[data-google-vignette]','[class*="google-anno"]','[class*="ad-modal-overlay"]'];document.querySelectorAll(selectors.join(',')).forEach(el =&gt; {el.remove();});
+Without any arguments.</msg>
+<arg>const selectors = [</arg>
+<arg>'iframe[id^="aswift"]',</arg>
+<arg>'div[id^="aswift"]',</arg>
+<arg>'ins.adsbygoogle',</arg>
+<arg>'[id^="google_ads_iframe"]',</arg>
+<arg>'[id*="google_ads_iframe"]',</arg>
+<arg>'[data-google-vignette]',</arg>
+<arg>'[class*="google-anno"]',</arg>
+<arg>'[class*="ad-modal-overlay"]'</arg>
+<arg>];</arg>
+<arg>document.querySelectorAll(selectors.join(',')).forEach(el =&gt; {</arg>
+<arg>el.remove();</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:59:38.283416" elapsed="0.005068"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:59:38.288867" level="INFO">Executing JavaScript:
+document.querySelectorAll('[class*="google-anno"], [data-google-vignette], [id*="google_ads_iframe"]').forEach(el =&gt; {el.style.setProperty('pointer-events', 'none', 'important');el.style.setProperty('display', 'none', 'important');});
+Without any arguments.</msg>
+<arg>document.querySelectorAll('[class*="google-anno"], [data-google-vignette], [id*="google_ads_iframe"]').forEach(el =&gt; {</arg>
+<arg>el.style.setProperty('pointer-events', 'none', 'important');</arg>
+<arg>el.style.setProperty('display', 'none', 'important');</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:59:38.288627" elapsed="0.004487"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:59:38.293491" level="INFO">Executing JavaScript:
+document.querySelectorAll('body &gt; *').forEach(el =&gt; {const s = getComputedStyle(el);if (s.position === 'fixed' &amp;&amp;parseInt(s.zIndex || '0') &gt; 100000) {el.remove();}});
+Without any arguments.</msg>
+<arg>document.querySelectorAll('body &gt; *').forEach(el =&gt; {</arg>
+<arg>const s = getComputedStyle(el);</arg>
+<arg>if (</arg>
+<arg>s.position === 'fixed' &amp;&amp;</arg>
+<arg>parseInt(s.zIndex || '0') &gt; 100000</arg>
+<arg>) {</arg>
+<arg>el.remove();</arg>
+<arg>}</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T03:59:38.293289" elapsed="0.003747"/>
+</kw>
+<status status="PASS" start="2026-09-26T03:59:38.281374" elapsed="0.015754"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-09-26T03:59:38.297375" level="INFO">Opening url 'https://www.zengmerch.in/products'</msg>
+<arg>${BASE_URL}/products</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-26T03:59:38.297223" elapsed="0.099290"/>
+</kw>
+<kw name="Wait Until Location Contains" owner="SeleniumLibrary">
+<arg>/products</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="PASS" start="2026-09-26T03:59:38.396822" elapsed="0.003854"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:00:08.660855" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-09-26T04:00:08.661013" level="FAIL">Element 'id=search_product' not visible after 30 seconds.</msg>
+<arg>${SEARCH_BOX}</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-09-26T03:59:38.400932" elapsed="30.260964">Element 'id=search_product' not visible after 30 seconds.</status>
+</kw>
+<kw name="Remove Advertisement Overlays" owner="common">
+<status status="NOT RUN" start="2026-09-26T04:00:08.662164" elapsed="0.000035"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${SEARCH_BOX}</arg>
+<arg>${product_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:00:08.662287" elapsed="0.000017"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${SEARCH_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:00:08.662366" elapsed="0.000015"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SEARCHED_PRODUCTS}</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-09-26T04:00:08.662438" elapsed="0.000014"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${product_name}</arg>
+<arg>30 seconds</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-09-26T04:00:08.662508" elapsed="0.000014"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>${product_name}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:00:08.662578" elapsed="0.000015"/>
+</kw>
+<arg>Sleeveless Dress</arg>
+<status status="FAIL" start="2026-09-26T03:59:38.281129" elapsed="30.381545">Element 'id=search_product' not visible after 30 seconds.</status>
+</kw>
+<kw name="Cleanup Test" type="TEARDOWN">
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:00:08.754262" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-26T04:00:08.663486" elapsed="0.091042"/>
+</kw>
+<arg>'${TEST STATUS}' == 'FAIL'</arg>
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-09-26T04:00:08.663101" elapsed="0.091603"/>
+</kw>
+<kw name="Close Application" owner="common">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-09-26T04:00:08.755529" elapsed="2.751840"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:00:08.755042" elapsed="2.752518"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:00:08.662887" elapsed="2.844735"/>
+</kw>
+<status status="FAIL" start="2026-09-26T03:58:27.293951" elapsed="104.213726">Several failures occurred:
+
+1) Element 'id=search_product' not visible after 30 seconds.
+
+2) Element 'id=search_product' not visible after 30 seconds.
+
+3) Element 'id=search_product' not visible after 30 seconds.</status>
+</test>
+<test id="s1-s1-t7" name="TC07 - Invalid Login" line="49">
+<kw name="Open Application" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:00:11.509083" level="INFO">Opening browser 'chrome' to base url 'https://www.zengmerch.in'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-26T04:00:11.508844" elapsed="2.677044"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-26T04:00:14.186102" elapsed="0.052363"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>15 seconds</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2026-09-26T04:00:14.238835" elapsed="0.002392"/>
+</kw>
+<kw name="Delete All Cookies" owner="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" start="2026-09-26T04:00:14.241648" elapsed="0.029104"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:00:14.271129" level="INFO">Opening url 'https://www.zengmerch.in'</msg>
+<arg>${BASE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-26T04:00:14.270959" elapsed="0.412125"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${BASE_URL}/</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-09-26T04:00:14.683291" elapsed="0.003961"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:00:11.508527" elapsed="3.178941"/>
+</kw>
+<kw name="Login With Invalid Credentials" owner="advanced_ecommerce">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:00:14.688251" level="INFO">Clicking element 'xpath=//a[contains(.,'Signup / Login')]'.</msg>
+<msg time="2026-09-26T04:00:14.819965" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-09-26T04:00:14.820127" level="FAIL">Element with locator 'xpath=//a[contains(.,'Signup / Login')]' not found.</msg>
+<arg>${LOGIN_LINK}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-09-26T04:00:14.688034" elapsed="0.133009">Element with locator 'xpath=//a[contains(.,'Signup / Login')]' not found.</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${EMAIL_FIELD}</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-09-26T04:00:14.821279" elapsed="0.000034"/>
+</kw>
+<kw name="Remove Advertisement Overlays" owner="common">
+<status status="NOT RUN" start="2026-09-26T04:00:14.821452" elapsed="0.000023"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${EMAIL_FIELD}</arg>
+<arg>${INVALID_EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:00:14.821538" elapsed="0.000015"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${INVALID_PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:00:14.821611" elapsed="0.000014"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" start="2026-09-26T04:00:14.821684" elapsed="0.000014"/>
+</kw>
+<kw name="Remove Advertisement Overlays" owner="common">
+<status status="NOT RUN" start="2026-09-26T04:00:14.821776" elapsed="0.000018"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<var>${login_button}</var>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:00:14.821850" elapsed="0.000015"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>arguments[0].click();</arg>
+<arg>ARGUMENTS</arg>
+<arg>${login_button}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2026-09-26T04:00:14.821929" elapsed="0.000013"/>
+</kw>
+<status status="FAIL" start="2026-09-26T04:00:14.687762" elapsed="0.134266">Element with locator 'xpath=//a[contains(.,'Signup / Login')]' not found.</status>
+</kw>
+<kw name="Verify Invalid Login Message" owner="advanced_ecommerce">
+<status status="NOT RUN" start="2026-09-26T04:00:14.822115" elapsed="0.000017"/>
+</kw>
+<kw name="Cleanup Test" type="TEARDOWN">
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:00:15.103839" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-26T04:00:14.822828" elapsed="0.281258"/>
+</kw>
+<arg>'${TEST STATUS}' == 'FAIL'</arg>
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-09-26T04:00:14.822485" elapsed="0.281794"/>
+</kw>
+<kw name="Close Application" owner="common">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-09-26T04:00:15.105428" elapsed="2.538622"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:00:15.104766" elapsed="2.539476"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:00:14.822281" elapsed="2.822338"/>
+</kw>
+<status status="FAIL" start="2026-09-26T04:00:11.508076" elapsed="6.136635">Element with locator 'xpath=//a[contains(.,'Signup / Login')]' not found.</status>
+</test>
+<test id="s1-s1-t8" name="TC08 - Logout User" line="57">
+<kw name="Open Application" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:00:17.646659" level="INFO">Opening browser 'chrome' to base url 'https://www.zengmerch.in'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-26T04:00:17.646301" elapsed="3.239976"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-26T04:00:20.886488" elapsed="0.036601"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>15 seconds</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2026-09-26T04:00:20.923416" elapsed="0.004369"/>
+</kw>
+<kw name="Delete All Cookies" owner="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" start="2026-09-26T04:00:20.927986" elapsed="0.033955"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:00:20.962388" level="INFO">Opening url 'https://www.zengmerch.in'</msg>
+<arg>${BASE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-26T04:00:20.962212" elapsed="0.395089"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${BASE_URL}/</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-09-26T04:00:21.357523" elapsed="0.004730"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:00:17.645838" elapsed="3.716535"/>
+</kw>
+<kw name="Login To Application" owner="common">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:00:21.363210" level="INFO">Clicking element 'xpath=//a[contains(.,'Signup / Login')]'.</msg>
+<msg time="2026-09-26T04:00:21.490445" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-17.png"&gt;&lt;img src="selenium-screenshot-17.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-09-26T04:00:21.490631" level="FAIL">Element with locator 'xpath=//a[contains(.,'Signup / Login')]' not found.</msg>
+<arg>${LOGIN_LINK}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-09-26T04:00:21.362941" elapsed="0.128967">Element with locator 'xpath=//a[contains(.,'Signup / Login')]' not found.</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${EMAIL_FIELD}</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-09-26T04:00:21.492170" elapsed="0.000039"/>
+</kw>
+<kw name="Remove Advertisement Overlays" owner="common">
+<status status="NOT RUN" start="2026-09-26T04:00:21.492372" elapsed="0.000026"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${EMAIL_FIELD}</arg>
+<arg>${VALID_EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:00:21.492473" elapsed="0.000016"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${VALID_PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:00:21.492551" elapsed="0.000114"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" start="2026-09-26T04:00:21.493025" elapsed="0.000064"/>
+</kw>
+<kw name="Remove Advertisement Overlays" owner="common">
+<status status="NOT RUN" start="2026-09-26T04:00:21.493374" elapsed="0.000057"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<var>${login_button}</var>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:00:21.493603" elapsed="0.000044"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>arguments[0].click();</arg>
+<arg>ARGUMENTS</arg>
+<arg>${login_button}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2026-09-26T04:00:21.493818" elapsed="0.000037"/>
+</kw>
+<status status="FAIL" start="2026-09-26T04:00:21.362594" elapsed="0.131547">Element with locator 'xpath=//a[contains(.,'Signup / Login')]' not found.</status>
+</kw>
+<kw name="Verify User Is Logged In" owner="common">
+<status status="NOT RUN" start="2026-09-26T04:00:21.494594" elapsed="0.000052"/>
+</kw>
+<kw name="Logout User" owner="advanced_ecommerce">
+<status status="NOT RUN" start="2026-09-26T04:00:21.494841" elapsed="0.000040"/>
+</kw>
+<kw name="Verify Login Page After Logout" owner="advanced_ecommerce">
+<status status="NOT RUN" start="2026-09-26T04:00:21.495048" elapsed="0.000040"/>
+</kw>
+<kw name="Cleanup Test" type="TEARDOWN">
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:00:21.648892" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-18.png"&gt;&lt;img src="selenium-screenshot-18.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-26T04:00:21.496531" elapsed="0.152489"/>
+</kw>
+<arg>'${TEST STATUS}' == 'FAIL'</arg>
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-09-26T04:00:21.495840" elapsed="0.153260"/>
+</kw>
+<kw name="Close Application" owner="common">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-09-26T04:00:21.652915" elapsed="2.352243"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:00:21.649342" elapsed="2.356027"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:00:21.495406" elapsed="2.510066"/>
+</kw>
+<status status="FAIL" start="2026-09-26T04:00:17.645212" elapsed="6.360340">Element with locator 'xpath=//a[contains(.,'Signup / Login')]' not found.</status>
+</test>
+<test id="s1-s1-t9" name="TC09 - Verify Product Details Page" line="67">
+<kw name="Open Application" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:00:24.008601" level="INFO">Opening browser 'chrome' to base url 'https://www.zengmerch.in'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-26T04:00:24.008156" elapsed="4.153121"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-26T04:00:28.161589" elapsed="0.042565"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>15 seconds</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2026-09-26T04:00:28.204364" elapsed="0.001153"/>
+</kw>
+<kw name="Delete All Cookies" owner="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" start="2026-09-26T04:00:28.205683" elapsed="0.055865"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:00:28.262048" level="INFO">Opening url 'https://www.zengmerch.in'</msg>
+<arg>${BASE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-26T04:00:28.261837" elapsed="0.483396"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${BASE_URL}/</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-09-26T04:00:28.745443" elapsed="0.004802"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:00:24.007534" elapsed="4.742826"/>
+</kw>
+<kw name="Open First Product Details" owner="advanced_ecommerce">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:00:28.750961" level="INFO">Opening url 'https://www.zengmerch.in/products'</msg>
+<arg>${BASE_URL}/products</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-26T04:00:28.750845" elapsed="0.141489"/>
+</kw>
+<kw name="Wait Until Location Contains" owner="SeleniumLibrary">
+<arg>/products</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="PASS" start="2026-09-26T04:00:28.892690" elapsed="0.004190"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:00:59.897227" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-19.png"&gt;&lt;img src="selenium-screenshot-19.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-09-26T04:00:59.897396" level="FAIL">Element 'xpath=(//a[contains(@href,'/product_details/')])[1]' not visible after 30 seconds.</msg>
+<arg>${FIRST_VIEW_PRODUCT}</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-09-26T04:00:28.897065" elapsed="31.001438">Element 'xpath=(//a[contains(@href,'/product_details/')])[1]' not visible after 30 seconds.</status>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${FIRST_VIEW_PRODUCT}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" start="2026-09-26T04:00:59.898751" elapsed="0.000030"/>
+</kw>
+<kw name="Remove Advertisement Overlays" owner="common">
+<status status="NOT RUN" start="2026-09-26T04:00:59.898934" elapsed="0.000024"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<var>${product_link}</var>
+<arg>${FIRST_VIEW_PRODUCT}</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:00:59.899025" elapsed="0.000015"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>arguments[0].click();</arg>
+<arg>ARGUMENTS</arg>
+<arg>${product_link}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2026-09-26T04:00:59.899104" elapsed="0.000014"/>
+</kw>
+<kw name="Wait Until Location Contains" owner="SeleniumLibrary">
+<arg>/product_details/</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:00:59.899178" elapsed="0.000014"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Availability:</arg>
+<arg>30 seconds</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-09-26T04:00:59.899247" elapsed="0.000013"/>
+</kw>
+<status status="FAIL" start="2026-09-26T04:00:28.750619" elapsed="31.148744">Element 'xpath=(//a[contains(@href,'/product_details/')])[1]' not visible after 30 seconds.</status>
+</kw>
+<kw name="Verify Product Details" owner="advanced_ecommerce">
+<status status="NOT RUN" start="2026-09-26T04:00:59.899478" elapsed="0.000020"/>
+</kw>
+<kw name="Cleanup Test" type="TEARDOWN">
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:01:00.000890" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-20.png"&gt;&lt;img src="selenium-screenshot-20.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-26T04:00:59.900245" elapsed="0.100827"/>
+</kw>
+<arg>'${TEST STATUS}' == 'FAIL'</arg>
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-09-26T04:00:59.899885" elapsed="0.101357"/>
+</kw>
+<kw name="Close Application" owner="common">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-09-26T04:01:00.002094" elapsed="2.515102"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:01:00.001586" elapsed="2.515795"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:00:59.899662" elapsed="2.617813"/>
+</kw>
+<status status="FAIL" start="2026-09-26T04:00:24.006051" elapsed="38.511537">Element 'xpath=(//a[contains(@href,'/product_details/')])[1]' not visible after 30 seconds.</status>
+</test>
+<test id="s1-s1-t10" name="TC10 - Verify Home Page Subscription" line="75">
+<kw name="Open Application" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:01:02.519591" level="INFO">Opening browser 'chrome' to base url 'https://www.zengmerch.in'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-26T04:01:02.519204" elapsed="2.764967"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-26T04:01:05.284469" elapsed="0.037341"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>15 seconds</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2026-09-26T04:01:05.322012" elapsed="0.001148"/>
+</kw>
+<kw name="Delete All Cookies" owner="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" start="2026-09-26T04:01:05.323372" elapsed="0.027312"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:01:05.351058" level="INFO">Opening url 'https://www.zengmerch.in'</msg>
+<arg>${BASE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-26T04:01:05.350888" elapsed="0.700585"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${BASE_URL}/</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-09-26T04:01:06.051911" elapsed="0.013704"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:01:02.518709" elapsed="3.547123"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:01:06.066396" level="INFO">Opening url 'https://www.zengmerch.in'</msg>
+<arg>${BASE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-26T04:01:06.066100" elapsed="0.434003"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${BASE_URL}/</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-09-26T04:01:06.500435" elapsed="0.007185"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:01:06.508387" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight);
+Without any arguments.</msg>
+<arg>window.scrollTo(0, document.body.scrollHeight);</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T04:01:06.508015" elapsed="0.009693"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:01:36.844941" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-21.png"&gt;&lt;img src="selenium-screenshot-21.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-09-26T04:01:36.845222" level="FAIL">Element 'id=susbscribe_email' not visible after 30 seconds.</msg>
+<arg>id=susbscribe_email</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-09-26T04:01:06.518039" elapsed="30.328967">Element 'id=susbscribe_email' not visible after 30 seconds.</status>
+</kw>
+<kw name="Get Current Date" owner="DateTime">
+<var>${timestamp}</var>
+<arg>result_format=%Y%m%d%H%M%S</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="NOT RUN" start="2026-09-26T04:01:36.847414" elapsed="0.000078"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${email}</var>
+<arg>robot.subscription.${timestamp}@example.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2026-09-26T04:01:36.847695" elapsed="0.000049"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=susbscribe_email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:01:36.847922" elapsed="0.000042"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>id=subscribe</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:01:36.848128" elapsed="0.000039"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>You have been successfully subscribed!</arg>
+<arg>20 seconds</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-09-26T04:01:36.848320" elapsed="0.000043"/>
+</kw>
+<kw name="Cleanup Test" type="TEARDOWN">
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:01:36.964457" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-22.png"&gt;&lt;img src="selenium-screenshot-22.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-26T04:01:36.849868" elapsed="0.114699"/>
+</kw>
+<arg>'${TEST STATUS}' == 'FAIL'</arg>
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-09-26T04:01:36.849232" elapsed="0.115411"/>
+</kw>
+<kw name="Close Application" owner="common">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-09-26T04:01:36.965063" elapsed="2.620958"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:01:36.964822" elapsed="2.621328"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:01:36.848801" elapsed="2.737393"/>
+</kw>
+<status status="FAIL" start="2026-09-26T04:01:02.518027" elapsed="37.068204">Element 'id=susbscribe_email' not visible after 30 seconds.</status>
+</test>
+<test id="s1-s1-t11" name="TC11 - Add Multiple Products To Cart" line="98">
+<kw name="Open Application" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:01:39.587219" level="INFO">Opening browser 'chrome' to base url 'https://www.zengmerch.in'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-26T04:01:39.587037" elapsed="2.647135"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-26T04:01:42.234434" elapsed="0.041347"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>15 seconds</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2026-09-26T04:01:42.276094" elapsed="0.001467"/>
+</kw>
+<kw name="Delete All Cookies" owner="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" start="2026-09-26T04:01:42.277835" elapsed="0.022393"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:01:42.300742" level="INFO">Opening url 'https://www.zengmerch.in'</msg>
+<arg>${BASE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-26T04:01:42.300476" elapsed="0.385814"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${BASE_URL}/</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-09-26T04:01:42.686496" elapsed="0.003093"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:01:39.586809" elapsed="3.102896"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:01:42.690091" level="INFO">Opening url 'https://www.zengmerch.in/products'</msg>
+<arg>${BASE_URL}/products</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-26T04:01:42.689865" elapsed="0.195339"/>
+</kw>
+<kw name="Wait Until Location Contains" owner="SeleniumLibrary">
+<arg>/products</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="PASS" start="2026-09-26T04:01:42.885478" elapsed="0.003755"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:02:13.684349" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-23.png"&gt;&lt;img src="selenium-screenshot-23.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-09-26T04:02:13.684588" level="FAIL">Element 'css=a[data-product-id="2"].add-to-cart' not visible after 30 seconds.</msg>
+<arg>${ADD_TO_CART_BUTTON}</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-09-26T04:01:42.889509" elapsed="30.796703">Element 'css=a[data-product-id="2"].add-to-cart' not visible after 30 seconds.</status>
+</kw>
+<kw name="Add Product By Id" owner="advanced_ecommerce">
+<arg>1</arg>
+<status status="NOT RUN" start="2026-09-26T04:02:13.686675" elapsed="0.000073"/>
+</kw>
+<kw name="Continue Shopping From Modal" owner="advanced_ecommerce">
+<status status="NOT RUN" start="2026-09-26T04:02:13.686966" elapsed="0.000047"/>
+</kw>
+<kw name="Add Product By Id" owner="advanced_ecommerce">
+<arg>2</arg>
+<status status="NOT RUN" start="2026-09-26T04:02:13.687213" elapsed="0.000042"/>
+</kw>
+<kw name="Open Cart From Modal" owner="advanced_ecommerce">
+<status status="NOT RUN" start="2026-09-26T04:02:13.687446" elapsed="0.000040"/>
+</kw>
+<kw name="Verify Multiple Products In Cart" owner="advanced_ecommerce">
+<status status="NOT RUN" start="2026-09-26T04:02:13.687649" elapsed="0.000040"/>
+</kw>
+<kw name="Cleanup Test" type="TEARDOWN">
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:02:13.819150" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-24.png"&gt;&lt;img src="selenium-screenshot-24.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-26T04:02:13.689668" elapsed="0.129601"/>
+</kw>
+<arg>'${TEST STATUS}' == 'FAIL'</arg>
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-09-26T04:02:13.688462" elapsed="0.130895"/>
+</kw>
+<kw name="Close Application" owner="common">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-09-26T04:02:13.819813" elapsed="2.610246"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:02:13.819568" elapsed="2.610614"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:02:13.688015" elapsed="2.742211"/>
+</kw>
+<status status="FAIL" start="2026-09-26T04:01:39.586494" elapsed="36.843770">Element 'css=a[data-product-id="2"].add-to-cart' not visible after 30 seconds.</status>
+</test>
+<test id="s1-s1-t12" name="TC12 - Verify Product Quantity In Cart" line="115">
+<kw name="Open Application" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:02:16.431184" level="INFO">Opening browser 'chrome' to base url 'https://www.zengmerch.in'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-26T04:02:16.431018" elapsed="3.072369"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-26T04:02:19.503703" elapsed="0.037181"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>15 seconds</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2026-09-26T04:02:19.541088" elapsed="0.000953"/>
+</kw>
+<kw name="Delete All Cookies" owner="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" start="2026-09-26T04:02:19.542231" elapsed="0.022072"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:02:19.564678" level="INFO">Opening url 'https://www.zengmerch.in'</msg>
+<arg>${BASE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-26T04:02:19.564506" elapsed="0.363229"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${BASE_URL}/</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-09-26T04:02:19.927935" elapsed="0.004561"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:02:16.430812" elapsed="3.501796"/>
+</kw>
+<kw name="Add Product With Quantity" owner="advanced_ecommerce">
+<kw name="Open First Product Details" owner="advanced_ecommerce">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:02:19.933339" level="INFO">Opening url 'https://www.zengmerch.in/products'</msg>
+<arg>${BASE_URL}/products</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-26T04:02:19.933232" elapsed="0.183491"/>
+</kw>
+<kw name="Wait Until Location Contains" owner="SeleniumLibrary">
+<arg>/products</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="PASS" start="2026-09-26T04:02:20.117032" elapsed="0.004985"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:02:50.242499" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-25.png"&gt;&lt;img src="selenium-screenshot-25.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-09-26T04:02:50.242674" level="FAIL">Element 'xpath=(//a[contains(@href,'/product_details/')])[1]' not visible after 30 seconds.</msg>
+<arg>${FIRST_VIEW_PRODUCT}</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-09-26T04:02:20.122473" elapsed="30.121137">Element 'xpath=(//a[contains(@href,'/product_details/')])[1]' not visible after 30 seconds.</status>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${FIRST_VIEW_PRODUCT}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" start="2026-09-26T04:02:50.243836" elapsed="0.000035"/>
+</kw>
+<kw name="Remove Advertisement Overlays" owner="common">
+<status status="NOT RUN" start="2026-09-26T04:02:50.244017" elapsed="0.000029"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<var>${product_link}</var>
+<arg>${FIRST_VIEW_PRODUCT}</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:02:50.244121" elapsed="0.000018"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>arguments[0].click();</arg>
+<arg>ARGUMENTS</arg>
+<arg>${product_link}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2026-09-26T04:02:50.244215" elapsed="0.000017"/>
+</kw>
+<kw name="Wait Until Location Contains" owner="SeleniumLibrary">
+<arg>/product_details/</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:02:50.244299" elapsed="0.000016"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Availability:</arg>
+<arg>30 seconds</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-09-26T04:02:50.244378" elapsed="0.000015"/>
+</kw>
+<status status="FAIL" start="2026-09-26T04:02:19.933079" elapsed="30.311419">Element 'xpath=(//a[contains(@href,'/product_details/')])[1]' not visible after 30 seconds.</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${PRODUCT_QUANTITY_FIELD}</arg>
+<arg>15 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-09-26T04:02:50.244594" elapsed="0.000018"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${PRODUCT_QUANTITY_FIELD}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:02:50.244679" elapsed="0.000016"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${PRODUCT_QUANTITY_FIELD}</arg>
+<arg>${quantity}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:02:50.244756" elapsed="0.000014"/>
+</kw>
+<kw name="Remove Advertisement Overlays" owner="common">
+<status status="NOT RUN" start="2026-09-26T04:02:50.244861" elapsed="0.000019"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<var>${add_button}</var>
+<arg>xpath=//*[self::button or self::a][contains(normalize-space(.),'Add to cart')]</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:02:50.244938" elapsed="0.000016"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>arguments[0].scrollIntoView({block:'center'});</arg>
+<arg>ARGUMENTS</arg>
+<arg>${add_button}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2026-09-26T04:02:50.245017" elapsed="0.000016"/>
+</kw>
+<kw name="Remove Advertisement Overlays" owner="common">
+<status status="NOT RUN" start="2026-09-26T04:02:50.245111" elapsed="0.000016"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>arguments[0].click();</arg>
+<arg>ARGUMENTS</arg>
+<arg>${add_button}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2026-09-26T04:02:50.245179" elapsed="0.000015"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//*[contains(normalize-space(.),'Your product has been added to cart')]</arg>
+<arg>15 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-09-26T04:02:50.245253" elapsed="0.000014"/>
+</kw>
+<kw name="Open Cart From Modal" owner="advanced_ecommerce">
+<status status="NOT RUN" start="2026-09-26T04:02:50.249604" elapsed="0.000053"/>
+</kw>
+<arg>4</arg>
+<status status="FAIL" start="2026-09-26T04:02:19.932830" elapsed="30.316929">Element 'xpath=(//a[contains(@href,'/product_details/')])[1]' not visible after 30 seconds.</status>
+</kw>
+<kw name="Verify Cart Quantity" owner="advanced_ecommerce">
+<arg>4</arg>
+<status status="NOT RUN" start="2026-09-26T04:02:50.249888" elapsed="0.000023"/>
+</kw>
+<kw name="Cleanup Test" type="TEARDOWN">
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:02:50.334270" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-26.png"&gt;&lt;img src="selenium-screenshot-26.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-26T04:02:50.250701" elapsed="0.083763"/>
+</kw>
+<arg>'${TEST STATUS}' == 'FAIL'</arg>
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-09-26T04:02:50.250324" elapsed="0.084286"/>
+</kw>
+<kw name="Close Application" owner="common">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-09-26T04:02:50.335459" elapsed="2.585196"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:02:50.334945" elapsed="2.585894"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:02:50.250086" elapsed="2.670840"/>
+</kw>
+<status status="FAIL" start="2026-09-26T04:02:16.430508" elapsed="36.490484">Element 'xpath=(//a[contains(@href,'/product_details/')])[1]' not visible after 30 seconds.</status>
+</test>
+<test id="s1-s1-t13" name="TC13 - Remove Product From Cart" line="123">
+<kw name="Open Application" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:02:52.922647" level="INFO">Opening browser 'chrome' to base url 'https://www.zengmerch.in'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-26T04:02:52.922471" elapsed="3.554310"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-26T04:02:56.477131" elapsed="0.041920"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>15 seconds</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2026-09-26T04:02:56.519279" elapsed="0.000997"/>
+</kw>
+<kw name="Delete All Cookies" owner="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" start="2026-09-26T04:02:56.520407" elapsed="0.030296"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:02:56.551077" level="INFO">Opening url 'https://www.zengmerch.in'</msg>
+<arg>${BASE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-26T04:02:56.550902" elapsed="0.402768"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${BASE_URL}/</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-09-26T04:02:56.953890" elapsed="0.005566"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:02:52.922228" elapsed="4.037349"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:02:56.959919" level="INFO">Opening url 'https://www.zengmerch.in/products'</msg>
+<arg>${BASE_URL}/products</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-26T04:02:56.959744" elapsed="0.258901"/>
+</kw>
+<kw name="Wait Until Location Contains" owner="SeleniumLibrary">
+<arg>/products</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="PASS" start="2026-09-26T04:02:57.219001" elapsed="0.007318"/>
+</kw>
+<kw name="Add Product By Id" owner="advanced_ecommerce">
+<kw name="Remove Advertisement Overlays" owner="common">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:02:57.227904" level="INFO">Executing JavaScript:
+const selectors = ['iframe[id^="aswift"]','div[id^="aswift"]','ins.adsbygoogle','[id^="google_ads_iframe"]','[id*="google_ads_iframe"]','[data-google-vignette]','[class*="google-anno"]','[class*="ad-modal-overlay"]'];document.querySelectorAll(selectors.join(',')).forEach(el =&gt; {el.remove();});
+Without any arguments.</msg>
+<arg>const selectors = [</arg>
+<arg>'iframe[id^="aswift"]',</arg>
+<arg>'div[id^="aswift"]',</arg>
+<arg>'ins.adsbygoogle',</arg>
+<arg>'[id^="google_ads_iframe"]',</arg>
+<arg>'[id*="google_ads_iframe"]',</arg>
+<arg>'[data-google-vignette]',</arg>
+<arg>'[class*="google-anno"]',</arg>
+<arg>'[class*="ad-modal-overlay"]'</arg>
+<arg>];</arg>
+<arg>document.querySelectorAll(selectors.join(',')).forEach(el =&gt; {</arg>
+<arg>el.remove();</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T04:02:57.227683" elapsed="0.005916"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:02:57.233966" level="INFO">Executing JavaScript:
+document.querySelectorAll('[class*="google-anno"], [data-google-vignette], [id*="google_ads_iframe"]').forEach(el =&gt; {el.style.setProperty('pointer-events', 'none', 'important');el.style.setProperty('display', 'none', 'important');});
+Without any arguments.</msg>
+<arg>document.querySelectorAll('[class*="google-anno"], [data-google-vignette], [id*="google_ads_iframe"]').forEach(el =&gt; {</arg>
+<arg>el.style.setProperty('pointer-events', 'none', 'important');</arg>
+<arg>el.style.setProperty('display', 'none', 'important');</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T04:02:57.233786" elapsed="0.004107"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:02:57.238540" level="INFO">Executing JavaScript:
+document.querySelectorAll('body &gt; *').forEach(el =&gt; {const s = getComputedStyle(el);if (s.position === 'fixed' &amp;&amp;parseInt(s.zIndex || '0') &gt; 100000) {el.remove();}});
+Without any arguments.</msg>
+<arg>document.querySelectorAll('body &gt; *').forEach(el =&gt; {</arg>
+<arg>const s = getComputedStyle(el);</arg>
+<arg>if (</arg>
+<arg>s.position === 'fixed' &amp;&amp;</arg>
+<arg>parseInt(s.zIndex || '0') &gt; 100000</arg>
+<arg>) {</arg>
+<arg>el.remove();</arg>
+<arg>}</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T04:02:57.238213" elapsed="0.005616"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:02:57.227453" elapsed="0.016514"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:02:57.329907" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-27.png"&gt;&lt;img src="selenium-screenshot-27.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-09-26T04:02:57.330111" level="FAIL">Element with locator 'xpath=//a[@data-product-id='2' and contains(@class,'add-to-cart')]' not found.</msg>
+<var>${button}</var>
+<arg>xpath=//a[@data-product-id='${product_id}' and contains(@class,'add-to-cart')]</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="FAIL" start="2026-09-26T04:02:57.244112" elapsed="0.087657">Element with locator 'xpath=//a[@data-product-id='2' and contains(@class,'add-to-cart')]' not found.</status>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>arguments[0].scrollIntoView({block:'center'});</arg>
+<arg>ARGUMENTS</arg>
+<arg>${button}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2026-09-26T04:02:57.332067" elapsed="0.000049"/>
+</kw>
+<kw name="Remove Advertisement Overlays" owner="common">
+<status status="NOT RUN" start="2026-09-26T04:02:57.332317" elapsed="0.000038"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>arguments[0].click();</arg>
+<arg>ARGUMENTS</arg>
+<arg>${button}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2026-09-26T04:02:57.332450" elapsed="0.000025"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//*[contains(normalize-space(.),'Your product has been added to cart')]</arg>
+<arg>15 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-09-26T04:02:57.332575" elapsed="0.000023"/>
+</kw>
+<arg>2</arg>
+<status status="FAIL" start="2026-09-26T04:02:57.226944" elapsed="0.105769">Element with locator 'xpath=//a[@data-product-id='2' and contains(@class,'add-to-cart')]' not found.</status>
+</kw>
+<kw name="Open Cart From Modal" owner="advanced_ecommerce">
+<status status="NOT RUN" start="2026-09-26T04:02:57.332874" elapsed="0.000030"/>
+</kw>
+<kw name="Remove Men Tshirt From Cart" owner="advanced_ecommerce">
+<status status="NOT RUN" start="2026-09-26T04:02:57.333034" elapsed="0.000030"/>
+</kw>
+<kw name="Cleanup Test" type="TEARDOWN">
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:02:57.445743" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-28.png"&gt;&lt;img src="selenium-screenshot-28.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-26T04:02:57.334061" elapsed="0.111891"/>
+</kw>
+<arg>'${TEST STATUS}' == 'FAIL'</arg>
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-09-26T04:02:57.333593" elapsed="0.112505"/>
+</kw>
+<kw name="Close Application" owner="common">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-09-26T04:02:57.446942" elapsed="2.346151"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:02:57.446438" elapsed="2.346860"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:02:57.333300" elapsed="2.460088"/>
+</kw>
+<status status="FAIL" start="2026-09-26T04:02:52.921442" elapsed="6.872013">Element with locator 'xpath=//a[@data-product-id='2' and contains(@class,'add-to-cart')]' not found.</status>
+</test>
+<test id="s1-s1-t14" name="TC14 - Verify No Results For Invalid Product Search" line="136">
+<kw name="Open Application" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:02:59.795267" level="INFO">Opening browser 'chrome' to base url 'https://www.zengmerch.in'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-26T04:02:59.794907" elapsed="5.873008"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-26T04:03:05.668193" elapsed="0.045244"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>15 seconds</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2026-09-26T04:03:05.713650" elapsed="0.000823"/>
+</kw>
+<kw name="Delete All Cookies" owner="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" start="2026-09-26T04:03:05.714647" elapsed="0.022519"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:03:05.737542" level="INFO">Opening url 'https://www.zengmerch.in'</msg>
+<arg>${BASE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-26T04:03:05.737365" elapsed="0.381812"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${BASE_URL}/</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-09-26T04:03:06.119536" elapsed="0.006120"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:02:59.794452" elapsed="6.331325"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:03:06.126107" level="INFO">Opening url 'https://www.zengmerch.in/products'</msg>
+<arg>${BASE_URL}/products</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-26T04:03:06.125936" elapsed="0.132598"/>
+</kw>
+<kw name="Wait Until Location Contains" owner="SeleniumLibrary">
+<arg>/products</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="PASS" start="2026-09-26T04:03:06.258773" elapsed="0.003052"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:03:37.196094" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-29.png"&gt;&lt;img src="selenium-screenshot-29.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-09-26T04:03:37.196260" level="FAIL">Element 'id=search_product' not visible after 30 seconds.</msg>
+<arg>${SEARCH_BOX}</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-09-26T04:03:06.261980" elapsed="30.935057">Element 'id=search_product' not visible after 30 seconds.</status>
+</kw>
+<kw name="Remove Advertisement Overlays" owner="common">
+<status status="NOT RUN" start="2026-09-26T04:03:37.197309" elapsed="0.000037"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${SEARCH_BOX}</arg>
+<arg>RobotProductDoesNotExist999</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:03:37.197435" elapsed="0.000017"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${SEARCH_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:03:37.197515" elapsed="0.000015"/>
+</kw>
+<kw name="Wait Until Location Contains" owner="SeleniumLibrary">
+<arg>/products?search=</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:03:37.197586" elapsed="0.000014"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<var>${product_count}</var>
+<arg>css=div.product-image-wrapper</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:03:37.197658" elapsed="0.000013"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<arg>${product_count}</arg>
+<arg>0</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="NOT RUN" start="2026-09-26T04:03:37.197737" elapsed="0.000014"/>
+</kw>
+<kw name="Cleanup Test" type="TEARDOWN">
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:03:37.303724" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-30.png"&gt;&lt;img src="selenium-screenshot-30.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-26T04:03:37.198479" elapsed="0.105374"/>
+</kw>
+<arg>'${TEST STATUS}' == 'FAIL'</arg>
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-09-26T04:03:37.198113" elapsed="0.105820"/>
+</kw>
+<kw name="Close Application" owner="common">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-09-26T04:03:37.304424" elapsed="2.439904"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:03:37.304126" elapsed="2.440332"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:03:37.197924" elapsed="2.546576"/>
+</kw>
+<status status="FAIL" start="2026-09-26T04:02:59.793883" elapsed="39.950656">Element 'id=search_product' not visible after 30 seconds.</status>
+</test>
+<test id="s1-s1-t15" name="TC15 - Verify Cart Total Price Calculation" line="156">
+<kw name="Open Application" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:03:39.746361" level="INFO">Opening browser 'chrome' to base url 'https://www.zengmerch.in'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-26T04:03:39.746171" elapsed="2.831031"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-26T04:03:42.577560" elapsed="0.037784"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>15 seconds</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2026-09-26T04:03:42.615555" elapsed="0.000993"/>
+</kw>
+<kw name="Delete All Cookies" owner="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" start="2026-09-26T04:03:42.616715" elapsed="0.031581"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:03:42.648666" level="INFO">Opening url 'https://www.zengmerch.in'</msg>
+<arg>${BASE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-26T04:03:42.648497" elapsed="0.338824"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${BASE_URL}/</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-09-26T04:03:42.987608" elapsed="0.005607"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:03:39.745919" elapsed="3.247416"/>
+</kw>
+<kw name="Add Product With Quantity" owner="advanced_ecommerce">
+<kw name="Open First Product Details" owner="advanced_ecommerce">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:03:42.994094" level="INFO">Opening url 'https://www.zengmerch.in/products'</msg>
+<arg>${BASE_URL}/products</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-26T04:03:42.993984" elapsed="0.186195"/>
+</kw>
+<kw name="Wait Until Location Contains" owner="SeleniumLibrary">
+<arg>/products</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="PASS" start="2026-09-26T04:03:43.180391" elapsed="0.004908"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:04:13.318800" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-31.png"&gt;&lt;img src="selenium-screenshot-31.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-09-26T04:04:13.318979" level="FAIL">Element 'xpath=(//a[contains(@href,'/product_details/')])[1]' not visible after 30 seconds.</msg>
+<arg>${FIRST_VIEW_PRODUCT}</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-09-26T04:03:43.185499" elapsed="30.134404">Element 'xpath=(//a[contains(@href,'/product_details/')])[1]' not visible after 30 seconds.</status>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${FIRST_VIEW_PRODUCT}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" start="2026-09-26T04:04:13.320127" elapsed="0.000339"/>
+</kw>
+<kw name="Remove Advertisement Overlays" owner="common">
+<status status="NOT RUN" start="2026-09-26T04:04:13.320868" elapsed="0.000044"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<var>${product_link}</var>
+<arg>${FIRST_VIEW_PRODUCT}</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:04:13.321015" elapsed="0.000018"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>arguments[0].click();</arg>
+<arg>ARGUMENTS</arg>
+<arg>${product_link}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2026-09-26T04:04:13.321104" elapsed="0.000015"/>
+</kw>
+<kw name="Wait Until Location Contains" owner="SeleniumLibrary">
+<arg>/product_details/</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:04:13.321179" elapsed="0.000014"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Availability:</arg>
+<arg>30 seconds</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-09-26T04:04:13.321248" elapsed="0.000013"/>
+</kw>
+<status status="FAIL" start="2026-09-26T04:03:42.993827" elapsed="30.327539">Element 'xpath=(//a[contains(@href,'/product_details/')])[1]' not visible after 30 seconds.</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${PRODUCT_QUANTITY_FIELD}</arg>
+<arg>15 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-09-26T04:04:13.321433" elapsed="0.000015"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${PRODUCT_QUANTITY_FIELD}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:04:13.321503" elapsed="0.000014"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${PRODUCT_QUANTITY_FIELD}</arg>
+<arg>${quantity}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:04:13.324158" elapsed="0.000038"/>
+</kw>
+<kw name="Remove Advertisement Overlays" owner="common">
+<status status="NOT RUN" start="2026-09-26T04:04:13.324340" elapsed="0.000023"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<var>${add_button}</var>
+<arg>xpath=//*[self::button or self::a][contains(normalize-space(.),'Add to cart')]</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:04:13.324426" elapsed="0.000016"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>arguments[0].scrollIntoView({block:'center'});</arg>
+<arg>ARGUMENTS</arg>
+<arg>${add_button}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2026-09-26T04:04:13.324502" elapsed="0.000015"/>
+</kw>
+<kw name="Remove Advertisement Overlays" owner="common">
+<status status="NOT RUN" start="2026-09-26T04:04:13.324591" elapsed="0.000016"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>arguments[0].click();</arg>
+<arg>ARGUMENTS</arg>
+<arg>${add_button}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2026-09-26T04:04:13.324661" elapsed="0.000014"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//*[contains(normalize-space(.),'Your product has been added to cart')]</arg>
+<arg>15 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-09-26T04:04:13.324733" elapsed="0.000014"/>
+</kw>
+<kw name="Open Cart From Modal" owner="advanced_ecommerce">
+<status status="NOT RUN" start="2026-09-26T04:04:13.324823" elapsed="0.000015"/>
+</kw>
+<arg>2</arg>
+<status status="FAIL" start="2026-09-26T04:03:42.993563" elapsed="30.331353">Element 'xpath=(//a[contains(@href,'/product_details/')])[1]' not visible after 30 seconds.</status>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<arg>${BASE_URL}/view_cart</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:04:13.324987" elapsed="0.000015"/>
+</kw>
+<kw name="Wait Until Location Contains" owner="SeleniumLibrary">
+<arg>/view_cart</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:04:13.325057" elapsed="0.000014"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CART_PRODUCT_ROWS}</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-09-26T04:04:13.325126" elapsed="0.000013"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CART_UNIT_PRICE}</arg>
+<arg>15 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-09-26T04:04:13.325193" elapsed="0.000012"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CART_TOTAL_PRICE}</arg>
+<arg>15 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-09-26T04:04:13.325258" elapsed="0.000013"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${unit_text}</var>
+<arg>${CART_UNIT_PRICE}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:04:13.325323" elapsed="0.000013"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${total_text}</var>
+<arg>${CART_TOTAL_PRICE}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:04:13.325388" elapsed="0.000013"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<var>${unit_price}</var>
+<arg>int($unit_text.replace('Rs. ', '').replace(',', ''))</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2026-09-26T04:04:13.325463" elapsed="0.000027"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<var>${total_price}</var>
+<arg>int($total_text.replace('Rs. ', '').replace(',', ''))</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2026-09-26T04:04:13.325546" elapsed="0.000013"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<var>${expected_total}</var>
+<arg>${unit_price} * 2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2026-09-26T04:04:13.325610" elapsed="0.000013"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<arg>${total_price}</arg>
+<arg>${expected_total}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="NOT RUN" start="2026-09-26T04:04:13.325677" elapsed="0.000013"/>
+</kw>
+<kw name="Cleanup Test" type="TEARDOWN">
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:04:13.410164" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-32.png"&gt;&lt;img src="selenium-screenshot-32.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-26T04:04:13.326449" elapsed="0.083862"/>
+</kw>
+<arg>'${TEST STATUS}' == 'FAIL'</arg>
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-09-26T04:04:13.326059" elapsed="0.084335"/>
+</kw>
+<kw name="Close Application" owner="common">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-09-26T04:04:13.410836" elapsed="2.506578"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:04:13.410587" elapsed="2.506955"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:04:13.325861" elapsed="2.591723"/>
+</kw>
+<status status="FAIL" start="2026-09-26T04:03:39.745414" elapsed="36.172209">Element 'xpath=(//a[contains(@href,'/product_details/')])[1]' not visible after 30 seconds.</status>
+</test>
+<test id="s1-s1-t16" name="TC16 - Verify Cart Persistence After Login" line="179">
+<kw name="Open Application" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:04:15.918561" level="INFO">Opening browser 'chrome' to base url 'https://www.zengmerch.in'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-26T04:04:15.918383" elapsed="4.637373"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-26T04:04:20.556008" elapsed="0.039128"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>15 seconds</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2026-09-26T04:04:20.595395" elapsed="0.001134"/>
+</kw>
+<kw name="Delete All Cookies" owner="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" start="2026-09-26T04:04:20.596700" elapsed="0.028007"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:04:20.625203" level="INFO">Opening url 'https://www.zengmerch.in'</msg>
+<arg>${BASE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-26T04:04:20.624970" elapsed="0.381431"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${BASE_URL}/</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-09-26T04:04:21.006898" elapsed="0.006406"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:04:15.918184" elapsed="5.095231"/>
+</kw>
+<kw name="Search For Product" owner="common">
+<kw name="Remove Advertisement Overlays" owner="common">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:04:21.014192" level="INFO">Executing JavaScript:
+const selectors = ['iframe[id^="aswift"]','div[id^="aswift"]','ins.adsbygoogle','[id^="google_ads_iframe"]','[id*="google_ads_iframe"]','[data-google-vignette]','[class*="google-anno"]','[class*="ad-modal-overlay"]'];document.querySelectorAll(selectors.join(',')).forEach(el =&gt; {el.remove();});
+Without any arguments.</msg>
+<arg>const selectors = [</arg>
+<arg>'iframe[id^="aswift"]',</arg>
+<arg>'div[id^="aswift"]',</arg>
+<arg>'ins.adsbygoogle',</arg>
+<arg>'[id^="google_ads_iframe"]',</arg>
+<arg>'[id*="google_ads_iframe"]',</arg>
+<arg>'[data-google-vignette]',</arg>
+<arg>'[class*="google-anno"]',</arg>
+<arg>'[class*="ad-modal-overlay"]'</arg>
+<arg>];</arg>
+<arg>document.querySelectorAll(selectors.join(',')).forEach(el =&gt; {</arg>
+<arg>el.remove();</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T04:04:21.014012" elapsed="0.004783"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:04:21.019253" level="INFO">Executing JavaScript:
+document.querySelectorAll('[class*="google-anno"], [data-google-vignette], [id*="google_ads_iframe"]').forEach(el =&gt; {el.style.setProperty('pointer-events', 'none', 'important');el.style.setProperty('display', 'none', 'important');});
+Without any arguments.</msg>
+<arg>document.querySelectorAll('[class*="google-anno"], [data-google-vignette], [id*="google_ads_iframe"]').forEach(el =&gt; {</arg>
+<arg>el.style.setProperty('pointer-events', 'none', 'important');</arg>
+<arg>el.style.setProperty('display', 'none', 'important');</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T04:04:21.018999" elapsed="0.006246"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:04:21.025659" level="INFO">Executing JavaScript:
+document.querySelectorAll('body &gt; *').forEach(el =&gt; {const s = getComputedStyle(el);if (s.position === 'fixed' &amp;&amp;parseInt(s.zIndex || '0') &gt; 100000) {el.remove();}});
+Without any arguments.</msg>
+<arg>document.querySelectorAll('body &gt; *').forEach(el =&gt; {</arg>
+<arg>const s = getComputedStyle(el);</arg>
+<arg>if (</arg>
+<arg>s.position === 'fixed' &amp;&amp;</arg>
+<arg>parseInt(s.zIndex || '0') &gt; 100000</arg>
+<arg>) {</arg>
+<arg>el.remove();</arg>
+<arg>}</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T04:04:21.025453" elapsed="0.004445"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:04:21.013857" elapsed="0.016241"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:04:21.030522" level="INFO">Opening url 'https://www.zengmerch.in/products'</msg>
+<arg>${BASE_URL}/products</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-26T04:04:21.030320" elapsed="0.171242"/>
+</kw>
+<kw name="Wait Until Location Contains" owner="SeleniumLibrary">
+<arg>/products</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="PASS" start="2026-09-26T04:04:21.201896" elapsed="0.007825"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:05:07.841178" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-33.png"&gt;&lt;img src="selenium-screenshot-33.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-09-26T04:05:07.841468" level="FAIL">Element 'id=search_product' not visible after 45 seconds.</msg>
+<arg>${SEARCH_BOX}</arg>
+<arg>45 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-09-26T04:04:21.210010" elapsed="46.633826">Element 'id=search_product' not visible after 45 seconds.</status>
+</kw>
+<kw name="Remove Advertisement Overlays" owner="common">
+<status status="NOT RUN" start="2026-09-26T04:05:07.844432" elapsed="0.000090"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${SEARCH_BOX}</arg>
+<arg>${SEARCH_PRODUCT}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:05:07.844739" elapsed="0.000049"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${SEARCH_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:05:07.844980" elapsed="0.000044"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SEARCHED_PRODUCTS}</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-09-26T04:05:07.845200" elapsed="0.000045"/>
+</kw>
+<status status="FAIL" start="2026-09-26T04:04:21.013627" elapsed="46.831840">Element 'id=search_product' not visible after 45 seconds.</status>
+</kw>
+<kw name="Add Product To Cart" owner="common">
+<status status="NOT RUN" start="2026-09-26T04:05:07.845757" elapsed="0.000051"/>
+</kw>
+<kw name="Open Cart From Modal" owner="advanced_ecommerce">
+<status status="NOT RUN" start="2026-09-26T04:05:07.846019" elapsed="0.000041"/>
+</kw>
+<kw name="Wait Until Location Contains" owner="SeleniumLibrary">
+<arg>/view_cart</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:05:07.846200" elapsed="0.000037"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CART_PRODUCT}</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-09-26T04:05:07.846395" elapsed="0.000037"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${product_before_login}</var>
+<arg>${CART_PRODUCT}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:05:07.846575" elapsed="0.000041"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${product_before_login}</arg>
+<arg>Men Tshirt</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" start="2026-09-26T04:05:07.846763" elapsed="0.000035"/>
+</kw>
+<kw name="Remove Advertisement Overlays" owner="common">
+<status status="NOT RUN" start="2026-09-26T04:05:07.846970" elapsed="0.000037"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${LOGIN_LINK}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:05:07.847128" elapsed="0.000033"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${EMAIL_FIELD}</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-09-26T04:05:07.848097" elapsed="0.000159"/>
+</kw>
+<kw name="Remove Advertisement Overlays" owner="common">
+<status status="NOT RUN" start="2026-09-26T04:05:07.848673" elapsed="0.000060"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${EMAIL_FIELD}</arg>
+<arg>${VALID_EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:05:07.848953" elapsed="0.000051"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${VALID_PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:05:07.849639" elapsed="0.000316"/>
+</kw>
+<kw name="Remove Advertisement Overlays" owner="common">
+<status status="NOT RUN" start="2026-09-26T04:05:07.850343" elapsed="0.000057"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:05:07.850571" elapsed="0.000042"/>
+</kw>
+<kw name="xpath=//*[contains(text(),&quot;Logged in as&quot;)]">
+<arg>30 seconds</arg>
+<status status="NOT RUN" start="2026-09-26T04:05:07.850938" elapsed="0.000060"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<arg>${BASE_URL}/view_cart</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:05:07.851164" elapsed="0.000043"/>
+</kw>
+<kw name="Wait Until Location Contains" owner="SeleniumLibrary">
+<arg>/view_cart</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:05:07.851371" elapsed="0.000038"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CART_PRODUCT}</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-09-26T04:05:07.851561" elapsed="0.000037"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${product_after_login}</var>
+<arg>${CART_PRODUCT}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:05:07.851755" elapsed="0.000037"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${product_after_login}</arg>
+<arg>${product_before_login}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" start="2026-09-26T04:05:07.855708" elapsed="0.000354"/>
+</kw>
+<kw name="Cleanup Test" type="TEARDOWN">
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:05:08.444135" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-34.png"&gt;&lt;img src="selenium-screenshot-34.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-26T04:05:07.859826" elapsed="0.584493"/>
+</kw>
+<arg>'${TEST STATUS}' == 'FAIL'</arg>
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-09-26T04:05:07.858648" elapsed="0.585821"/>
+</kw>
+<kw name="Close Application" owner="common">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-09-26T04:05:08.445273" elapsed="7.754804"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:05:08.444790" elapsed="7.755497"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:05:07.857025" elapsed="8.343345"/>
+</kw>
+<status status="FAIL" start="2026-09-26T04:04:15.917884" elapsed="60.282556">Element 'id=search_product' not visible after 45 seconds.</status>
+</test>
+<test id="s1-s1-t17" name="TC17 - Add Product Review" line="219">
+<kw name="Open Application" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:05:16.202458" level="INFO">Opening browser 'chrome' to base url 'https://www.zengmerch.in'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-26T04:05:16.202078" elapsed="2.521549"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-26T04:05:18.723869" elapsed="0.035758"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>15 seconds</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2026-09-26T04:05:18.760040" elapsed="0.001283"/>
+</kw>
+<kw name="Delete All Cookies" owner="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" start="2026-09-26T04:05:18.761474" elapsed="0.047896"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:05:18.810290" level="INFO">Opening url 'https://www.zengmerch.in'</msg>
+<arg>${BASE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-26T04:05:18.809895" elapsed="0.381925"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${BASE_URL}/</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-09-26T04:05:19.192184" elapsed="0.005783"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:05:16.201616" elapsed="2.996493"/>
+</kw>
+<kw name="Remove Advertisement Overlays" owner="common">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:05:19.198765" level="INFO">Executing JavaScript:
+const selectors = ['iframe[id^="aswift"]','div[id^="aswift"]','ins.adsbygoogle','[id^="google_ads_iframe"]','[id*="google_ads_iframe"]','[data-google-vignette]','[class*="google-anno"]','[class*="ad-modal-overlay"]'];document.querySelectorAll(selectors.join(',')).forEach(el =&gt; {el.remove();});
+Without any arguments.</msg>
+<arg>const selectors = [</arg>
+<arg>'iframe[id^="aswift"]',</arg>
+<arg>'div[id^="aswift"]',</arg>
+<arg>'ins.adsbygoogle',</arg>
+<arg>'[id^="google_ads_iframe"]',</arg>
+<arg>'[id*="google_ads_iframe"]',</arg>
+<arg>'[data-google-vignette]',</arg>
+<arg>'[class*="google-anno"]',</arg>
+<arg>'[class*="ad-modal-overlay"]'</arg>
+<arg>];</arg>
+<arg>document.querySelectorAll(selectors.join(',')).forEach(el =&gt; {</arg>
+<arg>el.remove();</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T04:05:19.198566" elapsed="0.005866"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:05:19.204846" level="INFO">Executing JavaScript:
+document.querySelectorAll('[class*="google-anno"], [data-google-vignette], [id*="google_ads_iframe"]').forEach(el =&gt; {el.style.setProperty('pointer-events', 'none', 'important');el.style.setProperty('display', 'none', 'important');});
+Without any arguments.</msg>
+<arg>document.querySelectorAll('[class*="google-anno"], [data-google-vignette], [id*="google_ads_iframe"]').forEach(el =&gt; {</arg>
+<arg>el.style.setProperty('pointer-events', 'none', 'important');</arg>
+<arg>el.style.setProperty('display', 'none', 'important');</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T04:05:19.204659" elapsed="0.004296"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:05:19.209361" level="INFO">Executing JavaScript:
+document.querySelectorAll('body &gt; *').forEach(el =&gt; {const s = getComputedStyle(el);if (s.position === 'fixed' &amp;&amp;parseInt(s.zIndex || '0') &gt; 100000) {el.remove();}});
+Without any arguments.</msg>
+<arg>document.querySelectorAll('body &gt; *').forEach(el =&gt; {</arg>
+<arg>const s = getComputedStyle(el);</arg>
+<arg>if (</arg>
+<arg>s.position === 'fixed' &amp;&amp;</arg>
+<arg>parseInt(s.zIndex || '0') &gt; 100000</arg>
+<arg>) {</arg>
+<arg>el.remove();</arg>
+<arg>}</arg>
+<arg>});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-09-26T04:05:19.209160" elapsed="0.003570"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:05:19.198320" elapsed="0.014531"/>
+</kw>
+<kw name="Add Product Review" owner="advanced_ecommerce">
+<kw name="Open First Product Details" owner="advanced_ecommerce">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:05:19.213520" level="INFO">Opening url 'https://www.zengmerch.in/products'</msg>
+<arg>${BASE_URL}/products</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-26T04:05:19.213411" elapsed="0.402414"/>
+</kw>
+<kw name="Wait Until Location Contains" owner="SeleniumLibrary">
+<arg>/products</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="PASS" start="2026-09-26T04:05:19.618630" elapsed="0.077104"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:05:50.756913" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-35.png"&gt;&lt;img src="selenium-screenshot-35.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-09-26T04:05:50.757310" level="FAIL">Element 'xpath=(//a[contains(@href,'/product_details/')])[1]' not visible after 30 seconds.</msg>
+<arg>${FIRST_VIEW_PRODUCT}</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-09-26T04:05:19.696074" elapsed="31.064440">Element 'xpath=(//a[contains(@href,'/product_details/')])[1]' not visible after 30 seconds.</status>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${FIRST_VIEW_PRODUCT}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" start="2026-09-26T04:05:50.761028" elapsed="0.000103"/>
+</kw>
+<kw name="Remove Advertisement Overlays" owner="common">
+<status status="NOT RUN" start="2026-09-26T04:05:50.761594" elapsed="0.000096"/>
+</kw>
+<kw name="Get WebElement" owner="SeleniumLibrary">
+<var>${product_link}</var>
+<arg>${FIRST_VIEW_PRODUCT}</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:05:50.761945" elapsed="0.000057"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>arguments[0].click();</arg>
+<arg>ARGUMENTS</arg>
+<arg>${product_link}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2026-09-26T04:05:50.762235" elapsed="0.000081"/>
+</kw>
+<kw name="Wait Until Location Contains" owner="SeleniumLibrary">
+<arg>/product_details/</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:05:50.762552" elapsed="0.000051"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Availability:</arg>
+<arg>30 seconds</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-09-26T04:05:50.763052" elapsed="0.000100"/>
+</kw>
+<status status="FAIL" start="2026-09-26T04:05:19.213266" elapsed="31.550184">Element 'xpath=(//a[contains(@href,'/product_details/')])[1]' not visible after 30 seconds.</status>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Write Your Review</arg>
+<arg>15 seconds</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-09-26T04:05:50.763809" elapsed="0.000078"/>
+</kw>
+<kw name="Remove Advertisement Overlays" owner="common">
+<status status="NOT RUN" start="2026-09-26T04:05:50.764211" elapsed="0.000063"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${REVIEW_NAME_FIELD}</arg>
+<arg>Robot QA</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:05:50.764455" elapsed="0.000047"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${REVIEW_EMAIL_FIELD}</arg>
+<arg>robot.review@example.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:05:50.764718" elapsed="0.000049"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${REVIEW_TEXT_FIELD}</arg>
+<arg>Automated review submitted by the Robot Framework capstone test suite.</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-09-26T04:05:50.764945" elapsed="0.000043"/>
+</kw>
+<kw name="Remove Advertisement Overlays" owner="common">
+<status status="NOT RUN" start="2026-09-26T04:05:50.765231" elapsed="0.000053"/>
+</kw>
+<kw name="Click Review Button" owner="advanced_ecommerce">
+<status status="NOT RUN" start="2026-09-26T04:05:50.765559" elapsed="0.000061"/>
+</kw>
+<status status="FAIL" start="2026-09-26T04:05:19.213037" elapsed="31.552798">Element 'xpath=(//a[contains(@href,'/product_details/')])[1]' not visible after 30 seconds.</status>
+</kw>
+<kw name="Verify Product Review Submitted" owner="advanced_ecommerce">
+<status status="NOT RUN" start="2026-09-26T04:05:50.766103" elapsed="0.000053"/>
+</kw>
+<kw name="Remove Advertisement Overlays" owner="common">
+<status status="NOT RUN" start="2026-09-26T04:05:50.766360" elapsed="0.000049"/>
+</kw>
+<kw name="Cleanup Test" type="TEARDOWN">
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:05:50.878741" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-36.png"&gt;&lt;img src="selenium-screenshot-36.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-26T04:05:50.768620" elapsed="0.110314"/>
+</kw>
+<arg>'${TEST STATUS}' == 'FAIL'</arg>
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-09-26T04:05:50.767693" elapsed="0.111378"/>
+</kw>
+<kw name="Close Application" owner="common">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-09-26T04:05:50.882972" elapsed="2.421309"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:05:50.879383" elapsed="2.425111"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:05:50.767062" elapsed="2.537536"/>
+</kw>
+<status status="FAIL" start="2026-09-26T04:05:16.200925" elapsed="37.103737">Element 'xpath=(//a[contains(@href,'/product_details/')])[1]' not visible after 30 seconds.</status>
+</test>
+<test id="s1-s1-t18" name="TC18 - Add Recommended Product To Cart" line="228">
+<kw name="Open Application" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:05:53.306338" level="INFO">Opening browser 'chrome' to base url 'https://www.zengmerch.in'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-26T04:05:53.306053" elapsed="2.641402"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-26T04:05:55.947669" elapsed="0.039954"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>15 seconds</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2026-09-26T04:05:55.987839" elapsed="0.001171"/>
+</kw>
+<kw name="Delete All Cookies" owner="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" start="2026-09-26T04:05:55.989194" elapsed="0.022580"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:05:56.012139" level="INFO">Opening url 'https://www.zengmerch.in'</msg>
+<arg>${BASE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-26T04:05:56.011971" elapsed="0.347394"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>${BASE_URL}/</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2026-09-26T04:05:56.359580" elapsed="0.004614"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:05:53.305659" elapsed="3.058647"/>
+</kw>
+<kw name="Add Recommended Product To Cart" owner="advanced_ecommerce">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:05:56.364888" level="INFO">Opening url 'https://www.zengmerch.in'</msg>
+<arg>${BASE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-26T04:05:56.364776" elapsed="0.134374"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:06:26.707673" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-37.png"&gt;&lt;img src="selenium-screenshot-37.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-09-26T04:06:26.707917" level="FAIL">Element 'xpath=//*[contains(@class,'recommended_items')]' not visible after 30 seconds.</msg>
+<arg>${RECOMMENDED_SECTION}</arg>
+<arg>30 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-09-26T04:05:56.499445" elapsed="30.210835">Element 'xpath=//*[contains(@class,'recommended_items')]' not visible after 30 seconds.</status>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>window.scrollTo({top: document.body.scrollHeight, behavior: 'instant'});</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2026-09-26T04:06:26.710747" elapsed="0.000077"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-09-26T04:06:26.711032" elapsed="0.000055"/>
+</kw>
+<kw name="Remove Advertisement Overlays" owner="common">
+<status status="NOT RUN" start="2026-09-26T04:06:26.711408" elapsed="0.000062"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<var>${clicked}</var>
+<arg>const root = document.querySelector('.recommended_items');</arg>
+<arg>if (!root) return false;</arg>
+<arg>const buttons = [...root.querySelectorAll('a.add-to-cart')];</arg>
+<arg>const visible = buttons.find(el =&gt; {</arg>
+<arg>const r = el.getBoundingClientRect();</arg>
+<arg>const s = getComputedStyle(el);</arg>
+<arg>return r.width &gt; 0 &amp;&amp;</arg>
+<arg>r.height &gt; 0 &amp;&amp;</arg>
+<arg>s.display !== 'none' &amp;&amp;</arg>
+<arg>s.visibility !== 'hidden';</arg>
+<arg>});</arg>
+<arg>if (!visible) return false;</arg>
+<arg>visible.scrollIntoView({block:'center'});</arg>
+<arg>visible.click();</arg>
+<arg>return true;</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2026-09-26T04:06:26.711656" elapsed="0.000050"/>
+</kw>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${clicked}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="NOT RUN" start="2026-09-26T04:06:26.711960" elapsed="0.000047"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Your product has been added to cart</arg>
+<arg>15 seconds</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-09-26T04:06:26.712360" elapsed="0.000023"/>
+</kw>
+<kw name="Open Cart From Modal" owner="advanced_ecommerce">
+<status status="NOT RUN" start="2026-09-26T04:06:26.712482" elapsed="0.000018"/>
+</kw>
+<status status="FAIL" start="2026-09-26T04:05:56.364548" elapsed="30.348041">Element 'xpath=//*[contains(@class,'recommended_items')]' not visible after 30 seconds.</status>
+</kw>
+<kw name="Verify Recommended Product In Cart" owner="advanced_ecommerce">
+<status status="NOT RUN" start="2026-09-26T04:06:26.712681" elapsed="0.000017"/>
+</kw>
+<kw name="Cleanup Test" type="TEARDOWN">
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-26T04:06:26.942666" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-38.png"&gt;&lt;img src="selenium-screenshot-38.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-26T04:06:26.714780" elapsed="0.228083"/>
+</kw>
+<arg>'${TEST STATUS}' == 'FAIL'</arg>
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-09-26T04:06:26.713486" elapsed="0.229524"/>
+</kw>
+<kw name="Close Application" owner="common">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-09-26T04:06:26.943835" elapsed="2.568517"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:06:26.943350" elapsed="2.569159"/>
+</kw>
+<status status="PASS" start="2026-09-26T04:06:26.712974" elapsed="2.799583"/>
+</kw>
+<status status="FAIL" start="2026-09-26T04:05:53.305101" elapsed="36.207497">Element 'xpath=//*[contains(@class,'recommended_items')]' not visible after 30 seconds.</status>
+</test>
+<status status="FAIL" start="2026-09-26T03:57:44.334846" elapsed="525.178300"/>
+</suite>
+<status status="FAIL" start="2026-09-26T03:57:44.294230" elapsed="525.219364"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="18" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="0" fail="18" skip="0">Tests</stat>
+<stat name="Ecommerce Tests" id="s1-s1" pass="0" fail="18" skip="0">Tests.Ecommerce Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

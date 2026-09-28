@@ -202,7 +202,7 @@ TC16 - Verify Cart Persistence After Login
     Remove Advertisement Overlays
     Click Element    ${LOGIN_BUTTON}
 
-    Wait Until Element Is Visible    ${LOGGED_IN_TEXT}    30 seconds
+    xpath=//*[contains(text(),"Logged in as")]    30 seconds
 
     Go To    ${BASE_URL}/view_cart
     Wait Until Location Contains    /view_cart    30 seconds

@@ -1,0 +1,1679 @@
+[
+  {
+    "type": "log",
+    "message": "> target: https://www.thesouledstore.com/login?redirect=%2Fmen",
+    "at": "2026-09-25T22:38:06.519Z"
+  },
+  {
+    "type": "log",
+    "message": "> executing 18 tests",
+    "at": "2026-09-25T22:38:06.519Z"
+  },
+  {
+    "type": "log",
+    "message": "> python: python -m robot ...",
+    "at": "2026-09-25T22:38:06.519Z"
+  },
+  {
+    "type": "log",
+    "message": "> initializing Robot Framework...",
+    "at": "2026-09-25T22:38:06.519Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC01",
+    "status": "running",
+    "at": "2026-09-25T22:38:06.519Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC02",
+    "status": "running",
+    "at": "2026-09-25T22:38:06.519Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC03",
+    "status": "running",
+    "at": "2026-09-25T22:38:06.519Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC04",
+    "status": "running",
+    "at": "2026-09-25T22:38:06.519Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC05",
+    "status": "running",
+    "at": "2026-09-25T22:38:06.519Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC06",
+    "status": "running",
+    "at": "2026-09-25T22:38:06.519Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC07",
+    "status": "running",
+    "at": "2026-09-25T22:38:06.519Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC08",
+    "status": "running",
+    "at": "2026-09-25T22:38:06.519Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC09",
+    "status": "running",
+    "at": "2026-09-25T22:38:06.519Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC10",
+    "status": "running",
+    "at": "2026-09-25T22:38:06.519Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC11",
+    "status": "running",
+    "at": "2026-09-25T22:38:06.519Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC12",
+    "status": "running",
+    "at": "2026-09-25T22:38:06.519Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC13",
+    "status": "running",
+    "at": "2026-09-25T22:38:06.519Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC14",
+    "status": "running",
+    "at": "2026-09-25T22:38:06.519Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC15",
+    "status": "running",
+    "at": "2026-09-25T22:38:06.519Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC16",
+    "status": "running",
+    "at": "2026-09-25T22:38:06.519Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC17",
+    "status": "running",
+    "at": "2026-09-25T22:38:06.519Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC18",
+    "status": "running",
+    "at": "2026-09-25T22:38:06.519Z"
+  },
+  {
+    "type": "log",
+    "message": "==============================================================================",
+    "at": "2026-09-25T22:38:07.038Z"
+  },
+  {
+    "type": "log",
+    "message": "Tests",
+    "at": "2026-09-25T22:38:07.038Z"
+  },
+  {
+    "type": "log",
+    "message": "==============================================================================",
+    "at": "2026-09-25T22:38:07.038Z"
+  },
+  {
+    "type": "log",
+    "message": "Tests.Ecommerce Tests",
+    "at": "2026-09-25T22:38:07.377Z"
+  },
+  {
+    "type": "log",
+    "message": "==============================================================================",
+    "at": "2026-09-25T22:38:07.377Z"
+  },
+  {
+    "type": "log",
+    "message": "TC01 - Verify Login                                                   | FAIL |",
+    "at": "2026-09-25T22:38:32.810Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC01",
+    "status": "failed",
+    "at": "2026-09-25T22:38:32.810Z"
+  },
+  {
+    "type": "log",
+    "message": "Setup failed:",
+    "at": "2026-09-25T22:38:32.810Z"
+  },
+  {
+    "type": "log",
+    "message": "Location did not become 'https://www.thesouledstore.com/login?redirect=%2Fmen/' in 15 seconds.",
+    "at": "2026-09-25T22:38:32.810Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-25T22:38:32.810Z"
+  },
+  {
+    "type": "log",
+    "message": "TC02 - Verify Product Search                                          | FAIL |",
+    "at": "2026-09-25T22:38:59.431Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC02",
+    "status": "failed",
+    "at": "2026-09-25T22:38:59.432Z"
+  },
+  {
+    "type": "log",
+    "message": "Setup failed:",
+    "at": "2026-09-25T22:38:59.432Z"
+  },
+  {
+    "type": "log",
+    "message": "Location did not become 'https://www.thesouledstore.com/login?redirect=%2Fmen/' in 15 seconds.",
+    "at": "2026-09-25T22:38:59.432Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-25T22:38:59.432Z"
+  },
+  {
+    "type": "log",
+    "message": "[ WARN ] Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",
+    "at": "2026-09-25T22:39:16.218Z"
+  },
+  {
+    "type": "log",
+    "message": "Stacktrace:",
+    "at": "2026-09-25T22:39:16.218Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7adf71035+5a95]",
+    "at": "2026-09-25T22:39:16.218Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7ade92c70]",
+    "at": "2026-09-25T22:39:16.218Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adcb4876]",
+    "at": "2026-09-25T22:39:16.218Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add00e03]",
+    "at": "2026-09-25T22:39:16.218Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add392f2]",
+    "at": "2026-09-25T22:39:16.218Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add330c2]",
+    "at": "2026-09-25T22:39:16.218Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add32843]",
+    "at": "2026-09-25T22:39:16.218Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adc7cdcb]",
+    "at": "2026-09-25T22:39:16.218Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adc7d422]",
+    "at": "2026-09-25T22:39:16.218Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adc7da55]",
+    "at": "2026-09-25T22:39:16.218Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae391411+425e71]",
+    "at": "2026-09-25T22:39:16.218Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae3bca47+4514a7]",
+    "at": "2026-09-25T22:39:16.218Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae3b094e+4453ae]",
+    "at": "2026-09-25T22:39:16.218Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae06bf6e+1009ce]",
+    "at": "2026-09-25T22:39:16.218Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adea0a05]",
+    "at": "2026-09-25T22:39:16.218Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adc7c20a]",
+    "at": "2026-09-25T22:39:16.218Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae412f9f+4a79ff]",
+    "at": "2026-09-25T22:39:16.218Z"
+  },
+  {
+    "type": "log",
+    "message": "\tKERNEL32!BaseThreadInitThunk [0x7ff96bb5259d+1d]",
+    "at": "2026-09-25T22:39:16.218Z"
+  },
+  {
+    "type": "log",
+    "message": "\tntdll!RtlUserThreadStart [0x7ff96c96af78+28]",
+    "at": "2026-09-25T22:39:16.218Z"
+  },
+  {
+    "type": "log",
+    "message": "[ WARN ] Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",
+    "at": "2026-09-25T22:39:16.224Z"
+  },
+  {
+    "type": "log",
+    "message": "Stacktrace:",
+    "at": "2026-09-25T22:39:16.224Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7adf71035+5a95]",
+    "at": "2026-09-25T22:39:16.224Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7ade92c70]",
+    "at": "2026-09-25T22:39:16.224Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adcb4876]",
+    "at": "2026-09-25T22:39:16.224Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add00e03]",
+    "at": "2026-09-25T22:39:16.224Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add392f2]",
+    "at": "2026-09-25T22:39:16.224Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add330c2]",
+    "at": "2026-09-25T22:39:16.224Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add32843]",
+    "at": "2026-09-25T22:39:16.224Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adc7cdcb]",
+    "at": "2026-09-25T22:39:16.224Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adc7d422]",
+    "at": "2026-09-25T22:39:16.224Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adc7da55]",
+    "at": "2026-09-25T22:39:16.224Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae391411+425e71]",
+    "at": "2026-09-25T22:39:16.224Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae3bca47+4514a7]",
+    "at": "2026-09-25T22:39:16.224Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae3b094e+4453ae]",
+    "at": "2026-09-25T22:39:16.224Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae06bf6e+1009ce]",
+    "at": "2026-09-25T22:39:16.224Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adea0a05]",
+    "at": "2026-09-25T22:39:16.224Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adc7c20a]",
+    "at": "2026-09-25T22:39:16.224Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae412f9f+4a79ff]",
+    "at": "2026-09-25T22:39:16.224Z"
+  },
+  {
+    "type": "log",
+    "message": "\tKERNEL32!BaseThreadInitThunk [0x7ff96bb5259d+1d]",
+    "at": "2026-09-25T22:39:16.224Z"
+  },
+  {
+    "type": "log",
+    "message": "\tntdll!RtlUserThreadStart [0x7ff96c96af78+28]",
+    "at": "2026-09-25T22:39:16.224Z"
+  },
+  {
+    "type": "log",
+    "message": "TC03 - Verify Product Can Be Added To Cart                            | FAIL |",
+    "at": "2026-09-25T22:39:18.295Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC03",
+    "status": "failed",
+    "at": "2026-09-25T22:39:18.295Z"
+  },
+  {
+    "type": "log",
+    "message": "Setup failed:",
+    "at": "2026-09-25T22:39:18.295Z"
+  },
+  {
+    "type": "log",
+    "message": "InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection",
+    "at": "2026-09-25T22:39:18.295Z"
+  },
+  {
+    "type": "log",
+    "message": "from disconnected: not connected to DevTools",
+    "at": "2026-09-25T22:39:18.295Z"
+  },
+  {
+    "type": "log",
+    "message": "  (Session info: chrome=153.0.8010.53); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",
+    "at": "2026-09-25T22:39:18.295Z"
+  },
+  {
+    "type": "log",
+    "message": "Stacktrace:",
+    "at": "2026-09-25T22:39:18.295Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7adf71035+5a95]",
+    "at": "2026-09-25T22:39:18.295Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7ade92c70]",
+    "at": "2026-09-25T22:39:18.295Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adcb4a7d]",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adca0422]",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adcc6116]",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add40d50]",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add5f4bd]",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add01d02]",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add02b13]",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae391411+425e71]",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae3bca47+4514a7]",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae3b094e+4453ae]",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae06bf6e+1009ce]",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adea0a05]",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7ade9bcf4]",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7ade9be84]",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7ade866ac]",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "\tKERNEL32!BaseThreadInitThunk [0x7ff96bb5259d+1d]",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "\tntdll!RtlUserThreadStart [0x7ff96c96af78+28]",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "Also teardown failed:",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "Stacktrace:",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7adf71035+5a95]",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7ade92c70]",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adcb4876]",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add00e03]",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add392f2]",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add330c2]",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add32843]",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adc7cdcb]",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adc7d422]",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adc7da55]",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae391411+425e71]",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae3bca47+4514a7]",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae3b094e+4453ae]",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae06bf6e+1009ce]",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adea0a05]",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adc7c20a]",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae412f9f+4a79ff]",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "\tKERNEL32!BaseThreadInitThunk [0x7ff96bb5259d+1d]",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "\tntdll!RtlUserThreadStart [0x7ff96c96af78+28]",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-25T22:39:18.296Z"
+  },
+  {
+    "type": "log",
+    "message": "[ WARN ] Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",
+    "at": "2026-09-25T22:39:39.246Z"
+  },
+  {
+    "type": "log",
+    "message": "Stacktrace:",
+    "at": "2026-09-25T22:39:39.246Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7adf71035+5a95]",
+    "at": "2026-09-25T22:39:39.246Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7ade92c70]",
+    "at": "2026-09-25T22:39:39.246Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adcb4876]",
+    "at": "2026-09-25T22:39:39.246Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add00e03]",
+    "at": "2026-09-25T22:39:39.246Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add392f2]",
+    "at": "2026-09-25T22:39:39.246Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add330c2]",
+    "at": "2026-09-25T22:39:39.246Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add32843]",
+    "at": "2026-09-25T22:39:39.246Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adc7cdcb]",
+    "at": "2026-09-25T22:39:39.246Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adc7d422]",
+    "at": "2026-09-25T22:39:39.246Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adc7da55]",
+    "at": "2026-09-25T22:39:39.246Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae391411+425e71]",
+    "at": "2026-09-25T22:39:39.246Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae3bca47+4514a7]",
+    "at": "2026-09-25T22:39:39.246Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae3b094e+4453ae]",
+    "at": "2026-09-25T22:39:39.246Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae06bf6e+1009ce]",
+    "at": "2026-09-25T22:39:39.246Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adea0a05]",
+    "at": "2026-09-25T22:39:39.246Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adc7c20a]",
+    "at": "2026-09-25T22:39:39.246Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae412f9f+4a79ff]",
+    "at": "2026-09-25T22:39:39.246Z"
+  },
+  {
+    "type": "log",
+    "message": "\tKERNEL32!BaseThreadInitThunk [0x7ff96bb5259d+1d]",
+    "at": "2026-09-25T22:39:39.246Z"
+  },
+  {
+    "type": "log",
+    "message": "\tntdll!RtlUserThreadStart [0x7ff96c96af78+28]",
+    "at": "2026-09-25T22:39:39.246Z"
+  },
+  {
+    "type": "log",
+    "message": "[ WARN ] Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",
+    "at": "2026-09-25T22:39:39.251Z"
+  },
+  {
+    "type": "log",
+    "message": "Stacktrace:",
+    "at": "2026-09-25T22:39:39.251Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7adf71035+5a95]",
+    "at": "2026-09-25T22:39:39.251Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7ade92c70]",
+    "at": "2026-09-25T22:39:39.251Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adcb4876]",
+    "at": "2026-09-25T22:39:39.251Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add00e03]",
+    "at": "2026-09-25T22:39:39.251Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add392f2]",
+    "at": "2026-09-25T22:39:39.251Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add330c2]",
+    "at": "2026-09-25T22:39:39.251Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add32843]",
+    "at": "2026-09-25T22:39:39.251Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adc7cdcb]",
+    "at": "2026-09-25T22:39:39.251Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adc7d422]",
+    "at": "2026-09-25T22:39:39.251Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adc7da55]",
+    "at": "2026-09-25T22:39:39.251Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae391411+425e71]",
+    "at": "2026-09-25T22:39:39.251Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae3bca47+4514a7]",
+    "at": "2026-09-25T22:39:39.251Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae3b094e+4453ae]",
+    "at": "2026-09-25T22:39:39.251Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae06bf6e+1009ce]",
+    "at": "2026-09-25T22:39:39.251Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adea0a05]",
+    "at": "2026-09-25T22:39:39.251Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adc7c20a]",
+    "at": "2026-09-25T22:39:39.251Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae412f9f+4a79ff]",
+    "at": "2026-09-25T22:39:39.251Z"
+  },
+  {
+    "type": "log",
+    "message": "\tKERNEL32!BaseThreadInitThunk [0x7ff96bb5259d+1d]",
+    "at": "2026-09-25T22:39:39.251Z"
+  },
+  {
+    "type": "log",
+    "message": "\tntdll!RtlUserThreadStart [0x7ff96c96af78+28]",
+    "at": "2026-09-25T22:39:39.251Z"
+  },
+  {
+    "type": "log",
+    "message": "TC04 - Complete E-Commerce User Journey                               | FAIL |",
+    "at": "2026-09-25T22:39:41.292Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC04",
+    "status": "failed",
+    "at": "2026-09-25T22:39:41.292Z"
+  },
+  {
+    "type": "log",
+    "message": "Setup failed:",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "from disconnected: not connected to DevTools",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "  (Session info: chrome=153.0.8010.53); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "Stacktrace:",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7adf71035+5a95]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7ade92c70]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adcb4a7d]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adca0422]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adcc6116]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add40d50]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add5f4bd]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add01d02]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add02b13]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae391411+425e71]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae3bca47+4514a7]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae3b094e+4453ae]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae06bf6e+1009ce]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adea0a05]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7ade9bcf4]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7ade9be84]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7ade866ac]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tKERNEL32!BaseThreadInitThunk [0x7ff96bb5259d+1d]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tntdll!RtlUserThreadStart [0x7ff96c96af78+28]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "Also teardown failed:",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "Stacktrace:",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7adf71035+5a95]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7ade92c70]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adcb4876]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add00e03]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add392f2]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add330c2]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add32843]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adc7cdcb]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adc7d422]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adc7da55]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae391411+425e71]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae3bca47+4514a7]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae3b094e+4453ae]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae06bf6e+1009ce]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adea0a05]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adc7c20a]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae412f9f+4a79ff]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tKERNEL32!BaseThreadInitThunk [0x7ff96bb5259d+1d]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "\tntdll!RtlUserThreadStart [0x7ff96c96af78+28]",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-25T22:39:41.293Z"
+  },
+  {
+    "type": "log",
+    "message": "TC05 - Register New User                                              | FAIL |",
+    "at": "2026-09-25T22:40:06.078Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC05",
+    "status": "failed",
+    "at": "2026-09-25T22:40:06.078Z"
+  },
+  {
+    "type": "log",
+    "message": "Setup failed:",
+    "at": "2026-09-25T22:40:06.078Z"
+  },
+  {
+    "type": "log",
+    "message": "Location did not become 'https://www.thesouledstore.com/login?redirect=%2Fmen/' in 15 seconds.",
+    "at": "2026-09-25T22:40:06.078Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-25T22:40:06.078Z"
+  },
+  {
+    "type": "log",
+    "message": "TC06 - Data Driven Product Search                                     | FAIL |",
+    "at": "2026-09-25T22:40:33.412Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC06",
+    "status": "failed",
+    "at": "2026-09-25T22:40:33.412Z"
+  },
+  {
+    "type": "log",
+    "message": "Setup failed:",
+    "at": "2026-09-25T22:40:33.412Z"
+  },
+  {
+    "type": "log",
+    "message": "Location did not become 'https://www.thesouledstore.com/login?redirect=%2Fmen/' in 15 seconds.",
+    "at": "2026-09-25T22:40:33.412Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-25T22:40:33.412Z"
+  },
+  {
+    "type": "log",
+    "message": "[ WARN ] Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",
+    "at": "2026-09-25T22:40:48.298Z"
+  },
+  {
+    "type": "log",
+    "message": "Stacktrace:",
+    "at": "2026-09-25T22:40:48.298Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7adf71035+5a95]",
+    "at": "2026-09-25T22:40:48.298Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7ade92c70]",
+    "at": "2026-09-25T22:40:48.298Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adcb4876]",
+    "at": "2026-09-25T22:40:48.298Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add00e03]",
+    "at": "2026-09-25T22:40:48.298Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add392f2]",
+    "at": "2026-09-25T22:40:48.298Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add330c2]",
+    "at": "2026-09-25T22:40:48.298Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add32843]",
+    "at": "2026-09-25T22:40:48.298Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adc7cdcb]",
+    "at": "2026-09-25T22:40:48.298Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adc7d422]",
+    "at": "2026-09-25T22:40:48.298Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adc7da55]",
+    "at": "2026-09-25T22:40:48.298Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae391411+425e71]",
+    "at": "2026-09-25T22:40:48.298Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae3bca47+4514a7]",
+    "at": "2026-09-25T22:40:48.298Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae3b094e+4453ae]",
+    "at": "2026-09-25T22:40:48.298Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae06bf6e+1009ce]",
+    "at": "2026-09-25T22:40:48.298Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adea0a05]",
+    "at": "2026-09-25T22:40:48.298Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adc7c20a]",
+    "at": "2026-09-25T22:40:48.298Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae412f9f+4a79ff]",
+    "at": "2026-09-25T22:40:48.298Z"
+  },
+  {
+    "type": "log",
+    "message": "\tKERNEL32!BaseThreadInitThunk [0x7ff96bb5259d+1d]",
+    "at": "2026-09-25T22:40:48.298Z"
+  },
+  {
+    "type": "log",
+    "message": "\tntdll!RtlUserThreadStart [0x7ff96c96af78+28]",
+    "at": "2026-09-25T22:40:48.298Z"
+  },
+  {
+    "type": "log",
+    "message": "[ WARN ] Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",
+    "at": "2026-09-25T22:40:48.307Z"
+  },
+  {
+    "type": "log",
+    "message": "Stacktrace:",
+    "at": "2026-09-25T22:40:48.307Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7adf71035+5a95]",
+    "at": "2026-09-25T22:40:48.307Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7ade92c70]",
+    "at": "2026-09-25T22:40:48.307Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adcb4876]",
+    "at": "2026-09-25T22:40:48.307Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add00e03]",
+    "at": "2026-09-25T22:40:48.307Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add392f2]",
+    "at": "2026-09-25T22:40:48.307Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add330c2]",
+    "at": "2026-09-25T22:40:48.307Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add32843]",
+    "at": "2026-09-25T22:40:48.307Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adc7cdcb]",
+    "at": "2026-09-25T22:40:48.307Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adc7d422]",
+    "at": "2026-09-25T22:40:48.307Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adc7da55]",
+    "at": "2026-09-25T22:40:48.307Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae391411+425e71]",
+    "at": "2026-09-25T22:40:48.307Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae3bca47+4514a7]",
+    "at": "2026-09-25T22:40:48.307Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae3b094e+4453ae]",
+    "at": "2026-09-25T22:40:48.307Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae06bf6e+1009ce]",
+    "at": "2026-09-25T22:40:48.307Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adea0a05]",
+    "at": "2026-09-25T22:40:48.307Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adc7c20a]",
+    "at": "2026-09-25T22:40:48.307Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae412f9f+4a79ff]",
+    "at": "2026-09-25T22:40:48.307Z"
+  },
+  {
+    "type": "log",
+    "message": "\tKERNEL32!BaseThreadInitThunk [0x7ff96bb5259d+1d]",
+    "at": "2026-09-25T22:40:48.307Z"
+  },
+  {
+    "type": "log",
+    "message": "\tntdll!RtlUserThreadStart [0x7ff96c96af78+28]",
+    "at": "2026-09-25T22:40:48.307Z"
+  },
+  {
+    "type": "log",
+    "message": "TC07 - Invalid Login                                                  | FAIL |",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC07",
+    "status": "failed",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "log",
+    "message": "Setup failed:",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "log",
+    "message": "InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "log",
+    "message": "from disconnected: not connected to DevTools",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "log",
+    "message": "  (Session info: chrome=153.0.8010.53); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "log",
+    "message": "Stacktrace:",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7adf71035+5a95]",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7ade92c70]",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adcb4a7d]",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adca0422]",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adcc6116]",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add40d50]",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add5f4bd]",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add01d02]",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add02b13]",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae391411+425e71]",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae3bca47+4514a7]",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae3b094e+4453ae]",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae06bf6e+1009ce]",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adea0a05]",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7ade9bcf4]",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7ade9be84]",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7ade866ac]",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "log",
+    "message": "\tKERNEL32!BaseThreadInitThunk [0x7ff96bb5259d+1d]",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "log",
+    "message": "\tntdll!RtlUserThreadStart [0x7ff96c96af78+28]",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "log",
+    "message": "Also teardown failed:",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "log",
+    "message": "InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "log",
+    "message": "Stacktrace:",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7adf71035+5a95]",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7ade92c70]",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adcb4876]",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add00e03]",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add392f2]",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add330c2]",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add32843]",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adc7cdcb]",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adc7d422]",
+    "at": "2026-09-25T22:40:50.373Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adc7da55]",
+    "at": "2026-09-25T22:40:50.374Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae391411+425e71]",
+    "at": "2026-09-25T22:40:50.374Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae3bca47+4514a7]",
+    "at": "2026-09-25T22:40:50.374Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae3b094e+4453ae]",
+    "at": "2026-09-25T22:40:50.374Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae06bf6e+1009ce]",
+    "at": "2026-09-25T22:40:50.374Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adea0a05]",
+    "at": "2026-09-25T22:40:50.374Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adc7c20a]",
+    "at": "2026-09-25T22:40:50.374Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae412f9f+4a79ff]",
+    "at": "2026-09-25T22:40:50.374Z"
+  },
+  {
+    "type": "log",
+    "message": "\tKERNEL32!BaseThreadInitThunk [0x7ff96bb5259d+1d]",
+    "at": "2026-09-25T22:40:50.374Z"
+  },
+  {
+    "type": "log",
+    "message": "\tntdll!RtlUserThreadStart [0x7ff96c96af78+28]",
+    "at": "2026-09-25T22:40:50.374Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-25T22:40:50.374Z"
+  },
+  {
+    "type": "log",
+    "message": "TC08 - Logout User                                                    | FAIL |",
+    "at": "2026-09-25T22:41:16.358Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC08",
+    "status": "failed",
+    "at": "2026-09-25T22:41:16.358Z"
+  },
+  {
+    "type": "log",
+    "message": "Setup failed:",
+    "at": "2026-09-25T22:41:16.358Z"
+  },
+  {
+    "type": "log",
+    "message": "Location did not become 'https://www.thesouledstore.com/login?redirect=%2Fmen/' in 15 seconds.",
+    "at": "2026-09-25T22:41:16.358Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-25T22:41:16.358Z"
+  },
+  {
+    "type": "log",
+    "message": "TC09 - Verify Product Details Page                                    | FAIL |",
+    "at": "2026-09-25T22:41:45.099Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC09",
+    "status": "failed",
+    "at": "2026-09-25T22:41:45.099Z"
+  },
+  {
+    "type": "log",
+    "message": "Setup failed:",
+    "at": "2026-09-25T22:41:45.099Z"
+  },
+  {
+    "type": "log",
+    "message": "Location did not become 'https://www.thesouledstore.com/login?redirect=%2Fmen/' in 15 seconds.",
+    "at": "2026-09-25T22:41:45.099Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-25T22:41:45.099Z"
+  }
+]

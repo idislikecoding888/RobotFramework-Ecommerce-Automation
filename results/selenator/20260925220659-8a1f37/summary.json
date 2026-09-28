@@ -1,0 +1,23 @@
+{
+  "runId": "20260925220659-8a1f37",
+  "status": "passed",
+  "targetUrl": "https://automationexercise.com",
+  "browser": "chrome",
+  "total": 1,
+  "passed": 1,
+  "failed": 0,
+  "skipped": 0,
+  "passRate": 100,
+  "durationMs": 52529,
+  "duration": "53s",
+  "startedAt": "2026-09-25T22:07:00.574Z",
+  "finishedAt": "2026-09-25T22:07:53.103Z",
+  "suiteName": "Tests",
+  "generator": "Robot Framework",
+  "testFile": "tests\\ecommerce_tests.robot",
+  "source": "robot",
+  "selectedTestIds": [
+    "TC05"
+  ],
+  "exitCode": 0
+}

@@ -1,0 +1,603 @@
+[
+  {
+    "type": "log",
+    "message": "> target: https://automationexercise.com",
+    "at": "2026-09-25T21:20:47.222Z"
+  },
+  {
+    "type": "log",
+    "message": "> executing 18 tests",
+    "at": "2026-09-25T21:20:47.223Z"
+  },
+  {
+    "type": "log",
+    "message": "> python: python -m robot ...",
+    "at": "2026-09-25T21:20:47.223Z"
+  },
+  {
+    "type": "log",
+    "message": "> initializing Robot Framework...",
+    "at": "2026-09-25T21:20:47.223Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC01",
+    "status": "running",
+    "at": "2026-09-25T21:20:47.223Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC02",
+    "status": "running",
+    "at": "2026-09-25T21:20:47.223Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC03",
+    "status": "running",
+    "at": "2026-09-25T21:20:47.223Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC04",
+    "status": "running",
+    "at": "2026-09-25T21:20:47.223Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC05",
+    "status": "running",
+    "at": "2026-09-25T21:20:47.223Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC06",
+    "status": "running",
+    "at": "2026-09-25T21:20:47.223Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC07",
+    "status": "running",
+    "at": "2026-09-25T21:20:47.223Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC08",
+    "status": "running",
+    "at": "2026-09-25T21:20:47.223Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC09",
+    "status": "running",
+    "at": "2026-09-25T21:20:47.223Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC10",
+    "status": "running",
+    "at": "2026-09-25T21:20:47.223Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC11",
+    "status": "running",
+    "at": "2026-09-25T21:20:47.223Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC12",
+    "status": "running",
+    "at": "2026-09-25T21:20:47.223Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC13",
+    "status": "running",
+    "at": "2026-09-25T21:20:47.223Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC14",
+    "status": "running",
+    "at": "2026-09-25T21:20:47.223Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC15",
+    "status": "running",
+    "at": "2026-09-25T21:20:47.223Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC16",
+    "status": "running",
+    "at": "2026-09-25T21:20:47.223Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC17",
+    "status": "running",
+    "at": "2026-09-25T21:20:47.223Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC18",
+    "status": "running",
+    "at": "2026-09-25T21:20:47.223Z"
+  },
+  {
+    "type": "log",
+    "message": "==============================================================================",
+    "at": "2026-09-25T21:20:47.945Z"
+  },
+  {
+    "type": "log",
+    "message": "Tests",
+    "at": "2026-09-25T21:20:47.945Z"
+  },
+  {
+    "type": "log",
+    "message": "==============================================================================",
+    "at": "2026-09-25T21:20:47.945Z"
+  },
+  {
+    "type": "log",
+    "message": "Tests.Ecommerce Tests",
+    "at": "2026-09-25T21:20:48.339Z"
+  },
+  {
+    "type": "log",
+    "message": "==============================================================================",
+    "at": "2026-09-25T21:20:48.339Z"
+  },
+  {
+    "type": "log",
+    "message": "TC01 - Verify Login                                                   | PASS |",
+    "at": "2026-09-25T21:21:32.102Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC01",
+    "status": "passed",
+    "at": "2026-09-25T21:21:32.102Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-25T21:21:32.102Z"
+  },
+  {
+    "type": "log",
+    "message": "TC02 - Verify Product Search                                          | PASS |",
+    "at": "2026-09-25T21:22:14.095Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC02",
+    "status": "passed",
+    "at": "2026-09-25T21:22:14.095Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-25T21:22:14.095Z"
+  },
+  {
+    "type": "log",
+    "message": "TC03 - Verify Product Can Be Added To Cart                            | PASS |",
+    "at": "2026-09-25T21:23:04.609Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC03",
+    "status": "passed",
+    "at": "2026-09-25T21:23:04.609Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-25T21:23:04.609Z"
+  },
+  {
+    "type": "log",
+    "message": "TC04 - Complete E-Commerce User Journey                               | PASS |",
+    "at": "2026-09-25T21:23:58.654Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC04",
+    "status": "passed",
+    "at": "2026-09-25T21:23:58.654Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-25T21:23:58.654Z"
+  },
+  {
+    "type": "log",
+    "message": "TC05 - Register New User                                              | FAIL |",
+    "at": "2026-09-25T21:25:18.410Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC05",
+    "status": "failed",
+    "at": "2026-09-25T21:25:18.411Z"
+  },
+  {
+    "type": "log",
+    "message": "Element 'xpath=//*[contains(text(),\"Logged in as\")]' not visible after 15 seconds.",
+    "at": "2026-09-25T21:25:18.411Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-25T21:25:18.411Z"
+  },
+  {
+    "type": "log",
+    "message": "TC06 - Data Driven Product Search                                     | PASS |",
+    "at": "2026-09-25T21:26:04.257Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC06",
+    "status": "passed",
+    "at": "2026-09-25T21:26:04.257Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-25T21:26:04.257Z"
+  },
+  {
+    "type": "log",
+    "message": "TC07 - Invalid Login                                                  | PASS |",
+    "at": "2026-09-25T21:27:00.270Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC07",
+    "status": "passed",
+    "at": "2026-09-25T21:27:00.270Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-25T21:27:00.270Z"
+  },
+  {
+    "type": "log",
+    "message": "TC08 - Logout User                                                    | PASS |",
+    "at": "2026-09-25T21:27:44.035Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC08",
+    "status": "passed",
+    "at": "2026-09-25T21:27:44.035Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-25T21:27:44.035Z"
+  },
+  {
+    "type": "log",
+    "message": "TC09 - Verify Product Details Page                                    | PASS |",
+    "at": "2026-09-25T21:28:22.218Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC09",
+    "status": "passed",
+    "at": "2026-09-25T21:28:22.218Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-25T21:28:22.218Z"
+  },
+  {
+    "type": "log",
+    "message": "TC10 - Verify Home Page Subscription                                  | PASS |",
+    "at": "2026-09-25T21:28:36.949Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC10",
+    "status": "passed",
+    "at": "2026-09-25T21:28:36.949Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-25T21:28:36.949Z"
+  },
+  {
+    "type": "log",
+    "message": "TC11 - Add Multiple Products To Cart                                  | PASS |",
+    "at": "2026-09-25T21:29:18.608Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC11",
+    "status": "passed",
+    "at": "2026-09-25T21:29:18.608Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-25T21:29:18.608Z"
+  },
+  {
+    "type": "log",
+    "message": "TC12 - Verify Product Quantity In Cart                                | PASS |",
+    "at": "2026-09-25T21:30:00.765Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC12",
+    "status": "passed",
+    "at": "2026-09-25T21:30:00.765Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-25T21:30:00.765Z"
+  },
+  {
+    "type": "log",
+    "message": "TC13 - Remove Product From Cart                                       | PASS |",
+    "at": "2026-09-25T21:30:17.996Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC13",
+    "status": "passed",
+    "at": "2026-09-25T21:30:17.996Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-25T21:30:17.996Z"
+  },
+  {
+    "type": "log",
+    "message": "TC14 - Verify No Results For Invalid Product Search                   | PASS |",
+    "at": "2026-09-25T21:30:32.954Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC14",
+    "status": "passed",
+    "at": "2026-09-25T21:30:32.954Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-25T21:30:32.954Z"
+  },
+  {
+    "type": "log",
+    "message": "TC15 - Verify Cart Total Price Calculation                            | PASS |",
+    "at": "2026-09-25T21:31:13.639Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC15",
+    "status": "passed",
+    "at": "2026-09-25T21:31:13.639Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-25T21:31:13.639Z"
+  },
+  {
+    "type": "log",
+    "message": "TC16 - Verify Cart Persistence After Login                            | PASS |",
+    "at": "2026-09-25T21:32:02.618Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC16",
+    "status": "passed",
+    "at": "2026-09-25T21:32:02.618Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-25T21:32:02.618Z"
+  },
+  {
+    "type": "log",
+    "message": "TC17 - Add Product Review                                             | FAIL |",
+    "at": "2026-09-25T21:32:42.387Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC17",
+    "status": "failed",
+    "at": "2026-09-25T21:32:42.387Z"
+  },
+  {
+    "type": "log",
+    "message": "ElementClickInterceptedException: Message: element click intercepted: Element <button type=\"submit\" id=\"button-review\" class=\"btn btn-default pull-right\">...</button> is not clickable at point (1142, 573). Other element would receive the click: <span class=\"google-anno-sa-qtx google-anno-skip\" tabindex=\"0\" role=\"link\" aria-live=\"polite\" aria-label=\"Go to shopping options for ...\" style=\"color-scheme: initial !important; forced-color-adjust: initial !important; math-depth: initial !important; position: initial !important; position-anchor: initial !important; text-size-adjust: initial !important; appearance: initial !important; font-feature-settings: initial !important; font-kerning: initial !important; font-language-override: initial !important; font-optical-sizing: initial !important; font-palette: initial !important; font-size-adjust: initial !important; font-stretch: initial !important; font-synthesis: initial !important; font-variant: initial !important; font-variation-settings: initial !important; position-area: initial !important; text-rendering: initial !important; text-spacing-trim: initial !important; -webkit-font-smoothing: initial !important; -webkit-locale: initial !important; -webkit-text-orientation: initial !important; -webkit-writing-mode: initial !important; zoom: initial !important; accent-color: initial !important; place-content: initial !important; place-self: initial !important; alignment-baseline: initial !important; anchor-name: initial !important; anchor-scope: initial !important; animation-composition: initi...",
+    "at": "2026-09-25T21:32:42.387Z"
+  },
+  {
+    "type": "log",
+    "message": "    [ Message content over the limit has been removed. ]",
+    "at": "2026-09-25T21:32:42.387Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add17d73]",
+    "at": "2026-09-25T21:32:42.387Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add1597a]",
+    "at": "2026-09-25T21:32:42.387Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add12cb7]",
+    "at": "2026-09-25T21:32:42.387Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add11b70]",
+    "at": "2026-09-25T21:32:42.387Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add03b18]",
+    "at": "2026-09-25T21:32:42.387Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add393ea]",
+    "at": "2026-09-25T21:32:42.387Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add03396]",
+    "at": "2026-09-25T21:32:42.387Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add5fbea]",
+    "at": "2026-09-25T21:32:42.387Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add01d02]",
+    "at": "2026-09-25T21:32:42.387Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7add02b13]",
+    "at": "2026-09-25T21:32:42.387Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae391411+425e71]",
+    "at": "2026-09-25T21:32:42.387Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae3bca47+4514a7]",
+    "at": "2026-09-25T21:32:42.387Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae3b094e+4453ae]",
+    "at": "2026-09-25T21:32:42.387Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!GetHandleVerifier [0x7ff7ae06bf6e+1009ce]",
+    "at": "2026-09-25T21:32:42.387Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7adea0a05]",
+    "at": "2026-09-25T21:32:42.387Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7ade9bcf4]",
+    "at": "2026-09-25T21:32:42.387Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7ade9be84]",
+    "at": "2026-09-25T21:32:42.387Z"
+  },
+  {
+    "type": "log",
+    "message": "\tchromedriver!(No symbol) [0x7ff7ade866ac]",
+    "at": "2026-09-25T21:32:42.387Z"
+  },
+  {
+    "type": "log",
+    "message": "\tKERNEL32!BaseThreadInitThunk [0x7ff96bb5259d+1d]",
+    "at": "2026-09-25T21:32:42.387Z"
+  },
+  {
+    "type": "log",
+    "message": "\tntdll!RtlUserThreadStart [0x7ff96c96af78+28]",
+    "at": "2026-09-25T21:32:42.387Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-25T21:32:42.387Z"
+  },
+  {
+    "type": "log",
+    "message": "TC18 - Add Recommended Product To Cart                                | PASS |",
+    "at": "2026-09-25T21:33:21.700Z"
+  },
+  {
+    "type": "status",
+    "testId": "TC18",
+    "status": "passed",
+    "at": "2026-09-25T21:33:21.700Z"
+  },
+  {
+    "type": "log",
+    "message": "------------------------------------------------------------------------------",
+    "at": "2026-09-25T21:33:21.700Z"
+  },
+  {
+    "type": "log",
+    "message": "Tests.Ecommerce Tests                                                 | FAIL |",
+    "at": "2026-09-25T21:33:21.701Z"
+  },
+  {
+    "type": "log",
+    "message": "18 tests, 16 passed, 2 failed",
+    "at": "2026-09-25T21:33:21.702Z"
+  },
+  {
+    "type": "log",
+    "message": "==============================================================================",
+    "at": "2026-09-25T21:33:21.702Z"
+  },
+  {
+    "type": "log",
+    "message": "Tests                                                                 | FAIL |",
+    "at": "2026-09-25T21:33:21.702Z"
+  },
+  {
+    "type": "log",
+    "message": "18 tests, 16 passed, 2 failed",
+    "at": "2026-09-25T21:33:21.702Z"
+  },
+  {
+    "type": "log",
+    "message": "==============================================================================",
+    "at": "2026-09-25T21:33:21.702Z"
+  },
+  {
+    "type": "log",
+    "message": "Output:  C:\\Projects\\Internship_proj\\RobotFramework-Ecommerce-Automation\\results\\selenator\\20260925212047-900089\\output.xml",
+    "at": "2026-09-25T21:33:21.722Z"
+  },
+  {
+    "type": "log",
+    "message": "Log:     C:\\Projects\\Internship_proj\\RobotFramework-Ecommerce-Automation\\results\\selenator\\20260925212047-900089\\log.html",
+    "at": "2026-09-25T21:33:23.170Z"
+  },
+  {
+    "type": "log",
+    "message": "Report:  C:\\Projects\\Internship_proj\\RobotFramework-Ecommerce-Automation\\results\\selenator\\20260925212047-900089\\report.html",
+    "at": "2026-09-25T21:33:23.907Z"
+  }
+]
